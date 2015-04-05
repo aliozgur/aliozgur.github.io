@@ -12,6 +12,4 @@ Hi, I'm Ali Özgür. I'm a software developer from Turkey. I have BS degree in C
 
 ### Contact me
 
-[Github](https://github.com/aliozgur)
-[Twitter](https://twitter.com/aliozgur)
-[LinkedIn] (http://tr.linkedin.com/in/aliozgur/en)
+[Github](https://github.com/aliozgur) | [Twitter](https://twitter.com/aliozgur) | [LinkedIn] (http://tr.linkedin.com/in/aliozgur/en)
