@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Love C#"
-published: true
+published: false
 ---
 
-![Love C#](/_posts/love_csharp.jpg)
