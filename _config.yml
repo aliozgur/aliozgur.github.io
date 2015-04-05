@@ -93,10 +93,10 @@ prose:
           label: "Add Tags"
           placeholder: "Choose Tags"
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+            - name: "General"
+              value: "general"
+            - name: "Software"
+              value: "software"
     _posts/static:
       - name: "layout"
         field:
