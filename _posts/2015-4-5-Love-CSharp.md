@@ -4,4 +4,4 @@ title: "Love C#"
 published: true
 ---
 
-![love_csharp.jpg](/_posts/love_csharp.jpg)
+![Love C#](/_posts/love_csharp.jpg)
