@@ -18,15 +18,15 @@ avatar: http://www.gravatar.com/avatar/aabeef889d8849ace8b5da3c92413577.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: aliozgur79@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: aliozgur
   instagram:
-  linkedin:
+  linkedin: http://tr.linkedin.com/in/aliozgur/en
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: aliozgur
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
 
@@ -39,7 +39,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://www.pragmatouch.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
