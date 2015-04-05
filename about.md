@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm Ali Özgür. I'm a software developer from Turkey. I have BS degree in Computer Engineering from Istanbul Technical University and masters degree in Business Administration from Bilgi University. I'm doing software development stuff since 2000. 
 
-### More Information
+### Areas of Interest
 
-A place to include any other types of information that you'd like to include about yourself.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Github](https://github.com/aliozgur)
+[Twitter](https://twitter.com/aliozgur)
+[LinkedIn] (http://tr.linkedin.com/in/aliozgur/en)
