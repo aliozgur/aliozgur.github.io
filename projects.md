@@ -22,7 +22,7 @@ During 2007 I've completed porting Delphi 6 code to  C#. Then I published Pragma
 
 After maintaining PragmaSQL as a commercial product for two years I've open sourced the code at the beginning of 2011 on Codeplex. PragmaSQL is now at version 3 and is still [open source](https://github.com/aliozgur/pragmasql) and maintained.You can visit PragmaSQL [Web Site](http://www.pragmasql.com/pragmasql/default.aspx) or  [GitHub Repository](https://github.com/aliozgur/pragmasql) if you want to see more details or some code.
 
-> Bilgi University Software Development Team still uses PragmaSQL as the main T-SQL editor which provides object history tracking besides other great features. 
+>Bilgi University Software Development Team still uses PragmaSQL as the main T-SQL editor which provides object history tracking besides other great features. 
 
 
 **Tools and Technologies**
@@ -48,7 +48,7 @@ eXpressOto is a vehicle repair services and management application developed for
 
 eXpressOto was the first application I've developed with Microsoft Entity Framework as Object Relational Mapper. The ORM things was not new to me since I've developed number of line of business web applications with NHibernate (starting from version 0.5 as far as I can remember), LLBLGen Pro and SubSonic. But with eXpressOto I had the chance to explore all those great things offered by EF (I admit EF was hard than enough to work with at that time).
 
-> eXpressOto is still in active use and runs the whole repair services process that result in multi million dollar transactions annually.
+>eXpressOto is still in active use and runs the whole repair services process that result in multi million dollar transactions annually.
 
 **Tools and Technologies**
 
