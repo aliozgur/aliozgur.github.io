@@ -6,7 +6,7 @@ permalink: /projects/
 
 This page is intended to provide some background and details for couple of projects I was involved with during my professional career. I think these projects, among many others, helped me shape my software development skills. 
 
-If you want to see all the projects I was involved with[please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
+If you want to see all the projects I was involved with [please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
 
 ## PragmaSQL
 PragmaSQL is a T-SQL editor which I've started developing during summer of 2005 (The name was actually InfoSQL). The initial version was developed with Delphi 6 and was used extensively by Bilgi University's Software Development team. The team provided lots of feedback and at some point, I guess that was in 2007, I decided to port PragmaSQL to .NET with C#. I love Delphi very much and I still have some apps used in production (yes I know we are in 2015) and from time to time I still provide support to those apps. But in 2007 or some time around these years Borland was losing developer attraction which made .NET and C# a good alternative.
