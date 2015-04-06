@@ -9,3 +9,7 @@ tags:
 ![love_csharp.jpg](../media/love_csharp.jpg)
 
 {% include share_twitter.html %}
+
+{% include disqus.html %}
+
+
