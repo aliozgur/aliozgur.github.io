@@ -4,9 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
-Here you can find some projects developed by me or by the teams I've managed during my career. I'm proud that I was involved in these projects which I think helped me shape my software development career.
+This page is intended to provide some background and details about couple of projects I was involved with during my professional career. I think these projects, among many others, helped me shape my software development skills. 
 
-# PragmaSQL
+If you want to see all the projects I was involved [please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
+
+## PragmaSQL
 PragmaSQL is a T-SQL editor which I've started developing during summer of 2005 (The name was actually InfoSQL). The initial version was developed with Delphi 6 and was used extensively by Bilgi University's Software Development team. The team provided lots of feedback and at some point, I guess that was in 2007, I decided to port PragmaSQL to .NET with C#. I love Delphi very much and I still have some apps used in production (yes I know we are in 2015) and from time to time I still provide support to those apps. But in 2007 or some time around these years Borland was losing developer attraction which made .NET and C# a good alternative.
 
 During 2007 I've completed porting Delphi 6 code to  C#. Then I published PragmaSQL as a commercial product. And that was an important point in my career, because I started to run my own small business. During this period I had the chance to practice running a commercial product. Some notable things of that period are
@@ -38,10 +40,10 @@ After maintaining PragmaSQL as a commercial product for two years I've open sour
 * Developer Express Suite : Fantastic set of components
 * DPack for Delphi: I still use DPack for Visual Studio
 
-# TaksiTV
+## TaksiTV
 To be added ...
 
-# eXpressOto 
+## eXpressOto 
 eXpressOto is a vehicle repair services and management application developed for [İSBAK](http://www.isbak.com.tr/en) which is a public company partially owned by İstanbul Municipality. 
 
 eXpressOto was the first application I've developed with Microsoft Entity Framework as Object Relational Mapper. The ORM things was not new to me since I've developed number of line of business web applications with NHibernate (starting from version 0.5 as far as I can remember), LLBLGen Pro and SubSonic. But with eXpressOto I had the chance to explore all those great things offered by EF (I admit EF was hard than enough to work with at that time).
@@ -54,16 +56,16 @@ eXpressOto was the first application I've developed with Microsoft Entity Framew
 * .NET and C#
 * WinForms
 * Entity Framework 4
-* Reflection# JiraTouch
+* Reflection## JiraTouch
 Under construction...
 
-# MoodleTouch and MoodlEZ
+## MoodleTouch and MoodlEZ
 Under construction...
 
-# SUGES
+## SUGES
 SUGES is a DCU and RTU data collection and control system. Me and my team at PragmaTouch  developed SUGES for a local natural gas and electricity distribution company. The main purpose of the system is to collect data from DCU and RTU devices and manage the devices installed on the field. 
 
 The technologies used are C#, ASP.NET MVC, ServiceStack, Quartz.NET and Redis.
 
-# VoltPMS
+## VoltPMS
 
