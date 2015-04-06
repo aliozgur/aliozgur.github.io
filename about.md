@@ -11,7 +11,7 @@ Hi, I'm Ali Özgür. I'm a software developer with BS degree in Computer Enginee
 
 * .NET and C#
 * Programming languages in general
-* Web Development (JavaScript frameworks, server side framworks like ASP.NET MVC)
+* Full stack web development 
 * Mobile development
 * Git and Subversion
 * Redis
@@ -19,6 +19,9 @@ Hi, I'm Ali Özgür. I'm a software developer with BS degree in Computer Enginee
 * Design Patterns
 * Software design and analysis
 * BPM
+* Blogging
+* Microsoft Azure
+* Xamarin Tools
 
 ##You Can Contact Me Via
 
