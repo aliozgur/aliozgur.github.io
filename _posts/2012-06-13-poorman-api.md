@@ -5,7 +5,7 @@ subtitle: "Poor man's API authentication with API keys and some cryptography"
 date:       2012-06-13 15:53
 author:     "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
-header-img: "img/post-bg-05.jpg"
+# header-img: "img/post-bg-05.jpg"
 published: true
 tags: 
   - software
