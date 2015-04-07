@@ -2,6 +2,7 @@
 layout: page
 title: Archive
 subtitle: "Blog time machine"
+header-img: "img/archive-bg.jpg"
 permalink: /archive/
 ---
 
