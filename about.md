@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+subtitle: "Ali Özgür"
 header-img: "img/about-bg.jpg"
 permalink: /about/
 ---

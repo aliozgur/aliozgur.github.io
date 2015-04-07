@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Projects
+subtitle: "Couple of things I'm proud of"
 permalink: /projects/
 ---
 
-This page is intended to provide some background and details for couple of projects I was involved with during my professional career. I think these projects, among many others, helped me shape my software development skills. 
+This page is intended to provide some background and details for couple of projects I was involved with during my professional career. 
+I think these projects, among many others, helped me shape my software development skills. 
 
 If you want to see all the projects I was involved with [please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
 

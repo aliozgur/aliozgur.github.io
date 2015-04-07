@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+subtitle: "Blog time machine"
 permalink: /archive/
 ---
 
