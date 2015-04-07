@@ -4,6 +4,7 @@ title: About
 header-img: "img/about-bg.jpg"
 permalink: /about/
 ---
+![love_csharp.jpg](/media/love_csharp.jpg)
 
 Hi, I'm Ali Özgür. I'm a software developer with BS degree in Computer Engineering from Istanbul Technical University and masters degree in Business Administration from Bilgi University. I'm developing software since 2000.
 
@@ -28,7 +29,3 @@ I maintain and contribute to couple of [open source projects](https://github.com
 * Blogging
 * Microsoft Azure
 * Xamarin Tools
-
-##You Can Contact Me Via
-
-[Twitter](https://twitter.com/aliozgur) | [LinkedIn] (http://tr.linkedin.com/in/aliozgur/en) | [Github](https://github.com/aliozgur)

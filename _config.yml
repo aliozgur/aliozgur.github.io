@@ -1,8 +1,8 @@
 # Site settings
 title: Ali Özgür
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email:
+description: "Coding and other software development stuff"
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://aliozgur.github.io
