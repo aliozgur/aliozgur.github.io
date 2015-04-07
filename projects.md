@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 subtitle: "Couple of things I'm proud of"
-header-img: "img/projects-bg.jpg"
+#header-img: "img/projects-bg.jpg"
 permalink: /projects/
 ---
 
