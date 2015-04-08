@@ -208,7 +208,7 @@ We returned to Turkey with the task to develop a JavaScript based mobile applica
 
 > Laureate LENS is actively used by University of Liverpool and couple of other Laureate Network Universities. The mobile application we delivered to the LENS team was never published because Laureate decided to abandon the LENS project short after our delivery.
 
-** Tools and technologies **
+**Tools and technologies**
 
 * Java and Spring 
 * GWT
