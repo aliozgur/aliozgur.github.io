@@ -12,6 +12,7 @@ tags:
   - OS
 ---
 (Turkish)
+
 Son günlerin gündemde tutunamayan konusu [Fatih Projesi](http://fatihprojesi.meb.gov.tr/tr/index.php) ciddi vaadleri olan ve ülkemizin geleceğini yakından ilgilendiren bir proje. Bu proje kapsamında yapılması planlanan çalışmalar şu 5 ana başlık altında toplanmış
 
 1. Donanım ve Yazılım Altyapısının İyileştirilmesi 
