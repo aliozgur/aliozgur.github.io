@@ -154,6 +154,8 @@ My role in this project was to design the system, develop the Core, web services
 * Entitiy Framework
 * Hangfire
 
+> VoltPMS is installed and maintained by VOLT and is actively used by VOLT customers.  
+
 ## Laureate LENS
 
 
