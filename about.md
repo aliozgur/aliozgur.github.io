@@ -15,10 +15,10 @@ I'm also managing the PragmaTouch team which develops mobile and line of busines
 
 I maintain and contribute to couple of [open source projects](https://github.com/aliozgur) and published an open source [Git 101 book in Turkish](https://www.gitbook.com/book/aliozgur/git101/details).
 
-I'm an organized, diciplined, self motivated and productive person. During my professional career I was involved with lot's of projects in very different industries. I had the chance to work with great people and I liked every second I spent on any single bit of code I've written. I love to share what I know or what I think is important with my colleagues. In terms of software development, team work or organizational relations you can name me as a social personality though my wife thinks I'm an introvert who likes to listing Heavy Metal.
+I'm an organized, diciplined, self motivated and productive person. During my professional career I was involved with lot's of projects in very different industries. I had the chance to work with great people and I liked every second I spent on any single bit of code I've written. I love to share what I know or what I think is important with my colleagues. In terms of software development, team work or organizational relations you can name me as a social personality though my wife thinks I'm an introvert who likes to listen to Heavy Metal.
 
 *By the way Heavy Metal rulez :smiling_imp:*
-
+ 
 
 ## Areas of Technical Interest
 
