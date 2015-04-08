@@ -193,6 +193,29 @@ Some features BilgiCampus offers to students are
 * Microsoft SQL Server
 * .NET and C#
 * ASP.NET MVC
+* jQuery Mobile
 * Android and Java
 * Xamarin Tools
+
+## Laureate LENS
+
+This was the first international project I was involved with. In 2012 I was tasked to provide mobile development consultancy to the Laureate LENS team which was located at Columbia, MD in United States. The LENS team already had the system functioning and they wanted to develop a mobile application before the initial version was deployed to University of Liverpool at UK. LENS was envisioned as fully fledged learning platform which would tie different products and was developed as a Java Spring application with GWT in the front end and MongoDB as the NoSQL database. LENS was integrating to Blackboard, Banner and couple of other systems through TIBCO service bus.
+
+Unfortunatelly the core LENS application was not designed and developed with a Web API and other possible client integrations in mind.
+We stayed in US for three weeks and  we've spent the first week reading the Java and Spring code to understand the mechanics of the server application. The second week we spend our time sniffing requests from the GWT front end. We documented all relevant requests with request payload and response details by the end of second week. The third week was fun, we developed a minimal prototype to demonstrate our findings and give the Laureate team a sense of feeling about the posssible mobile technologies they can use. We demonstrated three different technologies; web app with jquery mobile, native Android app with Java and native iOS app with Xamarin Tools.
+
+We returned to Turkey with the task to develop a JavaScript based mobile application for LENS. After 1 month of design meetings and discussions (over phone) and 1 month of development we delivered the JavaScript based mobile application to LENS team.
+
+> Laureate LENS is actively used by University of Liverpool and couple of other Laureat Network Universities. The mobile application we delivered to the LENS team was never published because Laureate decided to abandon the LENS project short after our delivery.
+
+** Tools and technologies **
+
+* Java and Spring 
+* GWT
+* MongoDB
+* Xamarin Tools
+* Android
+* ASP.NET MVC (C#)
+* Cordova (PhoneGap)
+* The-M-Project Mobile JavaScript MVC framework
 
