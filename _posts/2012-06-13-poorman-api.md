@@ -8,7 +8,7 @@ excerpt_separator: <!--end-of-excerpt-->
 # header-img: "img/post-bg-05.jpg"
 published: true
 tags: 
-  - software
+  - Software
 ---
 In this blog post I will show you the details of a custom and minimal solution we have developed for Web API authentication.
 
