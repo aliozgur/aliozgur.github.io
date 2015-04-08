@@ -206,7 +206,7 @@ We stayed in US for three weeks and  we've spent the first week reading the Java
 
 We returned to Turkey with the task to develop a JavaScript based mobile application for LENS. After 1 month of design meetings and discussions (over phone) and 1 month of development we delivered the JavaScript based mobile application to LENS team.
 
-> Laureate LENS is actively used by University of Liverpool and couple of other Laureat Network Universities. The mobile application we delivered to the LENS team was never published because Laureate decided to abandon the LENS project short after our delivery.
+> Laureate LENS is actively used by University of Liverpool and couple of other Laureate Network Universities. The mobile application we delivered to the LENS team was never published because Laureate decided to abandon the LENS project short after our delivery.
 
 ** Tools and technologies **
 
