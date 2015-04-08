@@ -155,10 +155,3 @@ My role in this project was to design the system, develop the Core, web services
 * Microsoft SQL Server
 * Entitiy Framework
 * Hangfire
-
-
-## Laureate LENS
-
-
-## BilgiCampus
-
