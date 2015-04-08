@@ -161,7 +161,7 @@ My role in this project was to design the system, develop the Core, web services
 
 At Istanbul Bilgi University we have an in house Student Information System which is actively used and developed for more than 15 years (as of 2015). Bilgi SIS has more than 50 applications and some of the applications have 10 to 20 modules. We also have a huge Business Intelligence platform. The web portal, which is the main entry point of SIS, was developed with classic ASP. 
 
-During all these years we migrated some parts of the classic ASP portal to new technologies like ASP.NET Web Forms and later to ASP.NET MVC, but BilgiCampus was the biggest migration task my team was challanged. The request from business was to migrate all major student modules to a mobile application as Phase 1 and later do the same for instructor modules in Phase 2. 
+During all these years we migrated some parts of the classic ASP portal to new technologies like ASP.NET Web Forms and later to ASP.NET MVC, but BilgiCampus was the biggest migration task my team was challanged. The request from business was to migrate all major student modules to a mobile application in first phase and later do the same for instructor modules as second phase. 
 
 We had two possible paths 
 
