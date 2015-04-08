@@ -219,3 +219,6 @@ We returned to Turkey with the task to develop a JavaScript based mobile applica
 * Cordova (PhoneGap)
 * The-M-Project Mobile JavaScript MVC framework
 
+***
+If you want to see all the projects I was involved with [please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
+
