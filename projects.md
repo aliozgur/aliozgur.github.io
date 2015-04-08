@@ -142,7 +142,9 @@ and manage the devices installed on the field. SUGES was designed and implemente
 
 VoltPMS is power plant monitoring system developed for [VOLT](http://volt.com.tr/), a leading IT service provider for energy industry. VoltPMS project was completed in 4 months including design and implementation. We developed a high volume data storage model, a web application with management and analytics capabilities, web services and multiplatform mobile applications
 
-[Some VoltPMS mobile app screenshots](https://app.box.com/s/ga8sudzm8hkct7fbpr6iqbhei7k6hfk6)
+[VoltPMS mobile app screenshots](https://app.box.com/s/ga8sudzm8hkct7fbpr6iqbhei7k6hfk6)
+
+> VoltPMS is installed and maintained by VOLT and is actively used by VOLT customers.
 
 **Tools and Technologies**
 My role in this project was to design the system, develop the Core, web services and the mobile applications
@@ -154,7 +156,6 @@ My role in this project was to design the system, develop the Core, web services
 * Entitiy Framework
 * Hangfire
 
-> VoltPMS is installed and maintained by VOLT and is actively used by VOLT customers.  
 
 ## Laureate LENS
 
