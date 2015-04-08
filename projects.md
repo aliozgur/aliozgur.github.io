@@ -147,6 +147,7 @@ VoltPMS is power plant monitoring system developed for [VOLT](http://volt.com.tr
 > VoltPMS is installed and maintained by VOLT and is actively used by VOLT customers.
 
 **Tools and Technologies**
+
 My role in this project was to design the system, develop the Core, web services and the mobile applications
 
 * .NET, C#
@@ -155,3 +156,43 @@ My role in this project was to design the system, develop the Core, web services
 * Microsoft SQL Server
 * Entitiy Framework
 * Hangfire
+
+## BilgiCampus
+
+At Istanbul Bilgi University we have an in house Student Information System which is actively used and developed for more than 15 years (as of 2015). Bilgi SIS has more than 50 applications and some of the applications have 10 to 20 modules. We also have a huge Business Intelligence platform. The web portal, which is the main entry point of SIS, was developed with classic ASP. 
+
+During all these years we migrated some parts of the classic ASP portal to new technologies like ASP.NET Web Forms and later to ASP.NET MVC, but BilgiCampus was the biggest migration task my team was challanged. The request from business was to migrate all major student modules to a mobile application as Phase 1 and later do the same for instructor modules in Phase 2. 
+
+We had two possible paths 
+
+1. Implement all module functions as web services then develop native UI for each and every mobile platform available
+2. Implement a responsive web application and pack this as minimal native applications
+
+We decided to follow the second approach. Development started in 2011 and during this same year after 3 months of hard work my team completed the first phase and we published BilgiCampus. 
+
+Some features BilgiCampus offers to students are 
+
+* Personal information
+* Weekly course schedule
+* Exam schedule
+* Grades
+* Announcements and SIS inbox
+* Accounting details
+* Course Catalog
+* Request for certificates (transcript, student certificate, penalty certificate and other)
+* GPA Calculator
+* Appointment for course registration
+* Current Registration status
+* Course status 
+* Summer school 
+
+> BilgiCampus is still active and my team continues to add new features to BilgiCampus. We've added instructor modules into BilgiCampus and completed phase two a couple of years ago. I'm still actively contributing code to BilgiCampus.
+
+**Tools and Technologies**
+
+* Microsoft SQL Server
+* .NET and C#
+* ASP.NET MVC
+* Android and Java
+* Xamarin Tools
+
