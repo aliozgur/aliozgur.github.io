@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello Git"
+title: "Farewell Subversion, Hello Git"
 subtitle: "Subversion to Git Migration"
 date:  2015-04-09 12:46
 author:  "Ali Özgür"
