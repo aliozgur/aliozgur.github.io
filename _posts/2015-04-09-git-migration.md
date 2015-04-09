@@ -34,7 +34,7 @@ All perfect projects need an action plan. Here is a list of actions you should c
 * Install Git
 * Train the team
 * Review Your Subversion Repositories
-* Decide on migration strategy (all at once, clear cut or with transition period )
+* Decide on migration strategy (all at once, clear cut or with transition period)
 * Migrate from Subversion to Git
 
 ### Install Git
