@@ -14,6 +14,7 @@ tags:
 At Istanbul Bilgi University Software Development Team we have been using Subversion for nearly 10 years. I was the person who introduced Subversion to the team in 2005. During all those years we have created lots of repositories, to give you the exact number we have 121 repositories. Around 100 of these repositories include source code for different systems, applications or modules. Around 20 of those repositores are just junk. We have a repository per system, application or module. I guess this bit of information is enough to give you an idea about the overall migration work we need to perform.  
 
 **This post is a work in progress**
+
 <!--end-of-excerpt-->
 
 ### What is wrong with Subversion ?
