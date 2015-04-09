@@ -52,7 +52,7 @@ Here is our final software setup running on Gentoo server
  * Ruby
  * Ruby on Rails
  
-> I confess, I was involved with the installation process and sat by our [system admin's (Karaca Ahmet İnce)](https://www.linkedin.com/pub/karaca-ahmet-ince/2/b55/868) side while he was setting up things. And I also need to mention that we installed GitLab 3 or 4 times until we got it working properly.
+> I confess, I was involved with the installation process and sat by our [system admin's (Karaca Ahmet İnce)](https://www.linkedin.com/pub/karaca-ahmet-ince/2/b55/868) side while he was setting things up. And I also need to mention that we installed GitLab 3 or 4 times until we got it working properly.
 
 ### Train The Team
 
