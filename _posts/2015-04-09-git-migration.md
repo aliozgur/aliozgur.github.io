@@ -67,6 +67,7 @@ If you want people to learn and start using as soon as possible keep these point
 * Ask questions and leave them curious 
 * Share links to more detailed content
 * Compare Subversion and Git concepts to an extent. Too much comparison can raise questions like "So, why we use Git?" and make people resistant to the change
+* Be prepared to questions like "Why do we practice with Git CLI instead of a visual client like SourceTree?"
 
 
 *Below you can see a practice session content (in Turkish)*
@@ -75,6 +76,51 @@ If you want people to learn and start using as soon as possible keep these point
 
 ### Review Your Subversion Repositories
 
+If you have too many repositories like we do you need to make sure which repositories are in use and which repositories are just for testing and possibly contain nothing but junk. 
+
+You can look at the following items to determine the migration candidates and their priorities
+
+* Inspect last commit times of your Subversion repos
+> You can identify repos which you will not migrate or which you will archive in Git after migration 
+
+* Check your service/system/application/module catalog and identifty repositories contain frequently commited code but are still running in production
+> Last commit time is not enough by itself to determine the dead repos. You need to know what is running in production 
+
+* Identify projects cancelled due to business priorities but have future potential
+> Business changes all the time. They want something one day but forget what they wanted or cancel something just because of strange cooperate politics. 
+
+* Check your release notes, new requests and whatever materia you have to identify hot projects with upcoming releases
+> If your team is new to Git you might not want to put another variable in a hot project. Migration will also take time and if you choose a clear cut or all at once migration strategy you will have to make Subversion repos readonly and ask them to stop committing.
+
+
+Besides all these categorization and decisions you have to make sure that your your Subversion tags and branches **do not contain whitespace**. *git svn clone* will fail and stop. If you happen to have whitespaces in your tags or branches, just trim them or copy them under renamed Tags and Branches folder. In our case I created *MigrateTags* and *MigrateBranches* folders and used *svn copy*. Please note you can specify your tags and branches folder names for *git svn clone* command.
+
+
 ### Decide on migration strategy
 
+You need to choose a strategy based on results  of the Subversion Repository Review. Which strategy you will follow matters since the amount of migration work will change based on your strategy. 
+
+* Choose to migrate **all at once** if
+ * You do not have any hot projects (may be couple of) in development with tightly scheduled deadline
+ * Number of repositories is low or number of revisions in your repositories is relatively low
+
+* Choose **clear cut** if
+ * You are already confident with your team's Git skills
+ * You have couple of repositories
+
+* Choose to migrate **with transition period** if
+ * You are ok with multiple source control systems
+ * You are ok with periodical Git-Subversion syncs
+ * Your system admins accept to backup two systems instead of one
+
+You might of course mix and match the strategies above. You can migrate most of you repositories with a clear cut strategy but migrate couple of repositories with a grace period. Alternatively you can leave some hot projects in Subversion for a while and migrate them later. But keep in mind what strategu you choose will be specifc to your organization and deeply effected by the result of Subversion repository reviews.
+
+> If you do not care about the commit history of your Subversion repositories you can simply export your Subversion repository, create a logal Git repository over the exported one and the simply push your local Git repo to a remote. This strategy might be handy for repositories with 
+
+
+So, what we did? We choose *clear cut most of all at once* strategy. We identified 65 repositories to migrate and 6 of them would be archived and couple of them would be merged under a single Git repository. After the migration we ended up with 51 Git repositories. Pretty impressive since we used to have 120 Subversion repositories 
+
 ### Migrate from Subversion to Git
+This is the most technical part of this blog post. After lots of training, reviews and planning lets see some Git commands which will help you migrate your Subversion repositories with commit history.
+
+
