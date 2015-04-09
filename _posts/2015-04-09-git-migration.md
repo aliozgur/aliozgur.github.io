@@ -52,11 +52,11 @@ Here is our final software setup running on Gentoo server
  * Ruby
  * Ruby on Rails
  
-> I confess, I was involved with the installation process and sat by our system admin's side while he was setting up things. And I also need to mention that we installed GitLab 3 or 4 times until we got it working properly.
+> I confess, I was involved with the installation process and sat by our [system admin's (Karaca Ahmet İnce)](https://www.linkedin.com/pub/karaca-ahmet-ince/2/b55/868) side while he was setting up things. And I also need to mention that we installed GitLab 3 or 4 times until we got it working properly.
 
 ### Train The Team
 
-We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself since I was the author of the [Git 101 in Turkish](https://www.gitbook.com/book/aliozgur/git101/details) book. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [colleague (Tolga)](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
+We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself since I was the author of the [Git 101 in Turkish](https://www.gitbook.com/book/aliozgur/git101/details) book. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [colleague (Tolga Kürkçüoğlu)](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
 
 If you want people to learn and start using as soon as possible keep these points in mind
 
