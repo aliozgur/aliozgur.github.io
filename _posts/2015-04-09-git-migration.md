@@ -152,7 +152,7 @@ You now should have svn2git and begin to clone your repository
 $ svn2git <SVN REPO ROOT URL> --username <SVN USERNAME> --authors users.txt --trunk trunk --branches branches --tags tags
 ```
 
-That is it, now you can grab a cup of cofee and wait while your Subversion repo is being cloned or go alternatively you can go and kill some more bugs.
+That is it, now you can grab a cup of cofee and wait while your Subversion repo is being cloned or you can alternatively go and kill some more bugs.
 
 **Step-3**
 
