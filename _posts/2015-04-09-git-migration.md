@@ -4,6 +4,7 @@ title: "Farewell Subversion, Hello Git"
 subtitle: "Subversion to Git Migration"
 date:  2015-04-09 12:46
 author:  "Ali Özgür"
+ogimage: "../../../../media/git-migration/migration.png"
 excerpt_separator: <!--end-of-excerpt-->
 published: true
 tags: 
