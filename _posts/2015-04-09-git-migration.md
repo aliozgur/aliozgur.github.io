@@ -55,7 +55,7 @@ Here is our final software setup running on Gentoo server
 
 ### Train The Team
 
-We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [coleague](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
+We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [coleague (Tolga)](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
 
 If you want people to learn and start using as soon as possible keep these points in mind
 
