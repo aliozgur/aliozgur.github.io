@@ -177,6 +177,12 @@ If you have Externals definitions on your Subversion repository you will need to
 
 ```bash
 $ git submodule add -b master <GIT REPO ADDRESS> <SUBMODULE PATH>
+
+# update your submodule
+# --remote will also fetch and ensure that
+# the latest commit from the branch is used
+$ git submodule update --remote
+
 $ git add .submodules
 $ git commit -m "Submodule added"
 ```
