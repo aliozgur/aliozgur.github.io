@@ -4,7 +4,6 @@ title: "Farewell Subversion, Hello Git"
 subtitle: "Subversion to Git Migration"
 date:  2015-04-09 12:46
 author:  "Ali Özgür"
-ogimage: "../../../../media/git-migration/migration.png"
 excerpt_separator: <!--end-of-excerpt-->
 published: true
 tags: 
@@ -16,6 +15,9 @@ At Istanbul Bilgi University Software Development Team we have been using Subver
 
 
 <!--end-of-excerpt-->
+
+![Migrate Subversion to Git]({{ root.url }}/media/git-migration/migration.png)
+
 
 ### What is wrong with Subversion ?
 
