@@ -198,4 +198,10 @@ If you installed GitLab and your team is located in a country with a non English
 
 Our migration process was completed within 3 days. As I've mentioned previously we identified 65 repositories to migrate and 6 of them were migrated and then archived on Git and couple of them were merged under a single Git repository. After the migration we ended up with 51 Git repositories. We made all Subversion repositoies readonly. Since then we deployed number of fixes and couple of new versions from Git. We will follow the Centralized Git Workflow which is a natural fit for teams with Subversion background and probably transition to [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) or [GitLab Workflow](https://about.gitlab.com/2014/09/29/gitlab-flow/) later.
 
+***
 
+{% include share_twitter.html %}
+
+***
+
+{% include disqus.html %}
