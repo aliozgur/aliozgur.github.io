@@ -55,6 +55,24 @@ Here is our final software setup running on Gentoo server
 
 ### Train The Team
 
+We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [coleague](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
+
+If you want people to learn and start using as soon as possible keep these points in mind
+
+* Keep your sessions short
+* Task oriented short practice sessions are easier to follow
+* Train every day until sessions are completed 
+* Visit everybody on their desk and walk through the current practice
+* Training should happen just before you start the migration. Do not let people forget what they've learned.
+* Ask questions and leave them curious 
+* Share links to more detailed content
+* Compare Subversion and Git concepts to an extent. Too much comparison can raise questions like "So, why we use Git?" and make people resistant to the change
+
+
+*Below you can see a practice session content (in Turkish)*
+
+![GitPlayground Wiki Sample]({{ root.url }}/media/git-migration/01.png)
+
 ### Review Your Subversion Repositories
 
 ### Decide on migration strategy
