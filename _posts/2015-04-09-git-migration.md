@@ -115,7 +115,7 @@ You need to choose a strategy based on results  of the Subversion Repository Rev
 
 You might of course mix and match the strategies above. You can migrate most of you repositories with a clear cut strategy but migrate couple of repositories with a grace period. Alternatively you can leave some hot projects in Subversion for a while and migrate them later. But keep in mind what strategu you choose will be specifc to your organization and deeply effected by the result of Subversion repository reviews.
 
-> If you do not care about the commit history of your Subversion repositories you can simply export your Subversion repository, create a logal Git repository over the exported one and the simply push your local Git repo to a remote. This strategy might be handy for repositories with 
+> If you do not care about the commit history of your Subversion repositories you can simply export your Subversion repository, create a local Git repository over the exported one and then simply push your local Git repo to a remote. This strategy might also be handy for repositories with small number of unimportant changes.
 
 
 So, what we did? We choose *clear cut most of all at once* strategy. We identified 65 repositories to migrate and 6 of them would be archived and couple of them would be merged under a single Git repository. After the migration we ended up with 51 Git repositories. Pretty impressive since we used to have 120 Subversion repositories 
