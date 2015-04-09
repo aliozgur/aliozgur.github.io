@@ -13,7 +13,6 @@ tags:
 
 At Istanbul Bilgi University Software Development Team we have been using Subversion for nearly 10 years. I was the person who introduced Subversion to the team in 2005. During all those years we have created lots of repositories, to give you the exact number we have 121 repositories. Around 100 of these repositories include source code for different systems, applications or modules. Around 20 of those repositores are just junk. We have a repository per system, application or module. I guess this bit of information is enough to give you an idea about the overall migration work we need to perform.  
 
-**This post is a work in progress**
 
 <!--end-of-excerpt-->
 
@@ -55,7 +54,7 @@ Here is our final software setup running on Gentoo server
 
 ### Train The Team
 
-We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [coleague (Tolga)](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
+We had couple of people, including myself, who have been using Git, but for the majority Git was new. So I decided to train the team myself since I was the author of the [Git 101 in Turkish](https://www.gitbook.com/book/aliozgur/git101/details) book. The first repository I've created in Git was GitPlayground. I designed 11 practices on GitPlayground using Wiki pages (You can create wiki pages for repositories in GitLab). I covered one concept at a time with enough description, links to other more detailed resources, couple of practices with Git receipts and questions. Then for three weeks, with one day off at most, me and a [colleague (Tolga)](https://www.linkedin.com/pub/tolga-kurkcuoglu/1/154/90) visited everyone on their desks and spend 10 minutes to cover the current practice.
 
 If you want people to learn and start using as soon as possible keep these points in mind
 
@@ -92,6 +91,8 @@ You can look at the following items to determine the migration candidates and th
 * Check your release notes, new requests and whatever materia you have to identify hot projects with upcoming releases
 > If your team is new to Git you might not want to put another variable in a hot project. Migration will also take time and if you choose a clear cut or all at once migration strategy you will have to make Subversion repos readonly and ask them to stop committing.
 
+* Identify the dependencies between your repositories
+> You might have Externals definitions which will change the order and priority of the repositories to be migrated
 
 Besides all these categorization and decisions you have to make sure that your your Subversion tags and branches **do not contain whitespace**. *git svn clone* will fail and stop. If you happen to have whitespaces in your tags or branches, just trim them or copy them under renamed Tags and Branches folder. In our case I created *MigrateTags* and *MigrateBranches* folders and used *svn copy*. Please note you can specify your tags and branches folder names for *git svn clone* command.
 
@@ -122,5 +123,79 @@ So, what we did? We choose *clear cut most of all at once* strategy. We identifi
 
 ### Migrate from Subversion to Git
 This is the most technical part of this blog post. After lots of training, reviews and planning lets see some Git commands which will help you migrate your Subversion repositories with commit history.
+
+**Step-1** 
+
+Extract usernames from your subversion repository with the following command
+
+```bash
+$ svn log --quiet <YOUR SVN REPO URL> --username <YOUR SVN USERNAME> | grep -E "r[0-9]+ \| .+ \|" | cut -d'|' -f2 | sed 's/^ //' | sort | uniq
+```
+The command above will dump the usernames to your terminal screen, you can alternatively pipe the output to a text file. Your text file should contain one line for each Subversion user conforming to the following format
+
+```
+username1 = User 1 Full Name <user1@company.com>
+username2 = User 2 Full Name <user2@company.com>
+username2 = User 3 Full Name <user3@company.com>
+```
+
+**Step-2**
+
+Clone your Subversion repository to your local as a Git repository. You can use *git svn* to clone your Subversion repository to your local. But if you do not want to be tackle with all the details required by svn clone you can use [svn2git](https://github.com/nirvdrum/svn2git) which is tiny utility for migrating projects from Subversion to Git while keeping the trunk, branches and tags where they should be. In order to use svn2git make sure that you have Ruby installed then just install the svn2git gem. 
+
+```bash
+$ gem install svn2git
+```
+You now should have svn2git and begin to clone your repository
+
+```bash
+$ svn2git <SVN REPO ROOT URL> --username <SVN USERNAME> --authors users.txt --trunk trunk --branches branches --tags tags
+```
+
+That is it, now you can grab a cup of cofee and wait while your Subversion repo is being cloned or go alternatively you can go and kill some more bugs.
+
+**Step-3**
+
+Create a remote repository on your Git server. Copy the SSH or HTTP address. You will need this address once cloning your Subversion repository is completed.
+
+**Step-4**
+
+Once the clone operation is completed you can add remote for your local Git repository and push to the Git server.
+
+```bash
+$ git remote add origin <GIT REMOTE ADDRESS>
+```
+
+If you have Subversion ignore definitions you will need to move them to a **.gitignore** before pushing your local to the remote.
+
+```bash
+$ git add .gitignore
+$ git commit -m ".gitignore added"
+```
+
+If you have Externals definitions on your Subversion repository you will need to redefine them as Git submodules. The following command adds a tracking submodule from the specified Git repository to the specified path
+
+```bash
+$ git submodule add -b master <GIT REPO ADDRESS> <SUBMODULE PATH>
+$ git add .submodules
+$ git commit -m "Submodule added"
+```
+
+> After you add the submodule open your projects and make sure to update your references and commit the changes.
+
+Now it is time to push your local Git repository to the remote Git server
+
+```bash
+$ git push --set-upstream origin master # push to the remote
+$ git push --tags # Optional, if you have tags push them to the remote
+$ git push --all # Optional, if you have branched push them to the remote
+```
+**Step-5**
+
+If you installed GitLab and your team is located in a country with a non English locale you need to verify that your development tools and editors support UTF-8 and this feature is turned on. If you forget this step you might end up with screwed strings and GitLab will not be able to display some characters.
+
+### Enjoy Git
+
+Our migration process was completed within 3 days. As I've mentioned previously we identified 65 repositories to migrate and 6 of them were migrated and then archived on Git and couple of them were merged under a single Git repository. After the migration we ended up with 51 Git repositories. We made all Subversion repositoies readonly. Since then we deployed number of fixes and couple of new versions from Git. We will follow the Centralized Git Workflow which is a natural fit for teams with Subversion background and probably transition to [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) or [GitLab Workflow](https://about.gitlab.com/2014/09/29/gitlab-flow/) later.
 
 
