@@ -36,6 +36,7 @@ All perfect projects need an action plan. Here is a list of actions you should c
 * Decide on migration strategy (all at once, clear cut or with transition period)
 * Migrate from Subversion to Git
 
+
 ### Install Git
 
 This is a system administration kind of task. Our system admins installed Git on a WMWare instance running Gentoo (a Linux distribution). You have to do some capacity and resource planning. Since we wanted to have more than Git itself we based our capacity and resource planning on [GitLab Requirements](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/requirements.md) document
@@ -51,6 +52,7 @@ Here is our final software setup running on Gentoo server
  * Ruby
  * Ruby on Rails
  
+> I confess, I was involved with the installation process and sat by our system admin's side while he was setting up things. And I also need to mention that we installed GitLab 3 or 4 times until we got it working properly.
 
 ### Train The Team
 
