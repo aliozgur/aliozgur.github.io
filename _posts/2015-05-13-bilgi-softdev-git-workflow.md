@@ -303,6 +303,7 @@ git push origin feature/JIRA-1
 
 ```
 # Cheatsheets
+#### [Full size images are here](http://imgur.com/a/53H7r#UDuFSUQ)
 
 ![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/01.jpg)
 
