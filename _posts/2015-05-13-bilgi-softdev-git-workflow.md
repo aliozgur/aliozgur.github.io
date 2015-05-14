@@ -14,6 +14,8 @@ tags:
 
 In this blog post I will give you some details about the Git Workflow we are using at İstanbul Bilgi University.
 
+![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/01.jpg)
+
 <!--end-of-excerpt-->
 
 > Our flow includes some inspiration and material from James Kurczodyna's [ENV Branching with Git](http://www.wearefine.com/mingle/env-branching-with-git/) post.
