@@ -18,9 +18,6 @@ In this blog post I will give you some details about the Git Workflow we are usi
 
 > Our flow includes some inspiration and material from James Kurczodyna's [ENV Branching with Git](http://www.wearefine.com/mingle/env-branching-with-git/) post.
 
-# Bilgi Software Development Git Workflow 
-In this page you can find the details and recipes of our Git Workflow 
-
 
 ![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/00.jpg)
 [Graphic by James Kurczodyna](http://www.wearefine.com/mingle/env-branching-with-git/)
@@ -28,54 +25,55 @@ In this page you can find the details and recipes of our Git Workflow
 # SIS Web Environments
 
 ## Test Environment
-This environment is used by product owners ( our customers ) to test if we have the right implementation of a feature or hotfix. 
-For our web apps this is a web farm environment which is accessible through https://subtest.bilgi.edu.tr (This is not a valid url :) 
+This environment is used by the product owners for tesing purposes and validate the implementation of a feature or hotfix. 
+For our web apps this is a web farm environment.
 
-* Applications deployed on this environment use our test databases running on test servers
-* Apps are built and **deployed** to test environment by Jenkins when we push code to our **staging** branch in respective Git repository.
+* Applications deployed to this environment use our test databases running on the test servers
+* Apps are built and **deployed** to the test environment by Jenkins when we push code to the **staging** branches
 
-> Classic ASP site is deployed manually by using old school methods (diff, merge manually).
+> Classic ASP site is deployed manually (diff then merge).
 
 
 ## Production Environment
-This environment is the production environment. For our web apps this is a web farm environment which is accessible through https://subprod.bilgi.edu.tr (This is not a valid url :) 
+This environment is the production environment. For our web apps this is a web farm environment
 
 * Apps deployed on this environment use our production databases.
-* Apps are built and **deployed** to production environment by Jenkins when we push code to our **master** branch in respective Git repository.
+* Apps are built and **deployed** to production environment by Jenkins when we push code to the **master** branches
 
-> Classic ASP site is deployed manually by using old school methods (diff and merge manually).
+> Classic ASP site is deployed manually (diff then merge).
 
 
 ## Local Development Environments
-All development and debugging happens on the developers own local environment. 
+All development and debugging happens on the developers' own local environment. 
 
-* Local IIS is used
-* All database development happens on dev databases running on servers 
-* Before merging branches to **staging** make sure your feature/hotfix database scripts are updated on the test database
-
-**BE AWARE**, Test database is periodically restored from production database. You can lose your changes if you develop on test databases.
+* We use local IIS
+* All database development happens on central development databases 
+* Before merging branches to **staging** we update feature/hotfix database scripts on central test databases
+* Test databases are periodically restored from the production databases.
 
 # Exceptions
-* Desktop applications do not follow the environment branchging described in this document. Modifications to these apps will be pushed to **master** branch by the developer.
-* Moodle customizations will not follow the environment branching flow, we have branch per Moodle version and the developer will push directly to **master** branch.
+* Desktop applications do not follow the environment branchging workflow. Modifications to these apps are  pushed to the **master** branch by the developer
+* Moodle customizations do not follow the environment branching workflow, we have branch per Moodle version and the developer pushes directly to the **master** branch
 
 # Branches
 
 ## Environment Branches
-These are the branches which will live forever on our remote origin. 
+These are the branches which live forever on our remote origin. 
 
 * master (*is protected*) (Production Environment)
 * staging (Test Environment)
 * develop (Local Development Environment)
 
 ## Supporting branches
-These branches are eventually deleted but may live for a short or a very long period. You can have those branches only on your local repo, but when the time comes for integrating your changes or code review you will have to push them to the remote origin.
+These branches are eventually deleted but may live for a short or a very long period. Before a code review session or when the time comes for integration with environment branches 
+we push these branches to the remote origin.
 
 * Feature ( feature/JiraKey )
 * Hotfix ( hotfix/JiraKey ) 
 
 ### Shared Branches
-In case we have a very big feature which will be developed by more than one person we will push that branch to remote origin immediately after branching before any developemnt begins. All the developers working on that big feature will rebase and push to this shared supporting branch.  
+If we have a very big feature which will be developed by more than one person we push that branch to the remote origin immediately after branching and before any development begins. 
+All the developers working on that big feature rebase from and push to this shared supporting branch.  
 
 # The Workflow
 
@@ -90,43 +88,49 @@ To maintain the integrity of the branches and ensure we can deploy features inde
 ## Branching
 All support branches branch off **master**. 
 
-> Please note, the drawing at the top of the post shows a **hotfix** branch which is branched off master and later directly integrated into master. This is not a practice we follow.
+> Please note, the drawing at the top of the post shows a **hotfix** branch which is branched off master and integrated into master. This is not a practice we follow with hotfix branchs. 
+> A hotfix branch is processed just like a feature branch.
 
-Naming convention we will use for support branches is 
+Naming convention we use for support branches is 
 
 * feature/JiraKey
 * hotfix/JiraKey
 
-We will use Jira issue keys as branch names. This might be an issue in **TALEP** project or any other internal project. 
+We use Jira issue keys as branch names. This might be an issue in **TALEP** project (this is the project we use for service desk purposes) or any other internal project. 
 
-We prefer the key from TALEP but if the feature does not come with a TALEP issue we should questions this. Once we are convinced that we do not really need a TALEP issue for the feature yet we have to create a parent issue in the respective Jira project and use that key for the branch name.
+We prefer the key from the TALEP project but if the feature does not come with a TALEP issue we still create a an issue in a different Jira project (we have module or app specific internal Jira projects) 
+and use that key for the branch name.
 
 **Jira Subtasks**
 
-If a feature or hotfix has sub tasks you can use sub task jira keys in your branch commits.
+If a feature or hotfix has sub tasks we use sub task jira keys in our branch commits.
 
 **Multi-issue changes**
 
-If a feature has more than one Jira issue ( note not subtasks but linked issues) this is not good and indicates a problem in our planning process. You should notify and consult your manager in charge or another developer and as a first step group all linked tasks as subtasks under a parent Jira issue.
+If a feature has more than one Jira issue ( note not subtasks but linked issues) this is not good and indicates a problem in our planning process. 
+In this case the developer notifies the team manager and asks for consolidation. Then the team manager consolidates all issues, most of the time under a parent Jira issue.
 
 ## Merging
 
-Support branches are merged into **develop** and **staging** environment branches by the support branch owners. Merges into production environment, aka **master** will happen through GitLab's merge requests.
+Support branches are merged into **develop** and **staging** environment branches by the supporting branch owners.
+Merges into the production environment (**master**) happen through GitLab's merge requests.
 
 ### [feature] to [develop]
-When the development of a feature/hotfix is completed the branch is merged into **develop** by the **branch owner** In case of shared branches one dev from the team performs the merge.
+When the development of a feature/hotfix is completed the branch is merged into the **develop** branch by the **branch owner**. 
+If the support branch is a shared branch one developer from the team performs the merge.
 
-After integrating (merging) the branch into **develop** the branch owner builds the app and runs the tests (if any) locally. 
+After integrating the changes from support branch into the **develop**, the branch owner builds the app and runs the tests locally. 
 
 ### [feature] to [staging]
 
-If everything is ok on the **develop** branch and ready for user acceptance testing (UAT) the **branch owner** merges the branch into **staging** environment branch.
+If everything is ok on the **develop** branch and ready for user acceptance testing (UAT) the **branch owner** merges the branch to **staging** environment branch.
 
 ### [feature] to [production]
-Upon receiving user acceptance a Jira Deployment issue is created and the the branch is pushed to remote origin by the **branch owner**. The branch owner then creates a GitLab merge request (chooses feature branch as source and **master** as destination branch) and assigns the request to the Deployment Engineer. 
+Upon receiving user acceptance a Jira Deployment issue is created and the the branch is pushed to the remote origin by the **branch owner**. 
+The branch owner then creates a GitLab merge request (chooses feature branch as the source and **master** as the destination) 
+and assigns the request to the Deployment Engineer. 
 
-## Follow the Recipes 
-
+## Branching and Merging Recipes 
 
 ### 1.Create your branch
 
@@ -180,7 +184,7 @@ git rebase -i [Your first commit hash]^
 
 ```
 
-Please note, in Step-2 we use ^ (caret) as the postfiz of your first commit's hash. This identifies the **parent of** our first commit which our rebase will start from (exluding the parent commit)
+Please note, in Step-2 we use ^ (caret) as the postfix of your first commit's hash. This identifies the **parent of** our first commit which our rebase will start from (exluding the parent commit)
 
 Interactive rebase will bring up your text editor (if you did not configure one this will be **vi** i guess) and you will see a text file which looks like this
 
