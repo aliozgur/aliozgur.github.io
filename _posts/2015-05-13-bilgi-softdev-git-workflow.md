@@ -302,6 +302,15 @@ git push origin feature/JIRA-1
 # Open a Merge Request on GitLab to merge feature branch into master
 
 ```
+# Cheatsheets
+
+![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/01.jpg)
+
+![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/02.jpg)
+
+![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/03.jpg)
+
+![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/04.jpg)
 
 
 ***
@@ -311,3 +320,4 @@ git push origin feature/JIRA-1
 ***
 
 {% include disqus.html %}
+
