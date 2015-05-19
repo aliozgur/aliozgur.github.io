@@ -279,7 +279,7 @@ git pull --rebase origin master
 ```
 
 ```bash
-# checkout your feature branch and rebase from staging
+# checkout staging branch and rebase from origin staging
 git checkout staging
 git pull --rebase origin staging
 
