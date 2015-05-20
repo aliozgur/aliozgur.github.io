@@ -310,6 +310,7 @@ git push origin feature/JIRA-1
 ## Change your conflict style setting to diff3
 
 Initial content is
+
 ```
 1 public void TestMethod(string myValue)
 2 {
