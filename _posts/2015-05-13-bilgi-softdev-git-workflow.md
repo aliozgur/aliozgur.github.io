@@ -480,7 +480,7 @@ After you complete the merge tool setup you will see (in Araxis) three panes nam
 ### Rebase
 For example if you rebase your local **staging** branch from **origin staging** each pane will display the following in case of a conflict
 
-* BASE, is shows the common base
+* BASE, shows the common base
 * LOCAL, shows the contents of the **origin staging**
 * REMOTE, shows the contents of **staging**.
 
