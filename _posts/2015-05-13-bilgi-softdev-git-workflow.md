@@ -304,6 +304,182 @@ git push origin feature/JIRA-1
 # Open a Merge Request on GitLab to merge feature branch into master
 
 ```
+
+# Merge and Conflict Resolution
+
+## Change your conflict style setting to diff3
+
+Initial content is
+```
+1 public void TestMethod(string myValue)
+2 {
+3    ResourceManager.Initialize();
+4 }
+```
+
+
+Contents of the local **develop** branch. Please note we have added some code in line 4
+
+```
+1 public void TestMethod(string myValue)
+2 {
+3    ResourceManager.Initialize(ResourceType.Database|ResourceType.Network|ResourceType.Storage);
+4 }
+```
+
+Contents of the **remote** develeop branch. Please note someone has added code in line 3
+
+```
+1 public void TestMethod(string myValue)
+2 {
+3    DatabaseResourceManager.Initiailize(ResourceType.All)
+4 }
+```
+
+When we perform **git pull --rebase origin develop** we will have a conflict and you will see something like this
+
+```
+public void TestMethod(string myValue)
+{
+<<<<<<< HEAD
+    ResourceManager.Initialize(ResourceType.All);
+=======
+    ResourceManager.Initialize(ResourceType.Database|ResourceType.Network|ResourceType.Storage);
+>>>>>>> Add resource types to be initialized
+}
+```
+
+Now let's change the conflict style to diff3 with the following **git config** command
+
+```bash
+git config --global merge.conflictstyle diff3
+```
+
+
+```
+public void TestMethod(string myValue)
+{
+<<<<<<< HEAD
+    ResourceManager.Initialize(ResourceType.All);
+||||||| merged common ancestors
+    ResourceManager.Initialize();
+=======
+    ResourceManager.Initialize(ResourceType.Database|ResourceType.Network|ResourceType.Storage);
+>>>>>>> Add resource types to be initialized
+}
+```
+
+You can read [Reducing merge headaches: git meets diff3](http://psung.blogspot.com.tr/2011/02/reducing-merge-headaches-git-meets.html) 
+for more details about diff3 conflict style
+
+## A funky git command : git rerere
+
+The environment branching workflow requires at least three merges, one for each environment, for a single feature branch. 
+This might be a tedious process especially when you hit too many conflicts during each merge. You will have to resolve the same conflict multiple times. 
+Don't fear Git has a funky command to ease this process, meet the **git rerere** command. rerere stands for "replay recorded resolutoin" and see what Git document says for this command
+
+> In a workflow employing relatively long lived topic branches, the developer sometimes needs to resolve the same conflicts over and over again until the topic 
+> branches are done (either merged to the "release" branch, or sent out and accepted upstream).
+> This command assists the developer in this process by recording conflicted automerge results and corresponding hand resolve 
+> results on the initial manual merge, and applying previously recorded hand resolutions to their corresponding automerge results.
+> Note: You need to set the configuration variable rerere.enabled in order to enable this command.
+
+
+So in order to enable rerere we set the **rerere.enabled** to true using the following git config command
+```
+git config --global rerere.enabled true
+```
+
+With this setting in effect Git starts recording your resolutions and applies them as needed. 
+
+
+## Setting up Araxis as merge tool
+```ini
+[mergetool "araxis"]
+    cmd = \"C:/Program Files/Araxis/Araxis Merge/araxisgitmerge.exe\" "$PWD/$REMOTE" "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+[difftool "araxis"]
+    cmd = \"C:/Program Files/Araxis/Araxis Merge/compare.exe\" "$PWD/$REMOTE" "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
+[merge]
+    keepBackup = false;
+    tool = araxis
+	conflictstyle = diff3
+[diff] 
+    tool=araxis
+    renames = true
+```
+
+## Setting up TortoiseMerge as diff/merge tool
+```ini
+mergetool "tortoise"]
+    cmd = TortoiseMerge.exe -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
+[difftool "tortoise"]
+    cmd = tortoisemerge.exe -mine:\"$REMOTE\" -base:\"$LOCAL\"
+[merge]
+    keepBackup = false;
+    tool = tortoise
+	conflictstyle = diff3
+[diff] 
+    tool=tortoise
+    renames = true
+```
+## Getting rid of merge backup files
+Git will create and keep some backup files when the configured merge tool is invoked.
+In order to disable this behavior you can set the **mergetool.keepBackup** config variable value to **false** with the following config command
+
+```
+git config --global mergetool.keepBackup false
+```
+
+This is only the Git side of the backup files story, your merge tool might keep it's own backup files which may show up as untracked files in your git repository.
+Please consult your tool's documentation to disable this behavior or configure a global **.gitignore** file and add those backup files to .gitignore 
+
+You can configure a global .gitignore file with the following command
+
+```
+# On Unix, Linux or Max OSX
+git config --global core.excludesfile '~/.gitignore'
+
+# On Windows
+git config --global core.excludesfile "%USERPROFILE%\.gitignore"
+
+```
+
+
+## LOCAL,REMOTE, BASE and MERGE?
+
+After you complete the merge tool setup you will see (in Araxis) three panes named Remote,Base and Local. Let's try to distill what each pane representes in terms of Git 
+
+* **BASE** is set to the name of a temporary file containing the common base for the merge, if available
+* **LOCAL** is set to the name of a temporary file containing the contents of the file on the current branch
+* **REMOTE** is set to the name of a temporary file containing the contents of the file to be merged
+* **MERGED** is set to the name of the file to which the merge tool should write the result of the merge resolution
+
+*Source [git-scm.com](http://git-scm.com/docs/git-mergetool)*
+
+> NOTE : Do not be fooled by the fact that Araxis displays BASE as the name of the middle pane. 
+> The target of the merge operation is that BASE pane but Araxis writes the merged content into $MERGE. 
+> You are not modifying the common base
+
+
+### Rebase
+For example if you rebase your local **staging** branch from **origin staging** each pane will display the following in case of a conflict
+
+* BASE, is shows the common base
+* LOCAL, shows the contents of the **origin staging**
+* REMOTE, shows the contents of **staging**.
+
+### Plain Merge
+For example when you merge your **feature branch** to **staging** each pane will display the following in case of a conflict
+
+* BASE, is shows the common base
+* LOCAL, shows the contents of the **staging** branch
+* REMOTE, shows the contents of your **feature branch**.
+
+
+
 # Cheatsheets
 #### [Full size images are here](http://imgur.com/a/53H7r#UDuFSUQ)
 
