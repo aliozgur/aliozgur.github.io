@@ -413,7 +413,7 @@ With this setting in effect Git starts recording your resolutions and applies th
 
 ## Setting up TortoiseMerge as diff/merge tool
 ```ini
-mergetool "tortoise"]
+[mergetool "tortoise"]
     cmd = TortoiseMerge.exe -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
 [difftool "tortoise"]
     cmd = tortoisemerge.exe -mine:\"$REMOTE\" -base:\"$LOCAL\"
