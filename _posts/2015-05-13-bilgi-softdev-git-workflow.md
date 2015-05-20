@@ -356,7 +356,6 @@ Now let's change the conflict style to diff3 with the following **git config** c
 git config --global merge.conflictstyle diff3
 ```
 
-
 ```
 public void TestMethod(string myValue)
 {
@@ -387,6 +386,7 @@ Don't fear Git has a funky command to ease this process, meet the **git rerere**
 
 
 So in order to enable rerere we set the **rerere.enabled** to true using the following git config command
+
 ```
 git config --global rerere.enabled true
 ```
@@ -396,7 +396,7 @@ With this setting in effect Git starts recording your resolutions and applies th
 
 ## Setting up Araxis as merge tool
 
-```ini
+```
 
 [mergetool "araxis"]
     cmd = \"C:/Program Files/Araxis/Araxis Merge/araxisgitmerge.exe\" "$PWD/$REMOTE" "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
@@ -419,7 +419,7 @@ With this setting in effect Git starts recording your resolutions and applies th
 
 ## Setting up TortoiseMerge as diff/merge tool
 
-```ini
+```
 
 [mergetool "tortoise"]
     cmd = TortoiseMerge.exe -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
