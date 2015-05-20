@@ -395,37 +395,49 @@ With this setting in effect Git starts recording your resolutions and applies th
 
 
 ## Setting up Araxis as merge tool
+
 ```ini
+
 [mergetool "araxis"]
     cmd = \"C:/Program Files/Araxis/Araxis Merge/araxisgitmerge.exe\" "$PWD/$REMOTE" "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
     keepTemporaries = false
     trustExitCode = false
     keepBackup = false
+
 [difftool "araxis"]
     cmd = \"C:/Program Files/Araxis/Araxis Merge/compare.exe\" "$PWD/$REMOTE" "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$MERGED"
+
 [merge]
-    keepBackup = false;
+    keepBackup = false
     tool = araxis
 	conflictstyle = diff3
+
 [diff] 
     tool=araxis
     renames = true
 ```
 
 ## Setting up TortoiseMerge as diff/merge tool
+
 ```ini
+
 [mergetool "tortoise"]
     cmd = TortoiseMerge.exe -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
+
 [difftool "tortoise"]
     cmd = tortoisemerge.exe -mine:\"$REMOTE\" -base:\"$LOCAL\"
+
 [merge]
-    keepBackup = false;
+    keepBackup = false
     tool = tortoise
 	conflictstyle = diff3
+
 [diff] 
     tool=tortoise
     renames = true
+
 ```
+
 ## Getting rid of merge backup files
 Git will create and keep some backup files when the configured merge tool is invoked.
 In order to disable this behavior you can set the **mergetool.keepBackup** config variable value to **false** with the following config command
