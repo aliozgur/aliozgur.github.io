@@ -63,7 +63,7 @@ Bu yazımda daha önce sizlerle paylaştığım ["Environment Branching With Git
 
 Ayrıntılara için [Git flow with Jenkins and GitLab](http://juristr.com/blog/2014/01/git-flow-jenkins-gitlab/) isimli blog post'a göz atabilirsiniz.
 
-## Tüm projelerde tanımlanması gereken proje/solution değişkenleri
+## Projelerde tanımlanması gereken değişkenler
 
 * SIS_GIT_REPO
 * SIS_GIT_BRANCH
@@ -75,11 +75,13 @@ Ayrıntılara için [Git flow with Jenkins and GitLab](http://juristr.com/blog/2
 * SIS_PRJ_CONFIG
 
 ## NuGet ile ilgili düzenlemeler
-* NuGet.exe’nin son versiyonu C:’ye kopyalandı. Build işleminin ilk adımı “C:\nugetexe” restore <Solution> şeklindeki bir komut
 
-* NuGet’in SIS NuGet repository’sini tanıyabilmesi için C:\ProgramData\NuGet\Config klasörü altına SisNuget.config isimli dosya eklendi. NuGet.exe config dosyalarına bakarken şu linkte anlatılan hiyerarşiye uygun davranıyor (NuGet Config Extensibility Point](https://docs.nuget.org/consume/nuget-config-file )
+* NuGet.exe’nin en güncel versiyonu C:’ye kopyalandı. Build işleminin ilk adımı **“C:\nuget.exe” restore .\MyProject\MySolution.sln** şeklindeki bir komut
 
-## Visual Studio’da NuGet ile ilgili yapılması gereken düzenlemeler şöyle.
+* NuGet’in Official NuGet Repository dışındaki repository'lerden de paketleri günncelleyebilmesi için **C:\ProgramData\NuGet\Config** klasörü altına **SisNuget.config** isimli dosya eklendi. NuGet.exe config dosyalarına bakarken şu linkte anlatılan hiyerarşiye uygun davranıyor (NuGet Config Extensibility Point](https://docs.nuget.org/consume/nuget-config-file )
+
+## Visual Studio’da NuGet ile ilgili yapılması gereken düzenlemeler
+
 Şu anki yapıda biz MSBuild-Integrated Package Restore denilen bir yöntemi kullanıyoruz. Bu yöntem ile solution’da “Enable Package Restore” dediğimiz anda VS solution altındaki .nuget klasörüne şu dosyaları ekliyor
 
 * NuGet.config
@@ -96,6 +98,7 @@ Jenkins ile birlikte MSBuild-Integrated Package Restore yerine bizim de normal P
 * Bu dosyaları teker teker Notepad++ benzeri bir text editör ile açıp dosya içindeki “Restore” ibaresinin ve “NuGet” ibaresinin olduğu XML tag’larını siliyoruz
 
 ## Shell Script Kullanımı
+
 * [Cygwin](https://www.cygwin.com/) default hali ile kurulur
 * Windows'da PATH environment değişkenine Cygwin kurulumundaki **bin** klasörünün path'i eklenir
 
@@ -110,5 +113,5 @@ echo GIT_BRANCH_SHORT=$val > git-branch-short.properties
 
 ```
 
-**NOT: S**hell scriptlerinde kullanacağınız koda göre Cygwin'e ilave package kurulumlarını Cygwin installer'ı tekrar çalıştırarak kurmanız gerekebilir
+> NOT: Shell scriptlerinde kullanacağınız koda göre Cygwin'e ilave package kurulumlarını Cygwin installer'ı tekrar çalıştırarak kurmanız gerekebilir
 
