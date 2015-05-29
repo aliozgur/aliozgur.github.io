@@ -132,3 +132,14 @@ echo GIT_BRANCH_SHORT=$val > git-branch-short.properties
 
 > NOT: Shell scriptlerinde kullanacağınız koda göre Cygwin'e ilave package kurulumlarını Cygwin installer'ı tekrar çalıştırarak kurmanız gerekebilir
 
+
+
+***
+
+{% include share_twitter.html %}
+
+***
+
+{% include disqus.html %}
+
+
