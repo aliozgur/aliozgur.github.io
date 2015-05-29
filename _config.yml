@@ -22,7 +22,7 @@ google_analytics:
 
 # Build settings
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
