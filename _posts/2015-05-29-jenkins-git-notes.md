@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jenkins Kurulum ve Yapılandırma Notları"
-subtitle: "Environment Branching Git Flow için Jenkins konfigürasyonu"
+subtitle: ""
 date:  2015-05-29 22:01
 author:  "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
