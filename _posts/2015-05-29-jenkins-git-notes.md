@@ -78,7 +78,7 @@ Ayrıntılara için [Git flow with Jenkins and GitLab](http://juristr.com/blog/2
 
 * NuGet.exe’nin en güncel versiyonu C:’ye kopyalandı. Build işleminin ilk adımı **“C:\nuget.exe” restore .\MyProject\MySolution.sln** şeklindeki bir komut
 
-* NuGet’in Official NuGet Repository dışındaki repository'lerden de paketleri günncelleyebilmesi için **C:\ProgramData\NuGet\Config** klasörü altına **SisNuget.config** isimli dosya eklendi. NuGet.exe config dosyalarına bakarken şu linkte anlatılan hiyerarşiye uygun davranıyor (NuGet Config Extensibility Point](https://docs.nuget.org/consume/nuget-config-file )
+* NuGet’in Official NuGet Repository dışındaki repository'lerden de paketleri günncelleyebilmesi için **C:\ProgramData\NuGet\Config** klasörü altına **SisNuget.config** isimli dosya eklendi. NuGet.exe config dosyalarına bakarken şu linkte anlatılan hiyerarşiye uygun davranıyor [NuGet Config Extensibility Point](https://docs.nuget.org/consume/nuget-config-file)
 
 ## Visual Studio’da NuGet ile ilgili yapılması gereken düzenlemeler
 
