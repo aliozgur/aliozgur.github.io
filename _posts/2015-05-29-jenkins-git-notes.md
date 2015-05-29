@@ -12,6 +12,7 @@ tags:
   - Bilgi
   - Jenkins
 ---
+
 *This post is in Turkish*
 
 Bu yazımda daha önce sizlerle paylaştığım ["Environment Branching With Git"](http://aliozgur.net/2015/05/13/bilgi-softdev-git-workflow/) yaklaşımında adı geçen deployment otomasyonu için
