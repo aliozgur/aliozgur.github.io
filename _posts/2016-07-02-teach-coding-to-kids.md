@@ -109,6 +109,9 @@ In this section I will give you pointers to couple of tools and environments you
 
 **[LEGO MINDSTRORMS](http://www.lego.com/en-US/mindstorms/):** LEGO MINSDSTORMS is really fantastic but very complex. This product is for 10+ kids and requires some form of in class education. We have an EV3 version, so far Arda just assmebled and programmed first two models of EV3RSTORM. 
 
+**[CsUnplugged.org](http://csunplugged.org/):** A site full of computing and coding related activities. Thanks [Emre Sevinç](https://fatherinastrangeland.wordpress.com) for your valuable contribution.
+
+
 There are couple of other advanced things like Raspberry Pi, Arduino and Netduino boards and DIY open source robotics schemes. These platforms are too complex for a kid but if you are interested to robotics as a hobbysist you can just let your kid help and watch you. I've built [this Robotroller](https://github.com/xamarin/Monkey.Robotics) as a hobby to myself and the [result (video)](https://www.youtube.com/watch?v=yNq5TP0Eik8) was pretty fantastic. I ordered all the parts, waited for couple of months, assembled the chassis, did some soldering. Arda was included all the way down, he helped me while assembling the chassis and the motors, he hold the wire while I was soldering.
 
 ## Conclusion
@@ -121,5 +124,4 @@ I've been trying different methods, tools and environments to introduce Arda to 
 ***
 
 {% include disqus.html %}
-
 
