@@ -10,6 +10,11 @@ This page is intended to provide some background and details for couple of proje
 I think these projects, among many others, helped me shape my software development skills. 
 
 If you want to see all the projects I was involved with [please visit my LinkedIn profile](http://linkedin.com/in/aliozgur)
+## Türkçe Git 101
+"Türkçe Git 101" is an open and freely available Git book written in Turkish. This book is also available in a printed form as "Git ile Versiyon Kontrolü".
+
+[The book is freely available online on GitBook](https://www.gitbook.com/book/aliozgur/git101/details), exercises for the topics covered in the book are also [available online](http://aliozgur.net/git_alistirmalar/)
+
 
 ## PragmaSQL
 PragmaSQL is a T-SQL editor which I've started developing during summer of 2005. 
