@@ -27,6 +27,9 @@ Kitabın ön izleme versiyonunu şuradan indirebilirsiniz
 
 [F# ile Fonksiyonel Programlama - Ön izleme versiyonu]({{ root.url }}/media/fsharp_fonksiyonel_preview.pdf)
 
+
+![]({{ root.url }}/media/fsharp_inprogress.jpg)
+
 ## Yazım Süreci Bilglendirme  
 
 * 09.09.2017 itibariyle : 1. bölüm ve 3. bölümün yarıya yakını tamamlandı
