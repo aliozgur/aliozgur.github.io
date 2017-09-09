@@ -22,7 +22,7 @@ tags:
 Uzun zamandır çok beğendiğim ve kullandığım zaman oldukça keyif aldığım F# programlama dili ile ilgili Türkçe bir kitap hazırlama fikrim vardır. Sonunda bu fikri hayata geçirmek için çalışma fırsatı buldum. Kitabın içeriğine aşağıdaki linkte yer alan ön izleme sürümünden göz atabilirsiniz.
 <!--end-of-excerpt-->
 
-Önizleme sürümünde 1. bölüm ve 3. bölümün bir kısmına yer verilmiştir. Kitap büyük ihtimalle basılı olarak değil elektronik formatta [Dikeyeksen](https://www.dikeyeksen.com) piyasaya sürülecek. 
+Önizleme sürümünde 1. bölüm ve 3. bölümün bir kısmına yer verilmiştir. Kitap büyük ihtimalle basılı olarak değil elektronik formatta [Dikeyeksen](https://www.dikeyeksen.com) tarafından piyasaya sürülecek. 
 Kitabın ön izleme versiyonunu şuradan indirebilirsiniz 
 
 [F# ile Fonksiyonel Programlama - Ön izleme versiyonu]({{ root.url }}/media/fsharp_fonksiyonel_preview.pdf)
