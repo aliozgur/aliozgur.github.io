@@ -34,8 +34,8 @@ Kitabın ön izleme versiyonunu şuradan indirebilirsiniz
 
 * 09.09.2017 itibariyle : 1. bölüm ve 3. bölümün yarıya yakını tamamlandı
 * Sonraki hedef
-    * 3. bölümü tamamlamak
-    * 2. bölümü tamamlamak
+    * 3.bölümü tamamlamak
+    * 2.bölümü tamamlamak
 
 ## Kitaptan Alıntı - F# Tarihçesi
 F#, Türkçe **efşarp** olarak telafuz edilen yabancı kaynaklarda da **FSharp** veya **F Sharp** olarak da rastlayabileceğiniz yordamsal (imperative) ve bildirimsel (declarative) yaklaşımlarının her ikisini de (multi-paradigm) destekleyen fonksyionel bir programlama dilidir. 
