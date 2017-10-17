@@ -42,9 +42,8 @@ Uzun zamandır çok beğendiğim ve kullandığım zaman oldukça keyif aldığ�
 * 25.09.2017 itibariyle : İlk 3. bölüm tamamlandı
 * Ön İzleme versiyonu için GitHub deposu oluşturuldu
 * Ön İzleme versiyonu [aliozgur.net](http://aliozgur.net/fsharp_kitap/) üzerinden yayınlandı
-* Sonraki hedef
-    * Ek-1 ve Ek-2
-    * 4.Bölüm
+* 17.10.2017 : Kitap içeriği tamamlanıp editör ile paylaşıldı
+* 17.10.2017 : Kitabın tam versiyonu içeriği dışındaki materyaller GitHub deposuna yüklendi  
 
 ## Kitaptan Alıntı - F# Tarihçesi
 F#, Türkçe **efşarp** olarak telafuz edilen yabancı kaynaklarda da **FSharp** veya **F Sharp** olarak da rastlayabileceğiniz yordamsal (imperative) ve bildirimsel (declarative) yaklaşımlarının her ikisini de (multi-paradigm) destekleyen fonksyionel bir programlama dilidir. 
