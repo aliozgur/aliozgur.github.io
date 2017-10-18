@@ -45,16 +45,22 @@ Uzun zamandır çok beğendiğim ve kullandığım zaman oldukça keyif aldığ�
 * 17.10.2017 : Kitap içeriği tamamlanıp editör ile paylaşıldı
 * 17.10.2017 : Kitabın tam versiyonu içeriği dışındaki materyaller GitHub deposuna yüklendi  
 
-## Kitaptan Alıntı - F# Tarihçesi
-F#, Türkçe **efşarp** olarak telafuz edilen yabancı kaynaklarda da **FSharp** veya **F Sharp** olarak da rastlayabileceğiniz yordamsal (imperative) ve bildirimsel (declarative) yaklaşımlarının her ikisini de (multi-paradigm) destekleyen fonksyionel bir programlama dilidir. 
+## Kitaptan Alıntı - Kısa F# Tarihçesi
 
-> **DİKKAT**
+F#, Türkçe **efşarp** olarak telafuz edilen, yabancı kaynaklarda **FSharp** olarak da rastlayabileceğiniz, yordamsal (imperative) ve bildirimsel (declarative) programlama yaklaşımlarının her ikisini de destekleyen çok yönlü (multi paradigm) ve fonksyionel bir programlama dilidir. 
+
+> **DİKKAT!**
 >
->"Fonksiyionel programlama dili" ifadesindeki **fonksiyonel** ibaresi ilk etapta "çok faydalı", "işe yarayan" benzeri anlamlar çağırıştırsa da kitapta bu anlamlarda kullanılmamıştır. "Fonksiyonel programlama" ifadesi programlama dilleri tasarımında matematikteki fonksiyonları ve özelliklerini temel alan bir yaklaşımı ifade eder. Bölümün sonunda bu tanım ayrıntılı olarak ele alınmaktadır.
+>"Fonksiyionel programlama dili" ifadesindeki **fonksiyonel** ibaresi ilk etapta "çok faydalı", "işe yarayan" benzeri anlamlar çağırıştırsa da kitapta bu anlamlarda kullanılmamıştır. "Fonksiyonel programlama" programlama dilleri sınıflandırmasında matematikteki fonksiyonları ve özelliklerini temel alan yaklaşımı ifade eder.
 
-F# programlama dili Microsoft tarafından tasarlanıp geliştirilen açık kaynak kodlu fonksiyonel bir programlama dilidir. Microsoft'un F# gibi bir dili geliştirmesinin altındaki temel motivasyon Microsoft'un geliştirdiği bir platformu olan .NET Framework'ün 90'lı yılların sonundaki temel tasarım amacına kadar uzanır. Microsoft'un .NET Framework'ünü Java'nın sanal ortamına (JVM) benzetebilirsiniz. .NET Framework farklı programlama dilleri ile geliştirilmiş programların MSIL (Microsoft Intermediate Language) adı verilen ara bir dile derlenmesi sonrasında üretilen kodu çalıştıran sanal bir ortam sunar.
+F#, Microsoft tarafından tasarlanıp geliştirilen açık kaynak kodlu bir dilidir. F#'ın geliştirilmesindeki temel motivasyon Microsoft'un en önemli platformlarından biri olan **.NET**'in tasarım prensiplerine kadar uzanır. .NET , diller, derleyiciler, standard kütüphaneler ve sanal çalışma ortamı gibi yazılım geliştirme ve bu yazılımların çalıştırıldığı bileşenleri içeren bir yapıdır. .NET'i destekleyen programlama dilleri ile geliştirilmiş programlar dillerin kendilerine özel derleyicileri tarafında derlenir. Derleyiciler tarafından MSIL (Microsoft Intermediate Language) olarak isimlendirilen ara bir dile dönüştürülen programlar ortak dil çalışma ortamı olan CLR (Common Language Runtime) tarafından çalıştırılabilir. 
 
-## İÇİNDEKİLER
+MSIL, işletim sistemi ve CPU mimarisi bağımsız bir dildir. .NET'i destekleyen programalama dillerinin (C#, VB.NET ve F#) derleyicileri MSIL kodu üretirler. Genelde MSIL kodu elle yazılmaz. .NET'i destekleyen herhangi bir dil ile geliştirilen ve MSIL'e derlenen programlar Windows, Linux ve OSX işletim sistemleri üzerinde CLR içinde çalıştırılabilir. 
+
+.NET ilk çıktığında geliştirici araçları ve CLR bileşenleri sadece Windows işletim sistemde çalışıyodu. Kısa bir süre sonra bağımsız bir grup yazılımcı Linux ve OSX'de de çalışabilen **Mono** isimli açık kaynak bir .NET versiyonu geliştirdi. 2015 yılına kadar Mono lisanslama koşulları nedeni ile Microsoft'un orjinal kodunu kullanmadı. Ancak, 2015 yılı itibariyle Microsoft da Mono'ya doğrudan kod katkısı sağlamaya başlamıştır. Buna ilave olarak Microsoft Windows, Linux ve OSX'de çalışan ve .NET Core olarak adlandırılan yeni bir .NET versiyonu geliştirmektedir. 2017 yılında .NET Core 2.0 dağıtımı kullanıma sunulmuştur. 
+
+
+## İçindekiler
 
 * 1.Bölüm : Giriş
     * 1.1 F# ile Tanışma
@@ -65,12 +71,13 @@ F# programlama dili Microsoft tarafından tasarlanıp geliştirilen açık kayna
     * 1.6 Fonksiyonel Programlama Nedir?
 
 * 2.Bölüm : F# Geliştirme Platformu 
-    * 2.1 FSC - F# Derleyicisi
-    * 2.2 FSI - F# Etkileşimli Ortamı (F# Interactive)  
-    * 2.3 F# Standard Dosya Uzantıları
-    * 2.4 Derleyici ve Etkileşimli Ortam Değişkenleri
-    * 2.5 Geliştirme Araçları
-    * 2.6 Merhaba F# 
+    * 2.1 Derleyici ve Yorumlayıcı Kavramları
+    * 2.2 FSC - F# Derleyicisi
+    * 2.3 FSI - F# Etkileşimli Ortamı  
+    * 2.4 F# Standard Dosya Uzantıları
+    * 2.5 Derleyici ve Etkileşimli Ortam Değişkenleri
+    * 2.6 Geliştirme Araçları
+    * 2.7 Merhaba F# 
 
 * 3.Bölüm : F# Temelleri
     * 3.1 Söz dizimi kuralları
@@ -82,44 +89,56 @@ F# programlama dili Microsoft tarafından tasarlanıp geliştirilen açık kayna
     * 3.7 Kod Organizasyonu
 
 * 4.Bölüm : Fonksiyonel Programlama
-    * Desen Eşleştirme (Pattern Matching)
-    * Küme Teorisi ve F# Tipleri
-        * Değişkenler Grubu (Tuple)
-        * Ayrışık Bileşim (Discriminated Union)
-        * Kayıt (Record) 
-    * Gevşek Değerleme (Lazy Evaluation)
-    * Sekanslar (Sequences)
-    * Sorgu İfadeleri (Query Expressions)
-* 5.Bölüm : Genel Amaçlı Programlama
-    * Değişken ve Değişmeyen Kavramları (Immutability and Mutability)
-    * .NET Bellek Yönetimi
-    * Değişken İçeriğini Değiştirme
-    * Diziler
-    * .NET Yığın Yapıları Kullanımı
-    * Döngü Yapıları (For ve While)
-    * Koşullu Dallanma Yapıları (If/Else)
-    * İstisna Yönetimi (Exceptions)
-* 6.Bölüm : Nesne Tabanlı Programlama ve Sınıflar
-    * Fonksiyonel Bir Dilde Neden Nesne Tabanlı Programlama Desteği Var?
-    * Sınıf Tanımlama
-    * Sınıf Özellik ve Üyeleri 
-    * Sınıflar Arası Kalıtım 
-    * Ara Birim Kullanımı (Interfaces)
-* 7.Bölüm : İleri Seviye Fonksiyonel Programlama Yöntemleri
-    * Aktif Desenler (Active Patterns)
-    * Liste Modülü
-    * Kuyruk Özyenilemeli Fonksiyonlar
-    * Fonksiyonlar ile Programlama
-    * Fonksiyonel Programlama Desenleri
-* 8.Bölüm : Asenkron ve Paralel Programlama
-    * İşletim Sistemi İplikleri ile Çalışma (Thread)
-    * Asenkron Programlama
-    * Asenkreon Programlama Kütüphanesi
-    * Paralel Programlama
-    * Paralel Programlama Kütüphanesi
-* 9.Bölüm : Örnek Uygulamalar
-    * Veritabanı Uygulaması
-    * Veri Ayıklama ve Analiz Uygulaması
-    * Web Programlama Uygulaması
-    * Finansal Uygulalma : Kredi Puanı Hesaplayıcı
-    * UrhoSharp İle Örnek Oyun 
+    * 4.1 Desen Eşleme (Pattern Matching)
+    * 4.2 Kayıtlar (Record) 
+    * 4.3 Ayrışık Bileşim (Discriminated Union)
+    * 4.4 Tiplere Davranış Ekleme
+    * 4.5 Tip Genelleme (Generics)
+    * 4.6 Sonradan Değerleme (Lazy Evaluation)
+    * 4.7 Sekanslar (Sequences)
+    * 4.8 yield! (yield bang)
+    
+* 5.Bölüm : Koleksiyonlar
+    * 5.1 Liste (List)
+    * 5.2 Dizi (Array)
+    * 5.3 Sekans (Sequence)
+    * 5.4 yield! (yield bang)
+    * 5.5 Küme (Set)
+    * 5.6 Anahtar Değer Haritası (Map)
+    * 5.7 List Modülü
+    * 5.8 Sorgu İfadeleri (Query Expressions)
+    
+* 6.Bölüm : Genel Amaçlı Programlama
+    * 6.1 Değişkenlere Gerçekten İhtiyacımız Var Mı? 
+    * 6.2 Değer Tipleri ve Referans Tipleri
+    * 6.3 Değişkenler
+    * 6.4 .NET Koleksiyonları
+    * 6.5 Döngü Yapıları (For ve While)
+    * 6.6 Koşullu Dallanma Yapıları (If/Else)
+    * 6.7 İstisnalar (Exceptions)
+    * 6.8 Ölçü Birimleri
+
+* 7.Bölüm : Nesne Yönelimli Programlama
+    * 7.1 Nesne Yönelimli Programlama Nedir?
+    * 7.2 Sınıf Tanımlama
+    * 7.3 Üye Özellikler
+    * 7.4 Üye Metodlar
+    * 7.5 Üye Erişim Kısıtlayıcıları
+    * 7.6 Kalıtım
+    * 7.7 Kontralar/Ara Birimler
+    * 7.8 Sınıflar Arası Tip Dönüşümü
+    * 7.9 IDisposable Kullanım Desenleri
+
+* 8.Bölüm : Gelişmiş Fonksiyonel Programlama Yöntemleri
+    * 8.1 Aktif Desenler 
+    * 8.2 Kuyruk Özyenilemeli Fonksiyonlar
+    * 8.3 Aktarım Operatörleri
+    * 8.4 Fonksiyon Kompozisyonu
+    * 8.5 İpuçları
+
+* 9.Bölüm : Asenkron ve Paralel Programlama
+    * 9.1 Giriş ve Temel Kavramlar
+    * 9.2 Thread Sınıfı
+    * 9.3 Asenkron İş Akışları
+    * 9.4 Task Sınıfı ve Paralel Programlama
+    * 9.5 MailboxProcessor Sınıfı
