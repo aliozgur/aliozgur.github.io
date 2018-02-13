@@ -9,7 +9,7 @@ permalink: /about/
 
 Hi, I'm Ali Özgür. I'm a software developer and a manager with BS degree in Computer Engineering from Istanbul Technical University and masters degree in Business Administration from Bilgi University. I'm developing software since 2000.
 
-I'm working as full time Platform and Services Team Manager at İstanbul Bilgi University (member of Laureate Universities Network) IT Department. My team at Bilgi is developing and maintaining the in house Student Information System (SIS) and provides operational support to SIS and Moodle LMS. 
+I'm working as Software Development Manager at İstanbul Bilgi University (member of Laureate Universities Network) IT Department. My team at Bilgi is developing and maintaining the in house Student Information System (SIS) and provides operational support to SIS and Moodle LMS. 
 	
 I'm also managing the PragmaTouch team which develops mobile and line of business applications for different industries.
 
