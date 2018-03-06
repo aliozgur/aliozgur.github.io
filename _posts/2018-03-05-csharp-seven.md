@@ -220,8 +220,16 @@ C# 6 ve önceki versiyonlarda **tuple** değerleri tanımlamak için ```Tuple<T>
 
 Ancak, C# 7.0 ile birlikte ```Tuple<T>```tipine gerek kalmadan, F#'dakine çok benzer bir söz dizimi ile doğrudan **tuple** değerler tanımlayıp kullanabiliriz.Yeni söz diziminde **tuple** değerleri basitçe iki parantez arasında virgül ile ayrılmış tipler veya değerler olarak aşağıdaki formata uygun olarak tanımlayabiliriz.
 
+> **BİLGİ**
+>
+> F#'ı öğrenmek veya incelemek isterseniz [F# ile Fonksiyonel Programlama](https://www.dikeyeksen.com/products/f-ile-fonksiyonel-programlama) kitabına başvurabilirsiniz. 
+>
+>Kitabın ilk üç bölümününe [şu adresten](http://aliozgur.net/2017/09/09/fsharp_fonksiyonel_prog_preview/) erişebilirsiniz.
+
+
 * Tip tanımı olarak tuple söz dizimi ```(T0,T1,T2,...)```
 * Değer olarak tuple söz dizimi ```(D0,D1,D2,...)``` 
+
 
 Bu kurallara uygun olarak aşağıdaki gibi yeni bir **GetPersonInfoNew** metodu tanımı yapabiliriz.  
 
@@ -290,7 +298,7 @@ var person3 = (ad: "Arda", soyad: "Özgür", yil: 2006);
 Console.WriteLine($"Person 3 {person3}");
 // Çıktı : Person 1 (Arda, Özgür, 2006)
 ```
-## Tuple Değerlerin Elemanlarını ( _ ) İle Göz Ardı Etme 
+### Tuple Değerlerin Elemanlarını ( _ ) İle Göz Ardı Etme 
 
 Yukarıdaki örnekte yer alan ```GetPersonInfo(2)``` metod çağırısının döndürdüğü tuple değerin bazı elemanlarının değerlerini göz ardı etmek istersek göz ardı edilecek elemanlar için değişken ismi vermek yerine alt çizgi ( _ ) yer tutucusu kullanılabilir. Bu yer tutucu değere yeni söz diziminde **discard** denilir. Aşağıda tuple dçnüş değerinin sadece **soyad** isimli elemanının değerini söküp diğer elemanların değerlerin _ ile nasıl göz ardı edebileceğimizi görebilirsiniz.
 
@@ -300,7 +308,7 @@ Console.WriteLine($"Person 2 Soyadı = {soyad}");
 // Çıktı : Person 2 Soyadı = Özgür
 ```
 
-## Sınıflarda Deconstruct metodu 
+### Sınıflarda Deconstruct metodu 
 
 C# 7.0 ile birlikte tasarladığımız sınıflardan üretilmiş nesnelerin bazı özelliklerini **tuple** değerler olarak sökülerek kullanılmasını sağlamak için sınıflarımıza ```Deconstruct``` isimli bir metodun eklenmesi yeterlidir. ```Deconstruct``` metodu sadece bir konvansiyondur yani C#'a eklenen yeni bir dil özelliği değildir . C# derleyicisi, konvansiyona uygun olarak sınıflarımıza ekleyeceğimiz ```Deconstruct```metodunun tanımına istinaden değerlerin tuple olarak sökülmesini sağlayan kodu derleme anında bizim için otomatik olarak üretir. 
 
@@ -354,6 +362,144 @@ Console.WriteLine($"Person 2 Ad = {aliAd}");
 // Çıktı : Person 2 Soyadı = Özgür
 ```
 
+ILSpy ile uygulamamızı decompile ettiğimizde yukarıdaki kod bloğunu IL komutları karşılığı aşağıdaki gibi olur. Bu komutlarda **IL_017b** satırında  ```(string aliAd, _) = ali``` atamasının yerine derleyicinin ```PersonalInfo``` sınıfının ```Decompile``` metoduna çağrı ürettiğini görebilirsiniz.
+
+```csharp
+// 	PersonalInfo ali = new PersonalInfo
+// 	{
+// 		Id = 2,
+// 		Ad = "Ali",
+// 		Soyad = "Özgür",
+// 		Yil = 1976
+// 	};
+IL_013d: newobj instance void SevenFeatures.PersonalInfo::.ctor()
+IL_0142: dup
+IL_0143: ldc.i4.2
+IL_0144: callvirt instance void SevenFeatures.PersonalInfo::set_Id(int32)
+// (no C# code)
+IL_0149: nop
+IL_014a: dup
+IL_014b: ldstr "Ali"
+IL_0150: callvirt instance void SevenFeatures.PersonalInfo::set_Ad(string)
+IL_0155: nop
+IL_0156: dup
+IL_0157: ldstr "Özgür"
+IL_015c: callvirt instance void SevenFeatures.PersonalInfo::set_Soyad(string)
+IL_0161: nop
+IL_0162: dup
+IL_0163: ldc.i4 1976
+IL_0168: newobj instance void valuetype [System.Runtime]System.Nullable`1<int32>::.ctor(!0)
+IL_016d: callvirt instance void SevenFeatures.PersonalInfo::set_Yil(valuetype [System.Runtime]System.Nullable`1<int32>)
+IL_0172: nop
+IL_0173: stloc.s 8
+// ali.Deconstruct(out text, out text2);
+IL_0175: ldloc.s 8
+IL_0177: ldloca.s 10
+IL_0179: ldloca.s 11
+IL_017b: callvirt instance void SevenFeatures.PersonalInfo::Deconstruct(string&, string&)
+// (no C# code)
+IL_0180: nop
+// string aliAd = text;
+IL_0181: ldloc.s 10
+IL_0183: stloc.s 9
+// Console.WriteLine(string.Format("Person 2 Ad = {0}", aliAd));
+IL_0185: ldstr "Person 2 Ad = {0}"
+IL_018a: ldloc.s 9
+IL_018c: call string [System.Runtime]System.String::Format(string, object)
+IL_0191: call void [System.Console]System.Console::WriteLine(string)
+```
+
+### Tuple Değerlerin Eşitliği
+
+Tuple değerleri == operatörü ile karşılaştıramazsınız. Karşılatırma işlemi için Equals metodunu kullanmalısınız. Equals metodu tuple değerlerin elemanların sırasının, tipinin ve değerlerinin aynı olup olmadığını test eder. BU şekile yapılan eşitlik kontrolüne  **yapısal eşitlik** (structural equality) kontrolü de denir.
+
+```csharp
+var d1 = ("Ali", 1);
+var d2 = ("Ali", 1);
+var d3 = ("Ali", 2);
+var d4 = ("Ali", "Özgür",1);
+
+// Derleyici hatası!
+// d1==d2
+
+Console.WriteLine($"d1==d2 => {d1.Equals(d2)}");
+// Çıktı d1==d2 => True
+
+Console.WriteLine($"d1==d3 => {d1.Equals(d3)}");
+// Çıktı d1==d3 => False
+
+Console.WriteLine($"d1==d4 => {d1.Equals(d4)}");
+// Çıktı d1==d4 => False
+```
+
+# **ref** Değişkenler ve **ref return**
+
+**ref** tanımlayıcısı da **out** tanımlayıcısına benzer bir şekilde metodlarımıza **by reference** parametreler geçebilmemizi sağlar. **out** ve **ref** arasındaki günülük programlama aktivitelerinde karşımıza çıkan en temel fark **out** parametrelerine metod içinde mutlaka ama mutlaka bir değer atanması zorunluluğudur.
+
+Yukarıda **out** parametre kullanarak oluşturduğumuz örnek ```TestByRef``` metodunu **ref** kullanarak aşağıdaki gibi yazabiliriz.
+
+```csharp
+// By ref parametreye dokunmadık
+public static void TestByRef(ref  int deger)
+{
+    Console.WriteLine($"Metod içinde değer {deger}");
+}
+
+// VEYA aşağıdaki gibi by ref parametrenin değerini değiştirebiliriz
+public static void TestByRef(ref int deger)
+{
+    deger = 42;
+    Console.WriteLine($"Metod içinde değer {deger}");
+}
+```
+
+Aşağıdaki örnek ```StockInfo``` sınıfının ```FindStock``` statik metodu, ilk parametredeki dizi içinden ikinci parametre ile verilen değeri bulup bu değeri **by reference** döndürür.  
+
+```csharp
+public class StockInfo
+{
+    public string Symbol { get; set; }
+    public decimal CurrentPrice { get; set; }
+
+    public static ref string FindStock(string[] stocks, string stockSymbol) // (1) <-- !!!
+    {
+        var idx = Array.IndexOf(stocks, stockSymbol);
+        if (idx < 0)
+            throw new ApplicationException("Stock nıt found!");
+
+        return ref stocks[idx]; // (2) <-- !!!
+    }
+}
+```
+
+```FindStock``` metodunun imzasında (1) ve değer dönüşü için kullanılan return satırında (2) önceki C# versiyonlarında sadece metod parametreleri için kullanabildiğimiz **ref** tanımlayıcısını C# 7.0 ile birlikte **by reference** metod dönüş değerleri oluşturmak için kullanabiliyoruz. Ancak, referans döndüren metodları kullanırken çok önemli bir noktaya dikkat edilmesi gerekiyor; metod çağırısının ve metod sonucunu tutacak olan değişkenimizin önüne **ref** tanımlayıcısını koymazsak (1) C# derleyicisi referans değer döndüren fonksiyonu normal değer döndüren bir fonksiyon gibi çağıracak şekilde bir kod üretir. 
+
+Örneğimizdeki ```FindStock``` metod çağırısını **ref** tanımlayıcısı kullanamdan yaparsak **stocks** dizisinin eşleşen elemanının değeri kopyalanarak döndürülür. Bu durumda **appleSymbol** değişkenini değerini sonradan değiştirsek (2) bile **stocks** dizisinde ilgili elemanın değeri değişmez (3). 
+
+```csharp
+var stocks = new string[4] { "THY", "MSFT", "AAPL", "TSLA" };
+var appleSymbol = StockInfo.FindStock(stocks, "AAPL"); // (1) <-- !!! ref kullanmadık
+
+Console.WriteLine($"appleSymbol => {appleSymbol}");
+// Çıktı : appleSymbol => AAPL
+
+appleSymbol = "xAAPL"; // (2) <-- 
+Console.WriteLine($"appleSymbol => {appleSymbol}, stocks[2] => {stocks[2]}"); // (3) <--
+// Çıktı : appleSymbol => xAAPL, stocks[2] => AAPL
+```
+
+Yukarıdaki ```FindStock``` metod çağırısını **ref** tanımlayıcısı ile yaparak sonuç değişkenini de **ref** ile tanımlarsak (1) sonuç olarak **stocks** dizisinin eşleşen elemanının referansı döndürülür. Bu durumda **msftSymbol** değişkeninin değerini sonradan değiştirdiğimizde (2)  **stocks** dizisinde ilgili elemanın değeri de değişir (3). 
+
+```csharp
+ref var msftSymbol = ref StockInfo.FindStock(stocks, "MSFT"); // (1) <-- !!!
+
+Console.WriteLine($"msftSymbol => {msftSymbol}");
+// Çıktı : msftSymbol  => MSFT
+
+msftSymbol = "xMSFT"; // (2) <-- !!!
+Console.WriteLine($"msftSymbol => {msftSymbol}, stocks[1] => {stocks[1]}"); // (3) <-- !!!
+// Çıktı : msftSymbol => xMSFT, stocks[1] => xMSFT
+``` 
 
 ***
 {% include share_twitter_tr.html %}
