@@ -19,6 +19,12 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+.post-content a
+{
+  color: #02697e !important;
+  text-decoration: underline;
+}
+
 a {
   color: #404040;
 }

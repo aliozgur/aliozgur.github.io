@@ -86,7 +86,7 @@ Here are couple of advices on potential new adventures for you
 * Contribute to open source projects
 * Work on your own pet projects
 * Write technical blog posts or record technical podcast
-* Answer questions on sites like Stackoveflow
+* Answer questions on sites like Stackoverflow
 * Attend coding challenges and hackathons
 * Attend or organize comunity events 
 * Organize internal workshops
