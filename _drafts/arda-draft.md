@@ -13,7 +13,7 @@ tags:
   - Yazılım 
 ---
 
-Bu sayfada Arda ile yaptığımız kodlama öğrenme oturumlarında yaptığımız çalışmaları paylaşıyorum.
+Bu sayfada Arda ile yaptığımız kodlama öğrenme oturumlarındaki çalışmalarımızın notlarını paylaşıyorum.
 
 <!--end-of-excerpt-->
 
@@ -23,7 +23,6 @@ Bu sayfada Arda ile yaptığımız kodlama öğrenme oturumlarında yaptığım�
 * Çocuklar için tasarlanmış görsel programlama dilleri dışında çok iyi bildiğiniz bir programlama dili seçilmeli. Biz tercihimizi **C#** ve **HTML**'den yana kullandık.
 * Uygulamaları çocuğunuzun kullanmaya alışık olduğu bir cihaz ve işletim sistemi kullanılarak yapılmalı. Bu nokta bir önceki maddede belirttiğim dil tercihini de etkileyecektir. Örneğin, çocğunuz iPad üzerinde iOS kullanmaya alışkın ise dil olarak Swift'i seçip uygulamalarınızı Swift Playgrounds ile yapabilirsiniz.
 
-## 1. Oturum (26.11.2018)
 ## Bilgisayarların İcadı ve Genel Kavramlar
 
 İlk oturuma Arda'nın bilgisayarlar ve kodlama ile ilgili merak ettiği soruları sormasını isteyerek başladık. Arda'nın ilk aklına gelen sorular şunlardı;
@@ -65,7 +64,7 @@ Arda'nın farklı bilgisayardan kastı tabii ki işletim sistemi farklı olan bi
 ### Yazdığım program bilgisayarı ve diğer cihazları nasıl kontrol edebiliyor? 
 Yazdığın programın içindeki **komutlar** ile bilgisayarları veya diğer cihazları kontrol edebilirsin. Aslında senin programının komutları elektrik sinyaline dönüştürülür ve bu elektrik sinyalleri farklı cihazların farklı işler yapmasını sağlar. Örneğin, programında ekrana "Arda" yazdırmak için bir komut varsa bu komut önce Windows'un anlayacağı bir şekle dönüştürülür sonra da Windows'un ekranı yöneten yazılımına iletilir. Windows'un ekranı kontrol eden yazılım da ekrana senin komutunda verdiğin "Arda" yazısını nereye yazacağını elektrik sinyali olarak iletir. 
 
-Bilgisayar dışındaki cihazlar için ise örnek olarak buzdoloabını düşünebiliriz. Buzdolabının sıcaklığını -4 dereceye ayarladığında buzdolabının üreten şirketteki programcının yazdığı bir program senin belirttiğin bu sıcaklığı kaydeder ve buzdolabının motoruna elektrik sinyali olarak -4 dereceye gelene kadar alışması gerektiği komutunu verir. 
+Bilgisayar dışındaki cihazlar için ise örnek olarak buzdoloabını düşünebiliriz. Buzdolabının sıcaklığını -4 dereceye ayarladığında buzdolabının üreten şirketteki programcının yazdığı bir program senin belirttiğin bu sıcaklığı kaydeder ve buzdolabının motoruna elektrik sinyali olarak sıcaklık -4 dereceye gelene kadar çalışması gerektiği komutunu verir. 
 
 
 ### C# İle Web sayfası hazırlayabilir miyim?
@@ -78,42 +77,6 @@ Bu açıklamalardan sonra Chrome'da bir sayfa açıp developer tools ile sayfan�
 
 ### Kendi programlama dilimi yapsam nasıl çalıştırabilirim?
 Kendi programlama dilini yapmak için **Bilgisayar Bilimleri** adını verdiğimiz alanda eğitim alman lazım. Bilgisayar bilimi ile uğraşan bilim insanlarının uzmanlık alanlarından birisi de programlama dili tasarımıdır. Programlama dilini tasarladıktan sonra bu dili anlayıp program üreten süper bir program yazman lazım. Programlama dillerini anlayan bu süper programlara derleyici (compiler) denir. Hazırlayacağın derleyici tasarladığın programlama dilini anlamalı ve yazıdan bilgisayarın ekranını kontrol edebilecek veya matematiksel işlemlerin yapılmasını sağlayacak olan komutları üretebilmeli. Derleyici dediğimiz programları makine üretebilen süper makineler gibi de düşünebilirsin. 
-
-> Ardanın sorularını cevapladıktan sonra aşağıda ele aldığım **computer** kavramı ve örnek uygulama ile oturuma devam ettik.
-
-
----
-DRAFT
-### Computer
-SORU : Bilgisayarlar sence neden icat edilmiştir?
-CEVAP : İnterne'te gezinmek, merak ettiğimiz soruların cevabını öğrenmek, insanlarla bilgileri paylaşmak için
-
-* Compute => Hesaplamak
-* Computer => Hesaplayıcı
-
-Aslında bilgisayarlar hesaplama yapmak için icat edilmiş.
-2. Dünya Savaşındaki tesliz şifrelerinin çözülmesi örneği
-
-Bilgisayar Einstein'den daha mı zeki? 
-Zeka ve işlem gücü arasındaki farkın anlatımı
-Bilgisayarlar ancak onları kodlayan insanlar kadar zeki görünebilirler, ama gerçekte zeki değiller (şimdilik)
-
-### Hesaplama Challenge
-
-Toplam işlemini insan ne kadar sürede yapar
-Bilgisayar ne kadar sürede yapar (kod)
-Toplam işleminde insanlar hata yapabilir, ama bilgisayarlar kodu doğru yazıldıysa hesaplama hatası yapmaz!
-
-### Anne Challange
-
-Bilgisayarların hesaplama gücü (kod)
-İnsan cevap verene kadar program kaç toplama işlemi yapabilir?
-
-### Araştırma Konusu
-İşlem gücü sayesinde hangi oyunda bilgisayar insanı yenmiştir. Oyun ne, insan kim, bilgisayarı kim yaptı? 
-
-## 2. Oturum (27.11.2018)
-## Dil Kavramı
 
 
 ***
