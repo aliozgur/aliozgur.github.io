@@ -9,6 +9,7 @@ published: true
 tags:
   - Git
   - Programlama
+  - Tips
 
 ---
 
