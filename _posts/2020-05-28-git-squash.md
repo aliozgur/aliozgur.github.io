@@ -125,6 +125,14 @@ Yukarıdaki yöntemlerden bir tanesi ile yapılan **squash** alias'ını aşağ�
 git squash 3
 ```
 
+
+## Daha Fazla Bilgi İçin
+
+* [Pro Git - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+* [Pro Git - Git Aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+* [–force considered harmful; understanding git’s –force-with-lease](https://blog.developer.atlassian.com/force-with-lease/)
+
+
 ***
 {% include share_twitter_tr.html %}
 
