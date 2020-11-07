@@ -10,7 +10,7 @@ Hi, I'm Ali Özgür. I'm a software developer and a manager with BS degree in Co
 
 ![Ali Özgür](/media/aliozgur.jpg)
 
-I'm working as Software Engineerin Manager at [trexDCAS](https://trex.com.tr/en/home/). My team is developing Industry 4.0, Industrial IoT and  MES solutions.
+I'm working as Software Engineering Manager at [trexDCAS](https://trex.com.tr/en/home/). My team is developing Industry 4.0, Industrial IoT and  MES solutions.
 
 I maintain and contribute to couple of [open source projects](https://github.com/aliozgur) and published an open source [Git 101 book in Turkish](https://www.gitbook.com/book/aliozgur/git101/details).
 
