@@ -11,7 +11,7 @@ tags:
   - Programming
 ---
 
-Microsodft released .NET 5 couple of days ago which comes with a new version of C#, namely C# 9. In this blog post I will not rant about the beauties of the record types in C# 9, rather I will try to warn my fellow developers about couple of issues I've noticed about the record types.
+Microsoft released .NET 5 couple of days ago which comes with a new version of C#, namely C# 9. In this blog post I will not rant about the beauties of the record types in C# 9, rather I will try to warn my fellow developers about couple of issues I've noticed about the record types.
 
 <!--end-of-excerpt-->
 
