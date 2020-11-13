@@ -15,7 +15,7 @@ Microsoft released .NET 5 couple of days ago which comes with a new version of C
 
 <!--end-of-excerpt-->
 
-I guess fair amount of the developers working with ALGOL like object oriented languages heard of [Tony Hoeare's (inventor of null)](https://en.wikipedia.org/wiki/Tony_Hoare) apology about the null reference. Speaking at a software conference in 2009, Tony Hoare apologized for inventing the null reference. He said "I call it my billion-dollar mistake. It was the invention of the null reference in 1965.".
+I guess fair amount of the developers working with ALGOL like object oriented languages must have heard of [Tony Hoeare's (inventor of null)](https://en.wikipedia.org/wiki/Tony_Hoare) apology about the null reference. Speaking at a software conference in 2009, Tony Hoare apologized for inventing the null reference. He said "I call it my billion-dollar mistake. It was the invention of the null reference in 1965.".
 
 When I started mocking up with the new record types I noticed couple of issues which might not be another billion-dollar mistake but may hurt many of us at the end of the day.
 
