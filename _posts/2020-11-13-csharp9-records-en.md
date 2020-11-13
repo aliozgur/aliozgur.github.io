@@ -279,7 +279,7 @@ I really liked the idea of value based equality coming to C# with record types. 
 * Deconstruction and
 * Class like record type definitions
 
-bad practices which might lead to unexpected results in runtime.
+bad practices which might lead to unexpected results at runtime.
 
 
 ## Change History
