@@ -277,7 +277,7 @@ The issue with Find References might be specific to `Visual Studio for Mac` and 
 I really liked the idea of value based equality coming to C# with record types. But, I would treat
 
 * Deconstruction and
-* Class like record type definitions
+* Using record types for immutability, especially class like record type definitions
 
 bad practices which might lead to unexpected results at runtime.
 
