@@ -116,7 +116,7 @@ var (_, _) = person;
 
 ```
 
-## Problem-2: Sysnthesized deconstruct method for records
+## Problem-2: Synthesized deconstruct method for records
 The C# compiler generates (sythesizes) a `Deconstruct` method for your record types. With this synthesized method tuple-like deconstruction works for our record types auto-magically. Let's see what I mean.
 
 ```csharp
