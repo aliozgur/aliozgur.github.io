@@ -20,7 +20,7 @@ I guess fair amount of the developers working with ALGOL like object oriented la
 When I started mocking up with the new record types I noticed couple of issues which might not be another billion-dollar mistake but may hurt many of us at the end of the day.
 
 ## Problem-1 : Are records really immutable by default?
-Microsoft advertises the new record types being [immutable by default](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9). But the truth is; it depends. Let's see why.
+Microsoft advertises the new record types as being [immutable by default](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9). But the truth is; it depends. Let's see why.
 
 ### Positional Record Definition
 
