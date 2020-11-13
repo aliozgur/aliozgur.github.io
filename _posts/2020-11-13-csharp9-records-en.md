@@ -66,7 +66,7 @@ person.LastName = "Özgür";
 
 This alternative definition looks like a regular class definition (use `record` keyword instead of `class` ). `FirstName` and `LastName` are defined as regular mutable (hence set) properities.
 
-So, the proposition "records are immutable by default" is true at compile time as long as we define our properties as `getter only` properties. But, at runtime we can still mutate our properties through reflection.
+So, the proposition "records are immutable by default" is true at **compile time** as long as we define our properties as `getter only` properties. But, at runtime we can still mutate our properties through reflection.
 
 ### Conclusion
 If "records are immutable by default";
