@@ -119,11 +119,13 @@ public class Person
 					lastName = this.LastName;
 	}
 
-	// With the help of Deconstruct method all these usages are possible
+
 }
 
 // Create an instance of Person class
 var person = new Person{FirstName="Ali", LastName="Özgür"};
+
+// With the help of Deconstruct method all these usages are possible
 
 // extract FirstName and LastName to firstName and lastName variables
 var (firstName, lastName) = person;
