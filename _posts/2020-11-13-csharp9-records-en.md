@@ -38,7 +38,7 @@ person.FirstName = "Arda";
 
 Based on the example above it is clear that we can not mutate properties of the positional records.
 
-But when we inspect the IL code we see that C# compiler generates backing `initonly` fields for the `FirstName` and `LastName` properties along with compiler generated `get_FirstName()/set_FirstName()` and `get_LastName()/set_FirstName()` methods.
+But when we inspect the IL code we see that C# compiler generates backing `initonly` fields for the `FirstName` and `LastName` properties along with compiler generated `get_FirstName()/set_FirstName()` and `get_LastName()/set_LastName()` methods.
 
 So, it is clear that if you declare positional records there is no way to stop us from mutating the record properties through reflection. Thus the proposition "records are immutable by default" is true at **compile time** as long as we use positional records.
 
@@ -64,7 +64,7 @@ person.LastName = "Özgür";
 
 ```
 
-This alternative definition looks like a regular class definition (use `record` keyword instead of `class` ). `FirstName` and `LastName` are defined as regular mutable (hence set) properities.
+Alternative definition of records above looks like a regular class definition (use `record` keyword instead of `class` ). `FirstName` and `LastName` are defined as regular mutable (hence set) properities.
 
 So, the proposition "records are immutable by default" is true at **compile time** as long as we define our properties as `getter only` properties. But, at runtime we can still mutate our properties through reflection.
 
@@ -104,7 +104,7 @@ var (_, _) = person;
 
 ```
 
-Deconstruction is not limited to tuples. With C# 7 we could define a specially threated `Deconstruct` method on any type and extract values from an instance with tuple-like deconstructions. Let's remeber how is that possible.
+Deconstruction is not limited to tuples. With C# 7 we can define a specially threated `Deconstruct` method on any type and extract values from an instance using tuple-like deconstruction. Let's see how is that possible.
 
 ```csharp
 public class Person
@@ -142,7 +142,7 @@ var (_, _) = person;
 ```
 
 ## Problem-2: Synthesized deconstruct method for records
-The C# compiler generates (sythesizes) a `Deconstruct` method for your record types. With this synthesized method tuple-like deconstruction works for our record types auto-magically. Let's see what I mean.
+C# compiler generates (sythesizes) a `Deconstruct` method for your record types. With this synthesized method tuple-like deconstruction works for our record types auto-magically. Let's see what I mean.
 
 ```csharp
 
@@ -172,7 +172,7 @@ else
 
 ```
 
-No worries up until now, deconstruction provides a nice syntax for extracting propery values from our records. So, lets assume that couple of months pass by and someone changes the order of the properties in our positional record definition.
+No worries up until now, deconstruction provides a nice syntax for extracting property values from our records. So, lets assume that couple of months pass by and someone changes the order of the properties in our positional record definition.
 
 ```csharp
 
@@ -199,7 +199,7 @@ else
 ### Conclusion
 Actually, the problem explained above has nothing to do with record types. I think deconstruction is broken from day one when it was first introduced in 2017. We know Microsoft brings some F# langıage features into C# which is good most of the time, but that is not the case for deconstruction.
 
-Here is the same deconstruction example this time in F#. F# does not allow us to extract the record propery/field values to simple types like in C#. That is because F# uses `pattern matching` instead of sytnhesized a `Deconstruct` method which relies on positions of the record properties.
+Here is the same deconstruction example this time in F#. F# does not allow us to extract the record propery/field values to simple types like in C#. That is because F# uses `pattern matching` instead of a synthesized `Deconstruct` method which relies on the positions of the record properties.
 
 ```fsharp
 // Define person record type
