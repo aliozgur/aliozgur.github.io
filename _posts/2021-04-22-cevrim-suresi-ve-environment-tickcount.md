@@ -128,6 +128,16 @@ public class CycleTimer
 >
 >**Cevap:** Realtime OS olmayan Windows gibi sistemlerde de saha verilerinin çevrim süresinin olabildiğince doğru bir şekilde ölçülmesi ihtiyacı var.  Bu nedenle doğru olmasa bile bağıl olarak iki olay arasında geçen süreyi olabildiğince yüksek çözünürlükte ölçebilmek gerekiyor.
 
+----
+>**Soru:** Motorun her devrini ölçsek boyle bir çözünürlüğür ihtiyaç olur mu? Bir de bu sinyalleri loglamak konusu var, log yazma süresi o frekansa erişebiliyor mu, frekans aralıklarının ortalamasını alip loglamak gibi işlemler nasıl yapılıyor?
+>
+>**Cevap:** Yüksek hızdaki ölçümleri High Speed Counter (HSC) destekleyen IO kartlarımız ile yapıyoruz, yani sayma işlemi kart üzerinde yapılıyor ve yazılıma gönderiliyor. İlave olarak sampling ile belirli genişlikteki bir pencere ortalama hesaplama, kesit alma ve kesit loglama gibi işlemler yapılıyor.Yüksek hızlı sayımlarda çevrim süresi genellikle HSC'yi yöneten ve üstünde MCU (microcontroller unit) ve gerçek zamanlı saat olan kartlar tarafından hesaplanıp MES yazılımına iletiliyor.
+
+
+----
+>**Soru:** 1 adet HSC 128 milyarı ne kadar sürede sayar?
+>
+>**Cevap:** Kullanılan HSC sensörüne bağlı olarak desteklenen maksimum pulse değeri değişebilir. HSC sensörlerinin diğer bir özelliği de sayma işlemini yönlü yapabiliyor olmalarıdır. Örneğin, bir motora bağlı bir HSC moturun sağ/sol dönüşlerini pozitif veya negatif değerler olarak sayabilir. Bazı üretim süreçlerinde üretilen parçanın veya yapılan işin specine göre bu dönüş yönleri doğru işlem teyidi için kullanılabilir. 
 
 ***
 {% include share_twitter_tr.html %}
