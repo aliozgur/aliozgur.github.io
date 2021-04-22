@@ -118,12 +118,17 @@ public class CycleTimer
 
 ## Soru/Cevap
 
-> **Soru:** Ali Hocam, hassas ölçümler için GetSystemTimePreciseAsFileTime Win32 API'ını kullanmayı tavsiye ederlerdi. Sizce mevcut senaryoda avantajı/dezavantajı nedir? 
-
-
+>**Soru:** Ali Hocam, hassas ölçümler için GetSystemTimePreciseAsFileTime Win32 API'ını kullanmayı tavsiye ederlerdi. Sizce mevcut senaryoda avantajı/dezavantajı nedir? 
+>
 > **Cevap:** Stopwatch'ın GetTimestamp şeklinde bir methodu var. Bu method da C# (managed code) tarafında bahsettiğiniz API'yi kullanıyor diye biliyorum. Dolayısıyla mevcut senaryoda ikisi de benim bildiğim ve anladığım kadarıyla aynı şeye denk geliyor. 
 
-  
+----
+
+>**Soru:** RTOS (Realtime Operating System) olmayan işletim sistemlerinde high resolution stopwatch ile senkronizasyon ne derece dogru?
+>
+>**Cevap:** Realtime OS olmayan Windows gibi sistemlerde de saha verilerinin çevrim süresinin olabildiğince doğru bir şekilde ölçülmesi ihtiyacı var.  Bu nedenle doğru olmasa bile bağıl olarak iki olay arasında geçen süreyi olabildiğince yüksek çözünürlükte ölçebilmek gerekiyor.
+
+
 ***
 {% include share_twitter_tr.html %}
 
