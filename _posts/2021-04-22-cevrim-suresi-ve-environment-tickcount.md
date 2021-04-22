@@ -23,9 +23,9 @@ Bu yazımda .NET ve C# ile bir sinyalin iki ölçümü arasında geçen süreyi 
 
 
 <!--end-of-excerpt-->
-Özellikle panel yazılımlarımızda çevrim süresi (cycle time) bilgisinin IO kartlardan gelmediği durumlarda sayaç değeleri veya input değerlerindeki değişimlere göre `Environment.TickCount` kullanılarak benim virtual cycle dediğim bir çevrim süresi hesabı yapılıyor. 
+Panel yazılımlarında genel olarak çevrim süresi (cycle time) bilgisinin IO kartlardan veya PLC'den gelmediği durumlarda sayaç değeleri veya input değerlerindeki değişimlere göre `Environment.TickCount` kullanılarak benim `virtual cycle` dediğim bir çevrim süresi hesabı yapılıyor. 
 
-> **Çevrim Süresi Nedir?**: Kabaca, bir sinyalin değerinin iki ölçümü arasında geçen süre olarak tanımlanabilir. Sinyalin ne ifade ettiğine bağlı olarak **birim çevrim süresi** şeklinde bir hesaplama da yapılabilir. Örneğin, sinyalimiz makinadan gelen ve üretim adedini bize bildiren bir sinyal olsun. `T1` anında sinyal değeri `C1=10` ise, `T2` anında da bu değer `C2=20` ise birim çevrim süresi `(C2-21)/(T2-T1)` şeklinde hesaplanabilir
+> **Çevrim Süresi Nedir?**: Kabaca, bir sinyalin değerinin iki ölçümü arasında geçen süre olarak tanımlanabilir. Sinyalin ne ifade ettiğine bağlı olarak **birim çevrim süresi** şeklinde bir hesaplama da yapılabilir. Örneğin, sinyalimiz makinadan gelen ve üretim adedini bize bildiren bir sinyal olsun. `T1` anında sinyal değeri `C1=10` ise, `T2` anında da bu değer `C2=20` ise birim çevrim süresi `(C2-C1)/(T2-T1)` şeklinde hesaplanabilir
 
 Ancak, [Microsoft'un dokümanlarında](https://docs.microsoft.com/en-us/dotnet/api/system.environment.tickcount?view=net-5.0) `Environment.TickCount` ile ilgili şöyle bir bilgi söz konusu
 >Because the value of the TickCount property value is a 32-bit signed integer, if the system runs continuously, TickCount will increment from zero to Int32.MaxValue for approximately >24.9 days, then jump to Int32.MinValue, which is a negative number, then increment back to zero during the next 24.9 days. You can work around this issue by calling the Windows >GetTickCount function, which resets to zero after approximately 49.7 days, or by calling the GetTickCount64 function.,
@@ -36,6 +36,7 @@ Bu dokümanları özetleyecek olursak `Environment.TickCount` değerinin bizi il
 3. `Environment.TickCount` tipinin 32-bit işaretli integer değer olması nedeni ile çevrim süresi fark hesaplarımızda aşağıdaki sorunlar oluşacaktır
     * +/- veya -/+ geçişlerinde çok büyük veya çok küçük değerler olarak olçülecek
     * Panel yazılımının çalıştığı windows paneli örneğin eğer 35 gündür ayakta ise çevrim süresi hesaplarımız negatif değerler olacaktır. Bu durumda hesap sonucunun mutlak değeri dikkate almalıyız.
+4. 50 gün veya üzerinde uptime'a sahip panellerde `Environment.TickCount` değerinin sıfırlanması nedeni hatalı çevrim süresi hesaplanabilir.
 
 `Environment.TickCount` kullanmadan çevrim süresi hesabınu şu alternatif yöntemler ile yapmayı düşünebiliriz;
 
