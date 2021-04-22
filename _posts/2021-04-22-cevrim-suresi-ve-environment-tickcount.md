@@ -118,7 +118,7 @@ public class CycleTimer
 
 ## Soru/Cevap
 
->**Soru:** Ali Hocam, hassas ölçümler için GetSystemTimePreciseAsFileTime Win32 API'ını kullanmayı tavsiye ederlerdi. Sizce mevcut senaryoda avantajı/dezavantajı nedir? 
+>**Soru:** Ali Hocam, hassas ölçümler için `GetSystemTimePreciseAsFileTime` Win32 API'ını kullanmayı tavsiye ederlerdi. Sizce mevcut senaryoda avantajı/dezavantajı nedir? 
 >
 > **Cevap:** Stopwatch'ın GetTimestamp şeklinde bir methodu var. Bu method da C# (managed code) tarafında bahsettiğiniz API'yi kullanıyor diye biliyorum. Dolayısıyla mevcut senaryoda ikisi de benim bildiğim ve anladığım kadarıyla aynı şeye denk geliyor. 
 
