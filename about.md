@@ -13,9 +13,8 @@ Hi, I'm Ali Özgür. I'm a software developer and a manager with BS degree in Co
 ![Ali Özgür](/media/aliozgur2.jpeg)
 --->
 
-| | | |
-|--|--|--|
-|![Ali Özgür](/media/aliozgur.jpg)|![Ali Özgür](/media/aliozgur1.jpeg)|![Ali Özgür](/media/aliozgur2.jpeg)|
+
+![Ali Özgür](/media/aliozgur1.jpeg)
 
 <!---
 <div>
