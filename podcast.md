@@ -15,7 +15,7 @@ Yeni bölümlerimizden anında haberdar olmak için bizi [Twitter'da](https://tw
 
 * [Ali Özgür](https://twitter.com/aliozgur/)
 * [Barış Akın](https://twitter.com/barisakin/)
-* [Ertan Tike]((https://twitter.com/elessarmelwasul/))
+* [Ertan Tike](https://twitter.com/elessarmelwasul/)
 
 
 ## Disaster Recovery ve Bankacıılık Sistemleri
