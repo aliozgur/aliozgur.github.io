@@ -3,7 +3,7 @@ layout: page
 title: Podcast
 subtitle: "Developer Kahvesi"
 header-img: "img/home-bg.jpg"
-permalink: /liste/
+permalink: /podcast/
 ---
 # Developer Kahvesi Podcast
 
