@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "BT Sektöründe Büyük İstifa Dalgası"
-subtitle: ""
+subtitle: "Uzaktan çalışma, tükenmişlik sendromu, iş-özel hayat dengesi"
 date:  2022-02-25 10:00
 author:  "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
