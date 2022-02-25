@@ -9,7 +9,6 @@ published: true
 tags:
   - Bilişim Teknolojileri
   - Sektörel
-  
 ---
 
 COVID-19 pandemi sürecinin başlangıcından bu yana 2 yıl geçti ve bu 2 yıllık sürecin sonunda sadece BT ve diğer birçok sektörde çalışanlar iş yerleri ile olan ilişkilerini daha yoğun bir şekilde gözden geçirme eğilimindeler. Pandeminin ilk yılında BT sektörü yeni normlardan en önemlisi olarak kabul edilen uzaktan çalışmaya en hızlı adapte olan sektörlerden birisi oldu. Bu hızlı adaptasyon sayesinde BT alanında çalışan firmalar çevrimiçi hizmetlere artan talebin kesintiye uğramadan karşılanmasında ve günün koşullarının dayattığı yeni çevrimiçi servisleri üretmede çok iyi bir performans sergilediler. Ancak, bu süreç uzadıkça BT şirketleri uzaktan çalışmanın ve artan çevrimiçi ihtiyaçların neden olduğu yıkıcı sorunlar ile yüzleşmek zorunda kalıyorlar. BT sektörü açısından bu sorunlardan en yıkıcısı olma potansiyeli taşıyan ve 2022 yılında da artarak devam etmesi ön görülen sorun artan istifalardır. 
