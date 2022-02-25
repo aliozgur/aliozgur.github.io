@@ -26,7 +26,7 @@ Bu bölümümüzde Command Query Responsibility Segregation (CQRS), Event Sourci
 
 <iframe title="CQRS ve Event Sourcing" allowtransparency="true" height="300" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?from=embed&i=u4mf5-1169204-pb&square=1&share=1&download=1&skin=f6f6f6&btn-skin=8bbb4e&size=300" allowfullscreen=""></iframe>
 
-# .NET 6 VE C# 10 - DENIZ İRGIN VE BORA KAŞMER
+# .NET 6 VE C# 10
 Konuklarımız ile .NET Conf 2021 etkinliğinde Microsoft tarafından duyurulan yeni .NET 6 ve C#10 üzerine keyifli bir sohbet gerçekleştirdik.
 
 * **Konullarımız:** Deniz İrgin ve Bora Kaşmer
