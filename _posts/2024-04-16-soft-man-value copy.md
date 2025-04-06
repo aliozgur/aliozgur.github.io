@@ -11,7 +11,7 @@ tags:
   - Yönetim
 ---
 
-Bu yazımda Gartner'ın **Software Engineering Practices** kategorisi altında yayınlanan  "Software Engineering Teams Must Learn to Deliver More Value" makalesinde ele alınan konuların bendeki yansımalarını ve makale içinde yer alan bazı görüşleri sizlerle paylaşıyorum.
+Bu yazımda Gartner'ın **Software Engineering Practices** kategorisi altında yayımlanan "Software Engineering Teams Must Learn to Deliver More Value" makalesinde ele alınan konuların bendeki yansımalarını ve makale içinde yer alan bazı görüşleri sizlerle paylaşıyorum.
 
 ![Cover]({{ root.url }}/media/soft-man-value/000.png)
 
