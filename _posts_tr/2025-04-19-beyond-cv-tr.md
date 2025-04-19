@@ -2,7 +2,7 @@
 layout: post
 title: "İşe Alımcıların Dijital Gölgesi"
 subtitle: "Ya ChatGPT Size Kefil Olsaydı?"
-date:  2025-04-19 19:00
+date:  2025-04-19
 author:  "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
 published: true
