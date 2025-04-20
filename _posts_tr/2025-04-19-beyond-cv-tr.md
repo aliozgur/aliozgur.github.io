@@ -17,15 +17,17 @@ tags:
 ChatGPT'ye ne zaman güçlü ve dürüst bir içgörü sorsam böyle başlıyorum.  
 Bir koç olarak değil. Bir terapist olarak değil. Bana sorularımı, paylaştığım kodları, tartıştığım kararları ve mücadele ettiğim belirsizlikleri **objektif biçimde hatırlatan bir hafıza** olarak.
 
-Ve işte asıl mesele: Eğer bir yapay zeka sizi bu kadar iyi tanıyorsa ve gelişmenize yardım edebiliyorsa — başkalarına da sizi daha iyi gösterebilir mi?
+Ve işte asıl mesele: Eğer bir yapay zeka sizi bu kadar iyi tanıyorsa ve gelişmenize yardım edebiliyorsa - başkalarının da sizi daha iyi tanımasını sağlayablir mi?
 
-[English Version]({{ root.url }}/2025/04/19/beyond-cv)
+English Version - [The Recruiter's Shadow Clone:What If ChatGPT Could Vouch for You?]({{ root.url }}/2025/04/19/beyond-cv)
 
 ![Cover]({{ root.url }}/media/beyond-cv.png)
 
 <!--end-of-excerpt-->
 
-Peki ya... **LLM geçmişiniz** sizin **profesyonel bir gölge kopyanız** olsaydı? Özenle seçilmiş, zaman sınırlı, özel bir hafıza alanı. Şu gibi sorulara cevap verebilen:
+> LLM: Büyük Dil Modeli (Large Language Model)
+
+Peki ya... **LLM geçmişiniz** sizin **profesyonel bir gölge kopyanız** olsaydı? Özenle seçilmiş, zaman sınırlı, özel bir hafıza alanı. Ve aşağıdaki sorulara cevap verebilseydi:
 - "Bu kişi belirsizlikle nasıl başa çıkıyor?"
 - "Hatalarından sonra ne yapıyor?"
 - "Gerçekten meraklı mı, yoksa sadece işini mi yapıyor?"
@@ -37,9 +39,9 @@ Gelin bu fikri biraz açalım.
 ## CV'lerin ve Kod Repolarının Ötesinde: Yapay Zeka Destekli Zihinsel İzler
 
 Bugün işe alımcılar sizin en cilalanmış halinizi görür:
-- CV'niz — süslenmiş.
-- GitHub — seçilmiş projeler.
-- LinkedIn — parlatılmış başarılar.
+- CV'niz - süslenmiş.
+- GitHub - seçilmiş projeler.
+- LinkedIn - parlatılmış başarılar.
 
 Ama LLM geçmişiniz? Ham ve filtresizdir.  
 Gerçek zamanlı, zihinsel büyümenizin izidir.
@@ -50,15 +52,15 @@ Gerçek zamanlı, zihinsel büyümenizin izidir.
   _"Mimari kararlar alırken nasıl düşünür?"_
 - Gerçek sorularınıza, paylaştığınız kodlara, yaptığınız yorumlara göre özetler sunabilir.
 
-Yani ne yaptığınızdan öte — **nasıl evrildiğinizi** gösterebilir.
+Yani ne yaptığınızdan öte - **nasıl evrildiğinizi** gösterebilir.
 
-Bu izler bir CV’den daha fazlasını anlatır: Zorlu problemlerle mücadele gücünüzü, detaylara verdiğiniz önemi, dokümantasyon alışkanlıklarınızı ve düşünme tarzınızı açığa çıkarır. Bu, bir **zihinsel Git geçmişidir** — commit'lerin değil, merakın izidir.
+Bu izler bir CV'den daha fazlasını anlatır: Zorlu problemlerle mücadele gücünüzü, detaylara verdiğiniz önemi, dokümantasyon alışkanlıklarınızı ve düşünme tarzınızı açığa çıkarır. Bu, bir **zihinsel Git geçmişidir** - commit'lerin değil, merakın izidir.
 
 ---
 
 ## Gizlilik, Seçicilik ve Kapsam: Bu Gölge Kimin?
 
-Bu sistem, veri yığınını ortaya dökmemeli. **İnce ayarlı kontrol** şarttır — bu gölge sizin, her zaman.
+Bu sistem, veri yığınını ortaya dökmemeli. Bu nedenle, **ince ayarlı kontrol** şarttır.
 
 Neler açığa çıkabilir?
 - ✅ **Teknik gelişim**: kodlama, mimari düşünce, hata ayıklama.
@@ -67,12 +69,12 @@ Neler açığa çıkabilir?
 
 Bunu sağlamak için yapay zeka platformları **otomatik bağlam sınıflandırması** yapmalıdır:
 - Mesajları sınıflandırmalı: *teknik*, *kişisel*, *meta*, *önemsiz*
-- Hassas içerikleri gizlilik sezgilerine göre işaretlemeli
+- Hassas içerikleri işaretlemeli
 - Paylaşım öncesi kullanıcıya **ön izleme ve düzenleme imkanı** tanımalı
 
-Gizlilik, sadece saklamak değil — **bağlamına göre seçmek** demektir.
+Gizlilik, sadece saklamak değil - **bağlamına göre seçmek** demektir.
 
-Yapay zeka, ayrıca **kalıcı gizlilik haritaları** tanımalıdır: belirli konular, konuşma tonları veya kişiler asla paylaşılmamalı. GDPR gibi veri koruma düzenlemeleriyle bu zorunludur.
+KVKK (GDPR) gibi kişisel veri koruma düzenlemeleri nedeniyle, yapay zeka **kişisel gizlilik sınırlarını** tanımalıdır: belirli konular, konuşma tonları veya kişiler asla paylaşılmamalı.
 
 ---
 
@@ -80,12 +82,12 @@ Yapay zeka, ayrıca **kalıcı gizlilik haritaları** tanımalıdır: belirli ko
 
 Şimdi işin karanlık tarafına geçiyoruz.
 
-LLM’ler işe alımda değerlendirme aracı haline gelirse insanlar **sistemi kandırmaya** çalışacaktır:
-- Yapay meraklı sorularla hafıza enjekte etmek
+LLM'ler işe alımda değerlendirme aracı haline gelirse insanlar **sistemi kandırmaya** çalışacaktır:
+- Yapay sorularla hafıza enjekte etmek
 - Kurgulanmış "gelişim yolculukları"
 - Sahte alçakgönüllülük veya hırs gösterileri
 
-Bugün bunu LinkedIn’de zaten yapıyoruz. Ama LLM’ler işi hem kolaylaştırıyor hem zorlaştırıyor.
+Bugün bu LinkedIn'de zaten yapılıyor. Ama LLM'ler işi hem kolaylaştırıyor hem zorlaştırıyor.
 
 Peki **bu gölgenin güvenilirliğini** nasıl koruruz?
 
@@ -95,7 +97,7 @@ Yapay zeka etkileşimlerin **doğallığını** analiz edebilir:
 - Aynı formatta tekrar eden soru kalıpları
 - Bariz mülakat hazırlığına benzeyen oturumlar
 
-Bu verilerle **güven skoru** hesaplanabilir. Amaç elemek değil — işe alımcıya içeriğin motivasyonunu anlamasında yardımcı olmaktır.
+Bu verilerle **güven skoru** hesaplanabilir. Amaç elemek değil - işe alımcıya içeriğin motivasyonunu anlamasında yardımcı olmaktır.
 
 ### 2. Zaman Tutarlılığı (Temporal Consistency)
 Gelişim zaman alır.  
@@ -111,7 +113,7 @@ Sahte personayı azaltmak için sistem şunu önerebilir:
 - Yalnızca doğrulanmış kişilerle yapılan etkileşimleri dahil etmek
 - Konuşmaların sahte değil, gerçek olduğunu doğrulamak
 
-Bu tür etkileşimler **zaman çizelgesinde referans noktaları** oluşturur — her şeyin yapay olmadığını kanıtlayan sinyaller.
+Bu tür etkileşimler **zaman çizelgesinde referans noktaları** oluşturur ve her şeyin yapay olmadığını kanıtlayan sinyaller olarak kayıt altına alınır.
 
 ---
 
@@ -121,7 +123,7 @@ Bu sistemin çalışabilmesi için bazı temel etik prensipler gerekir:
 
 - **Açık rıza**: kullanıcı onayı olmadan hiçbir veri paylaşılmamalıdır.
 - **Şeffaflık kayıtları**: işe alımcıların yaptığı tüm sorgular aday tarafından sonradan görülebilmelidir.
-- **Açıklanabilirlik**: işe alımcılar sadece *özetleri* görmelidir — ham mesajlar değil.
+- **Açıklanabilirlik**: işe alımcılar sadece *özetleri* görmelidir - ham mesajları değil.
 - **Silme hakkı**: kullanıcı dilediği zaman paylaşım listesinden içerik çıkarabilmelidir.
 - **Geri alma hakkı**: paylaşım yapılmış olsa bile kullanıcı **erişimi iptal** edebilmelidir.
 
@@ -132,37 +134,44 @@ Bu prensipler **güven altyapısının** temelidir. Aksi durumda sistem bir öz-
 ## Neden Buna Değer Olabilir?
 
 Günümüzde işe alımda çok fazla gürültü var.  
-Ama sinyal — *gerçek sinyal* — şunlarda saklı:
+Ama sinyal - *gerçek sinyal* - şunlarda saklı:
 - Merakınızda
 - Kararlarınızda
 - Öğrenme sürecinizde
 
 LLM destekli, seçici ve etik şekilde inşa edilmiş bir sistem sizin en güçlü destekçiniz olabilir.
 
-Hayal edin ki bu sistemle birlikte bir **AI güven özgeçmişi** geliyor:
+Bu yaklaşımla birlikte bir **AI özgeçmişiniz** oluşuyor. Bu özgeçmişte:
+
 - Teknik derinlik yolculuğunuz
-- Kapanan bilgi boşluklarının özetleri
-- Zor mimari tercihlerin analizi
+- Bilgi eksiklerinizi kapatma çabalarınız
+- Mimari tercihlerin analizi
 - Belirsizlik altında nasıl düşündüğünüzü gösteren diyaloglar
 
-Amaç AI’yı bir yargıç yapmak değil.  
-Amaç AI’yı **bir tanığa** dönüştürmek.
+gibi ayrıntılar yer alabilir.
+
+Amaç AI'yı bir yargıç yapmak değil.  
+Amaç AI'yı bir **tanığa** veya **kefile** dönüştürmek.
 
 ---
 
 ## Bunu Gerçekten İnşa Edecek Miyiz?
 
 Gerekli yapıtaşları elimizde:
-- Hafızalı LLM’ler
-- Mesaj sınıflandırma
+- Hafızalı LLM'ler
+- İçerik sınıflandırma
 - Doğal dil özetleme
 - Zaman tabanlı gelişim takibi
 - Rıza altyapıları
 
-Tek gereken şey — **sorumluca inşa etme iradesi**.
+Tek gereken şey - **sorumluca inşa etme iradesi**.
 
-Ve belki bu soruyla başlar:  
-_"Bir sonraki işe alımınızın yanında, onu tanıyan bir AI olsaydı nasıl olurdu?"_
+---
+
+> _"Bir sonraki işe alımınızda adayı tanıyan bir YZ olsaydı nasıl olurdu?"_
+
+
+> _"Bir sonraki iş görüşmenize sizin yerinize sizi tanıyan YZ girseydi nasıl olurdu?"_
 
 
 ***
