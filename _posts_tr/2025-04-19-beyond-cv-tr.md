@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "İşe Alımcıların Dijital Gölgesi"
-subtitle: "Ya ChatGPT Size Kefil Olsaydı?"
-date:  2025-04-19
+title: "Yapay Zeka Sizi Özgeçmişinizden Daha İyi Tanıyor"
+subtitle: "İşe alımcılar LLM geçmişinizle konuşsaydı ne olurdu?"
 author:  "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
 published: true
@@ -19,7 +18,7 @@ Bir koç olarak değil. Bir terapist olarak değil. Bana sorularımı, paylaşt�
 
 Ve işte asıl mesele: Eğer bir yapay zeka sizi bu kadar iyi tanıyorsa ve gelişmenize yardım edebiliyorsa - başkalarının da sizi daha iyi tanımasını sağlayablir mi?
 
-English Version - [The Recruiter's Shadow Clone:What If ChatGPT Could Vouch for You?]({{ root.url }}/2025/04/19/beyond-cv)
+English Version - [Beyond Your CV: AI Knows You Better Than Your Resume Does]({{ root.url }}/2025/04/19/beyond-cv)
 
 ![Cover]({{ root.url }}/media/beyond-cv.png)
 
