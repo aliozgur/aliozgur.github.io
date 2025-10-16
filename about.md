@@ -7,28 +7,11 @@ permalink: /about/
 ---
 
 Hi, I'm Ali Özgür. I'm a software developer and a manager with BS degree in Computer Engineering from Istanbul Technical University and masters degree in Business Administration from Bilgi University. I'm developing software since 2000.
-<!---
-![Ali Özgür](/media/aliozgur.jpg)
-![Ali Özgür](/media/aliozgur1.jpeg)
-![Ali Özgür](/media/aliozgur2.jpeg)
---->
 
 
-![Ali Özgür](/media/aliozgur1.jpeg)
+![Ali Özgür](/media/aliozgur.png)
 
-<!---
-<div>
-    <table>
-        <tr>
-            <td><img src="{{ root.url }}/media/aliozgur.jpg" height="210"/></td>
-            <td><img src="{{ root.url }}/media/aliozgur1.jpeg" height="210"/></td>
-            <td><img src="{{ root.url }}/media/aliozgur2.jpeg" height="210"/></td>
-        <tr>
-    <table>
-</div>
---->
-
-I'm working as Software Engineering Manager at [trexDCAS](https://trex.com.tr/en/home/). My team is developing Industry 4.0, Industrial IoT and  MES solutions.
+I'm working as Director of Technology at [trex Digital Manufacturing](https://trex.com.tr/en/). My team is developing Industry 4.0, Industrial IoT and MES/MOM solutions.
 
 I maintain and contribute to couple of [open source projects](https://github.com/aliozgur) and published an open source **Git 101 book in Turkish** ([Read Online](https://aliozgur.gitbook.io/git101/) \| [Download PDF](https://www.dropbox.com/s/947k3c4rvid0drr/aliozgur_git101_book.pdf?dl=0)).
 
@@ -43,7 +26,9 @@ I'm an organized, diciplined, self motivated and productive person. During my pr
 
 ## Areas of Technical Interest
 
+* Software Architecture
 * .NET, C# and F#
-* Programming languages
-* SDLC
+* Programming Languages
+* Software Development Lifecycle 
 * Management
+* Career Development
