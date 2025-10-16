@@ -138,7 +138,7 @@ Bu hibrit mimarinin somut bir örneği [**trex MOP (Manufacturing Operations Pla
 **trex**, klasik anlamda bir MES değil, uçtan uca bir **üretim operasyon platformu** olarak konumlanmıştır.  
 Bu yapı, üretim süreçlerinin hem sahada hem de bulutta akıllı bir bütünlük içinde yönetilmesini sağlar.
 
-> trex MOP ile ilgili merak ettiklerinizi [iletşim sayfamızdan](https://trex.com.tr/tr/) bizimle paylaşabilirsiniz.
+> trex MOP ile ilgili merak ettiklerinizi [iletişim sayfamızdan](https://trex.com.tr/tr/) bizimle paylaşabilirsiniz.
 
 ### Çok Katmanlı Veri Mimarisi
 
