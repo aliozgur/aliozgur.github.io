@@ -18,17 +18,6 @@ tags:
   - Middleware
 ---
 
-Akıllı üretim çağında verinin değeri, yalnızca toplanmasında değil, anlamlandırılıp paylaşılmasında ortaya çıkar.  
-
-Farklı protokoller, cihazlar ve sistemler arasında köprü kuran **Orta Katman (Middleware)** teknolojisi, dijital fabrikanın görünmeyen sinir sistemidir.  
-**NightWatch**, üretimden tesise kadar tüm veriyi tek bir açık, standardize ve lisanssız platformda birleştirerek akıllı üretimin veri akışını yeniden tanımlıyor.
-
-
-![Cover]({{ root.url }}/media/nw-as-middleware.png)
-
-
-<!--end-of-excerpt-->
-
 Endüstri 4.0 döneminde dijital dönüşümün gerçek değeri, sadece veriyi toplamakta değil, **veriyi anlamlı hale getirmekte** yatıyor.  
 
 Üretim hatlarında, tesis altyapısında ve kurumsal uygulamalarda oluşan bu veriyi bütünleştirmek; hem teknik hem de operasyonel açıdan ciddi bir mühendislik gerektiriyor.  
@@ -37,7 +26,10 @@ Endüstri 4.0 döneminde dijital dönüşümün gerçek değeri, sadece veriyi t
 
 NightWatch, trex MOP (Manufacturing Operations Platform) bileşenleriyle hazır entegrasyona sahip olup, MES, MOM, enerji, bakım ve kalite yönetimi sistemleri arasında veri akışını kolaylaştıran güçlü bir altyapı sunar.  
 
+![Cover]({{ root.url }}/media/nw-as-middleware.png)
 
+
+<!--end-of-excerpt-->
 
 ## Modern Üretimde Middleware Neden Hâlâ Gereklidir?  
 
