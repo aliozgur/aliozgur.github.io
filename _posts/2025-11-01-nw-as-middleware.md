@@ -22,7 +22,7 @@ Endüstri 4.0 döneminde dijital dönüşümün gerçek değeri, sadece veriyi t
 
 Üretim hatlarında, tesis altyapısında ve kurumsal uygulamalarda oluşan bu veriyi bütünleştirmek; hem teknik hem de operasyonel açıdan ciddi bir mühendislik gerektiriyor.  
 
-İşte tam bu noktada, **trex Digital Manufacturing** tarafından geliştirilen **NightWatch**, sahadan kurumsal sistemlere veri akışını yöneten, **açık**, **standart uyumlu** ve **lisans ücreti gerektirmeyen** bir middleware platformu olarak öne çıkıyor.  
+İşte tam bu noktada, [**trex Digital Manufacturing**](https://trex.com.tr/tr/) tarafından geliştirilen [**NightWatch**](https://nightwatch.com.tr/), sahadan kurumsal sistemlere veri akışını yöneten, **açık**, **standart uyumlu** ve **lisans ücreti gerektirmeyen** bir middleware platformu olarak öne çıkıyor.  
 
 NightWatch, trex MOP (Manufacturing Operations Platform) bileşenleriyle hazır entegrasyona sahip olup, MES, MOM, enerji, bakım ve kalite yönetimi sistemleri arasında veri akışını kolaylaştıran güçlü bir altyapı sunar.  
 
