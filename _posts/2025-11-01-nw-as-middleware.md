@@ -197,6 +197,11 @@ Kısacası NightWatch:
 
 > **NightWatch: Açık veri, lisanssız dönüşüm, anlamlı üretim.**
 
+## Daha Fazla Bilgi İçin
+* [NightWatch Web Sitesi](https://docs.nightwatch.com.tr/)
+* [NightWatch Dokümantasyon](https://docs.nightwatch.com.tr/)
+* [trex İletişim](https://trex.com.tr/tr/iletisim)
+
 ***
 {% include share_twitter_tr.html %}
 
