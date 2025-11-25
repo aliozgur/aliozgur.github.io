@@ -54,7 +54,7 @@ AI/LLM ile birlikte:
 
 - Kod yazma (aslında üretme mi demeliyiz) hızımız dramatik biçimde arttı.  
 - "Blank page" veya "Form 1/Button 1" korkusu neredeyse yok oldu.  
-- Mimari alternatifler birkaç saniyede önümüzdek listelenir hale geldi.  
+- Mimari alternatifler birkaç saniyede önümüzdeki listelenir hale geldi.  
 - Destek süreçlerinde ilk cevabı insan değil model vermeye başladı.  
 
 Bunların hepsi **objektif olarak iyi şeyler.**  
