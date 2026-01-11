@@ -36,9 +36,17 @@ a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
+
+blockquote p {
+  margin: 0;
+}
+
 blockquote {
   color: #808080;
   font-style: italic;
+  border: 3px solid #eee;
+  border-left: 10px solid #eee;
+  
 }
 hr.small {
   max-width: 100px;
