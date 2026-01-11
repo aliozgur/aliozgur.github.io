@@ -117,6 +117,7 @@ Bir istek timeout olduğunda tekrar gönderildiğinde sistemin "çifte işlem" y
   (aynı isteği tekrar göndermek iki ayrı sipariş yaratabilir)
 
 **Matematiksel Olarak Formal Gösterim**
+
 Bir fonksiyon **f** için:
 
 > `f(f(x)) = f(x)` ise, **f idempotenttir**.
