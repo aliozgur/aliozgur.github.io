@@ -66,24 +66,22 @@ Kısaca: **Agentic otomasyon = "workflow + akıl + araç kullanımı + doğrulam
 
 ### Agentic Sistemler Özelinde “Semantik Yorum” Nedir?
 
-Agentic sistemlerde **semantik yorum**, kullanıcının verdiği talebi (prompt/komut) kelimesi kelimesine bir yönerge olarak değil;  
-**arka plandaki niyeti, hedef durumu ve başarı kriterlerini** çıkararak yorumlama becerisidir.
+Agentic sistemlerde **semantik yorum**, kullanıcının verdiği talebi (prompt/komut) kelimesi kelimesine bir yönerge olarak değil, **arka plandaki niyeti, hedef durumu ve başarı kriterlerini** çıkararak yorumlama becerisidir.
 
 Yani agent şu soruyu sorar:
 
-> "Kullanıcı benden *tam olarak hangi sonucu* istiyor?""
-> "Bu isteğin *anlamı* nedir ve hangi koşul sağlanınca tamam sayılır?""
+> "Kullanıcı benden *tam olarak hangi sonucu* istiyor?"
+> "Bu isteğin *anlamı* nedir ve hangi koşul sağlanınca tamam sayılır?"
 
-Bu yaklaşım, agentic sistemleri klasik otomasyondan ayıran temel farklardan biridir:  
-Klasik sistem “komutu çalıştırır”; agent ise **anlamı anlar, hedef durumu tanımlar ve ona ulaşmak için plan üretir**.
+Bu yaklaşım, agentic sistemleri klasik otomasyondan ayıran temel farklardan biridir. Klasik sistem “komutu çalıştırır”. Agent ise **anlamı anlar, hedef durumu tanımlar ve ona ulaşmak için plan üretir**.
 
 Semantik yorum sayesinde agent:
 
 - İsteğin **niyetini** çıkarır (intent extraction)
 - Belirsizlikleri fark eder ve gerekirse **netleştirici soru** sorar
-- “Adım listesi” değil, **hedef durum (desired state)** tanımlar
+- "Adım listesi" değil, **hedef durum (desired state)** tanımlar
 - Araç/aksiyon seçiminde **en uygun yolu** belirler
-- Sonucu “çıktı ürettim” diye değil, **başarı kriteri sağlandı mı** diye değerlendirir
+- Sonucu "çıktı ürettim" diye değil, **başarı kriteri sağlandı mı** diye değerlendirir
 - Gerekirse tekrar dener (iterasyon), çünkü amaç **anlamı gerçekleştirmektir**
 
 **Örnekle Semantik Yorum**
@@ -94,8 +92,8 @@ Kullanıcı: **"Bu raporu müşteriye gönder."**
   "E-posta gönder" aksiyonunu çalıştırmak.
 
 - **Semantik yorum (agentic yaklaşım):**  
-  "Hangi müşteri?"", "hangi raporun son versiyonu?"", "hangi format?"",  
-  "gönderim başarılı mı?"", "ek doğru mu?"", "cc/bcc var mı?"" gibi sorularla  
+  "Hangi müşteri?", "hangi raporun son versiyonu?", "hangi format?",  
+  "gönderim başarılı mı?", "ek doğru mu?", "cc/bcc var mı?" gibi sorularla  
   hedefi netleştirip **gerçek anlamı tamamlamak**.
 
 Burada agentın hedefi "e-posta atmak" değil;  
