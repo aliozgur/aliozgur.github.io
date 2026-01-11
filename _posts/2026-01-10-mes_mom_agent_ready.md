@@ -64,16 +64,16 @@ Burada amaç, sadece "otomasyon değil; **duruma göre karar verebilen, alternat
 
 Kısaca: **Agentic otomasyon = "workflow + akıl + araç kullanımı + doğrulama + gerektiğinde tekrar deneme"**.
 
-### Agentic Sistemler Özelinde “Semantik Yorum” Nedir?
+### Agentic Sistemler Özelinde "Semantik Yorum" Nedir?
 
 Agentic sistemlerde **semantik yorum**, kullanıcının verdiği talebi (prompt/komut) kelimesi kelimesine bir yönerge olarak değil, **arka plandaki niyeti, hedef durumu ve başarı kriterlerini** çıkararak yorumlama becerisidir.
 
 Yani agent şu soruyu sorar:
 
-> "Kullanıcı benden *tam olarak hangi sonucu* istiyor?"
-> "Bu isteğin *anlamı* nedir ve hangi koşul sağlanınca tamam sayılır?"
+- "Kullanıcı benden *tam olarak hangi sonucu* istiyor?"
+- "Bu isteğin *anlamı* nedir ve hangi koşul sağlanınca tamam sayılır?"
 
-Bu yaklaşım, agentic sistemleri klasik otomasyondan ayıran temel farklardan biridir. Klasik sistem “komutu çalıştırır”. Agent ise **anlamı anlar, hedef durumu tanımlar ve ona ulaşmak için plan üretir**.
+Bu yaklaşım, agentic sistemleri klasik otomasyondan ayıran temel farklardan biridir. Klasik sistem "komutu çalıştırır". Agent ise **anlamı anlar, hedef durumu tanımlar ve ona ulaşmak için plan üretir**.
 
 Semantik yorum sayesinde agent:
 
@@ -105,10 +105,10 @@ Burada agentın hedefi "e-posta atmak" değil;
 **Idempotency**, bir işlemin **aynı girdilerle birden fazla kez çalıştırıldığında** sonucu **ilk çalıştırmayla aynı kalması** durumudur.  
 Yani işlemi tekrar etmek **sistemin durumunu değiştirmez** veya **ek bir yan etki üretmez**.
 
-- **İdempotent işlem:** Aynı isteği 1 kere de göndersen, 10 kere de göndersen **sonuç değişmez**.
+> **İdempotent işlem:** Aynı isteği 1 kere de göndersen, 10 kere de göndersen **sonuç değişmez**.
 
 Idempotency özellikle **dağıtık sistemlerde**, **retry (yeniden deneme)** mekanizmalarında ve **ağ hatalarında** kritiktir.  
-Bir istek timeout olduğunda tekrar gönderildiğinde sistemin “çifte işlem” yapmasını engeller (ör. iki kez ödeme almak gibi).
+Bir istek timeout olduğunda tekrar gönderildiğinde sistemin "çifte işlem" yapmasını engeller (ör. iki kez ödeme almak gibi).
 
 **Örnek (API Düzeyinde)**
 - `PUT /users/123` -> kullanıcı kaydını güncellemek genelde **idempotenttir**  
@@ -119,7 +119,7 @@ Bir istek timeout olduğunda tekrar gönderildiğinde sistemin “çifte işlem�
 **Matematiksel Olarak Formal Gösterim**
 Bir fonksiyon **f** için:
 
-`f(f(x)) = f(x)` ise, **f idempotenttir**.
+> `f(f(x)) = f(x)` ise, **f idempotenttir**.
 
 
 ## Agentic sistemlerin ideal koşul varsayımları
