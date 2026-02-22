@@ -389,10 +389,11 @@ The objective is long-term interoperability with predictable security properties
 
 ## 12. Read the Spec and Join the Discussion
 
+Everyone is welcome for discussions, feedback, and contributions. If you are building AI agents, enterprise developer tooling, governance frameworks, or security infrastructure for autonomous systems, the working surface is open.
+
 * Specification website: [https://harp-protocol.github.io](https://harp-protocol.github.io)
 * GitHub repository:  [https://github.com/harp-protocol/harp-spec](https://github.com/harp-protocol/harp-spec)
 
-Everyone is welcome for discussions, feedback, and contributions. If you are building AI agents, enterprise developer tooling, governance frameworks, or security infrastructure for autonomous systems, the working surface is open.
 
 ***
 {% include share_twitter_tr.html %}
