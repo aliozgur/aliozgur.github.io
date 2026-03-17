@@ -178,7 +178,7 @@ There are early attempts to fix parts of this problem.
 
 One of them is the Agent Client Protocol (ACP).
 
-ACP standardizes communication between editors and agents using JSON-RPC, allowing agents to run as subprocesses or remote services and interact through structured messages. :contentReference[oaicite:0]{index=0}
+ACP standardizes communication between editors and agents using JSON-RPC, allowing agents to run as subprocesses or remote services and interact through structured messages.
 
 It addresses a real issue:
 - every editor-agent pair currently requires custom integration  
@@ -195,7 +195,7 @@ ACP also formalizes:
 - prompt flows  
 - tool calls  
 - permission requests  
-- streaming updates :contentReference[oaicite:1]{index=1}  
+- streaming updates 
 
 This is a meaningful improvement.
 
