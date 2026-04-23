@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MCP Tool Descriptions: Göründüğü Gibi Değil"
-subtitle: "Tool Tanımları, Semantic Risk ve Execution Kontrolü"
+subtitle: "Tool Tanımları, Semantic Risk ve Çalıştırma Kontrolü"
 date: 2026-04-24
 author: "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
