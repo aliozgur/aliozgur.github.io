@@ -19,6 +19,8 @@ Based on [one of my articles](http://blog.pragmasql.com/post/Writing-NHibernate-
 
 Here is my answer
 
+<!--end-of-excerpt-->
+
 The problem related to testing a Repository method is a very common one and people suggest different solutions to this problem. Here are some of them
 
 * Mock your Repository method by using a Mocking library or by hand. But this suggestion is not valid all of the time. If you have native SQL or use NH Transformers to produce DTO's mocking is not an option.

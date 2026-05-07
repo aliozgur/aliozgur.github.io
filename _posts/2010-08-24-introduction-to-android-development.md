@@ -14,6 +14,8 @@ tags:
 
 This post is the winner of [The CodeProject Android Development Competition](http://www.codeproject.com/script/Awards/Winners.aspx?obtid=2&cmpTpId=3&cid=429)
 
+<!--end-of-excerpt-->
+
 ### Introduction  
 
 I have been designing and developing mobile applications for less than 1 year, though I'm a professional software developer for 10 years or so, and this new mobile era makes me feel excited. As of today there are two and a half major platforms gaining pretty well reputation by the mobile users. Two of them are iOS (formerly known as iPhone OS) and Android and the half is long debated Windows Phone 7.
