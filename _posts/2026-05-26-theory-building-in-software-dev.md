@@ -36,6 +36,8 @@ Bu sahne yazılım sektöründe sanıldığından çok daha yaygındır. Tam ola
 
 Bu yaklaşımın kökeni ise Peter Naur'un yıllar önce ortaya koyduğu ["Programming as Theory Building"][naur-programming-as-theory-building] düşüncesine dayanıyor.
 
+![Cover]({{ root.url }}/media/theory-building-in-software-dev.png)
+
 <!--end-of-excerpt-->
 
 ---
