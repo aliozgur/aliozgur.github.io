@@ -655,20 +655,15 @@ Bana göre en doğru özet şu:
 
 ## Referanslar
 
-[1] Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, Peter Clark. **Self-Refine: Iterative Refinement with Self-Feedback**. arXiv:2303.17651, 2023.
-https://arxiv.org/abs/2303.17651
+[1] Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, Peter Clark. [**Self-Refine: Iterative Refinement with Self-Feedback**](https://arxiv.org/abs/2303.17651). arXiv:2303.17651, 2023.
 
-[2] Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan. **SWE-bench: Can Language Models Resolve Real-World GitHub Issues?** arXiv:2310.06770, 2023.
-https://arxiv.org/abs/2310.06770
+[2] Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan. [**SWE-bench: Can Language Models Resolve Real-World GitHub Issues?**](https://arxiv.org/abs/2310.06770). arXiv:2310.06770, 2023.
 
-[3] SWE-bench. **SWE-bench Verified**.
-https://www.swebench.com/verified.html
+[3] SWE-bench. [**SWE-bench Verified**](https://www.swebench.com/verified.html).
 
-[4] Shuyan Zhou, Frank F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, Abishek Sridhar, Xianyi Cheng, Tianyue Ou, Yonatan Bisk, Daniel Fried, Uri Alon, Graham Neubig. **WebArena: A Realistic Web Environment for Building Autonomous Agents**. arXiv:2307.13854, 2023.
-https://arxiv.org/abs/2307.13854
+[4] Shuyan Zhou, Frank F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, Abishek Sridhar, Xianyi Cheng, Tianyue Ou, Yonatan Bisk, Daniel Fried, Uri Alon, Graham Neubig. [**WebArena: A Realistic Web Environment for Building Autonomous Agents**](https://arxiv.org/abs/2307.13854). arXiv:2307.13854, 2023.
 
-[5] Karthik Narasimhan et al. / Sierra Research. **τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains**. arXiv:2406.12045, 2024.
-https://arxiv.org/abs/2406.12045
+[5] Karthik Narasimhan et al. / Sierra Research. [**τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains**](https://arxiv.org/abs/2406.12045). arXiv:2406.12045, 2024.
 
 ---
 
