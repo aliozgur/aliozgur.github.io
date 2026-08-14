@@ -14,7 +14,8 @@
       "Bash(rtk git *)",
       "Bash(rtk gh *)",
       "Bash(command -v gh)",
-      "Bash(bundle exec *)"
+      "Bash(bundle exec *)",
+      "Bash(gh --version)"
     ]
   }
 }

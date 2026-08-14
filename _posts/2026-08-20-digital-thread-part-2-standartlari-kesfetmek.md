@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Digital Thread Standartlarını Keşfetmek"
-subtitle: "Digital Thread Serisi — Bölüm 2: STEP, ISA-95, QIF, OPC UA, AAS, EPCIS ve DPP Standartları Nasıl Bir Arada Çalışır?"
+subtitle: "Bölüm 2: STEP, ISA-95, QIF, OPC UA, AAS, EPCIS ve DPP Standartları Nasıl Bir Arada Çalışır?"
 date: 2026-08-20
 author: "Ali Özgür"
 excerpt_separator: <!--end-of-excerpt-->
