@@ -7,7 +7,13 @@
       "WebFetch(domain:api-docs.deepseek.com)",
       "WebFetch(domain:platform.kimi.ai)",
       "WebSearch",
-      "Bash(rtk grep *)"
+      "Bash(rtk grep *)",
+      "Bash(rtk read *)",
+      "Bash(rtk ls *)",
+      "Bash(grep -vE \"^\\\\.git$|^\\\\.$|^\\\\.\\\\.$\")",
+      "Bash(rtk git *)",
+      "Bash(rtk gh *)",
+      "Bash(command -v gh)"
     ]
   }
 }

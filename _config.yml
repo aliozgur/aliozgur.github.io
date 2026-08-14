@@ -27,6 +27,12 @@ permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
+# Posts with a future `date:` in front matter are excluded from the build
+# until that date arrives. A scheduled GitHub Actions rebuild (see
+# .github/workflows/jekyll-gh-pages.yml) picks them up automatically once
+# their date passes. Set explicitly since the site depends on this behavior.
+future: false
+
 collections:
   posts_tr:
     output: true
