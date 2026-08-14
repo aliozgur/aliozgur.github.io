@@ -6,7 +6,8 @@
       "WebFetch(domain:developers.openai.com)",
       "WebFetch(domain:api-docs.deepseek.com)",
       "WebFetch(domain:platform.kimi.ai)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(rtk grep *)"
     ]
   }
 }

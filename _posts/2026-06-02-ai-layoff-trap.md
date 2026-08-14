@@ -318,5 +318,3 @@ Birinci soru maliyet muhasebesidir.
 
 ***
 {% include share_twitter_tr.html %}
-
-***

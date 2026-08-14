@@ -345,5 +345,3 @@ Belki de geleceğin en önemli mühendislik becerilerinden biri daha iyi prompt 
 
 ***
 {% include share_twitter_tr.html %}
-
-***

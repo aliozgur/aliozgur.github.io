@@ -420,5 +420,3 @@ Oysa kod çoğu zaman yalnızca insanların zihnindeki teorinin görünen kısm�
 
 ***
 {% include share_twitter_tr.html %}
-
-***

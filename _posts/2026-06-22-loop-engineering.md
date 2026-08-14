@@ -663,8 +663,7 @@ Bana göre en doğru özet şu:
 
 [5] Karthik Narasimhan et al. / Sierra Research. [**τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains**](https://arxiv.org/abs/2406.12045). arXiv:2406.12045, 2024.
 
----
-
+***
 {% include share_twitter_tr.html %}
 
----
+

@@ -26,7 +26,7 @@ Birkaç yıl öncesine kadar yazılım geliştirme sürecinin temel varsayımı 
 **İnsan bir mühendislik faaliyeti gerçekleştirir ve bunun sonucunda bir mühendislik çıktısı oluşur:**
 
 ```text
-Requirement → Design → Kod → Test → Code Review → Commit → Build → Release
+İsterler → Tasarım → Kod → Test → Gözden Geçirme → Commit → Build → Release
 ```
 
 Bugünün gerçekliği ise giderek farklılaşıyor.
@@ -837,5 +837,3 @@ Asıl soru şu olacak:
 
 ***
 {% include share_twitter_tr.html %}
-
-***

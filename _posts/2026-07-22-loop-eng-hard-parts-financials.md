@@ -542,5 +542,3 @@ Bence en doğru özet şu:
 
 ***
 {% include share_twitter_tr.html %}
-
-***

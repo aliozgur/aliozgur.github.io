@@ -116,5 +116,3 @@ Bu nedenle bugünkü AI dönüşümünü sadece "daha akıllı araçlar" dönemi
 
 ***
 {% include share_twitter_tr.html %}
-
-***
