@@ -15,7 +15,8 @@
       "Bash(rtk gh *)",
       "Bash(command -v gh)",
       "Bash(bundle exec *)",
-      "Bash(gh --version)"
+      "Bash(gh --version)",
+      "Bash(grep -n '`' \"2026-08-15-ab-yapay-zeka-tuzugu-claude-watermark-ai-provenance.md\")"
     ]
   }
 }
