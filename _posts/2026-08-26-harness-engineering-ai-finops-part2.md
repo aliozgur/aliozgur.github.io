@@ -17,7 +17,7 @@ tags:
 
 > **Bu yazı, AI coding ekonomisi ve harness engineering üzerine iki bölümlük serinin ikinci yazısıdır. İlk bölümde AI destekli yazılım geliştirmenin değişen maliyet yapısını ve neden klasik lisans bütçesinden farklı bir FinOps problemi haline geldiğini ele aldım. Bu bölümde ise aynı problemi execution katmanından inceliyorum: Maliyeti yalnızca ölçmek yerine, agent'ın çalışma biçimini tasarlayarak nasıl kontrol edebiliriz?**
 
-İlk yazıdaki temel soru şuydu: AI coding için ne kadar harcadığımızı biliyor muyuz ve bu harcamayı gerçek mühendislik çıktısıyla ilişkilendirebiliyor muyuz? Bu soruyu biraz daha ileri götürdüğümüzde daha zor bir problem ortaya çıkıyor. Bir agent'ın gereksiz yere yüz binlerce token tükettiğini, aynı repository'yi tekrar tekrar okuduğunu, başarısız bir yaklaşımı defalarca denediğini veya basit bir görev için gereğinden pahalı bir model kullandığını ay sonunda görmek elbette faydalıdır; ancak asıl değer, bu davranışları maliyet ortaya çıkmadan veya büyümeden önce kontrol edebilmektir.
+[İlk yazıdaki]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) temel soru şuydu: AI coding için ne kadar harcadığımızı biliyor muyuz ve bu harcamayı gerçek mühendislik çıktısıyla ilişkilendirebiliyor muyuz? Bu soruyu biraz daha ileri götürdüğümüzde daha zor bir problem ortaya çıkıyor. Bir agent'ın gereksiz yere yüz binlerce token tükettiğini, aynı repository'yi tekrar tekrar okuduğunu, başarısız bir yaklaşımı defalarca denediğini veya basit bir görev için gereğinden pahalı bir model kullandığını ay sonunda görmek elbette faydalıdır; ancak asıl değer, bu davranışları maliyet ortaya çıkmadan veya büyümeden önce kontrol edebilmektir.
 
 <!--end-of-excerpt-->
 
