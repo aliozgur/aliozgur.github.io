@@ -11,7 +11,6 @@ tags:
 
 - ai
 - software-engineering
-- gartner
 - sdlc
 - engineering
 
