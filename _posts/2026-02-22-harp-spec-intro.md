@@ -36,19 +36,19 @@ Autonomous AI agents are crossing an important boundary. They are no longer limi
 - Run migrations and deployment steps
 - Commit and push changes
 
-This is not a hypothetical. It is the default trajectory of coding agents and “autonomous developer” tooling.
+This is not a hypothetical. It is the default trajectory of coding agents and "autonomous developer" tooling.
 
 The problem is that the approval mechanisms we use today are not built for this reality.
 
 ### 1.1 What is wrong with current approvals
 
-Most “approvals” today are:
+Most "approvals" today are:
 
 1. **UI-based confirmations**  
    A click in an IDE panel is not a security boundary. It is not a verifiable authorization token.
 
 2. **Not bound to exact execution payloads**  
-   A human might approve “run tests” but the system might execute a different command, or the command might be modified after review.
+   A human might approve "run tests" but the system might execute a different command, or the command might be modified after review.
 
 3. **Not cryptographic**  
    Without signatures and hashes, there is no tamper-evident binding between what was reviewed and what actually executed.
@@ -84,7 +84,7 @@ HARP stands for **Human Authorization & Review Protocol**.
 
 HARP defines a cryptographically verifiable model for human approval of AI agent actions. It is designed as a **tool-agnostic, vendor-neutral protocol** that can be implemented by any agent platform, IDE integration, or enterprise governance system.
 
-HARP’s core rule is strict:
+HARP's core rule is strict:
 
 > Every sensitive agent action must be represented as a deterministic artifact.  
 > The artifact must be canonically serialized and hashed.  
@@ -111,7 +111,7 @@ HARP separates responsibilities into clear actors:
 - **Gateway (optional)**  
   A transport relay that must be treated as untrusted for plaintext. HARP remains compatible with zero-knowledge routing and encrypted payloads.
 
-The key design principle is that the enforcement boundary is local and mandatory. If execution can bypass HE, the model collapses. HARP’s compliance posture assumes that enforcement is not optional.
+The key design principle is that the enforcement boundary is local and mandatory. If execution can bypass HE, the model collapses. HARP's compliance posture assumes that enforcement is not optional.
 
 ---
 
@@ -253,7 +253,7 @@ Scope exists to support real workflows while preserving enforceable constraints.
 
 ## 6. Enforcement Model: Mandatory Gating
 
-HARP’s core claim is meaningless if enforcement is optional.
+HARP's core claim is meaningless if enforcement is optional.
 
 The HARP Enforcer is the system boundary that guarantees:
 
@@ -268,7 +268,7 @@ The HARP Enforcer is the system boundary that guarantees:
 
 If canonicalization fails, hashing fails, signature verification fails, time validation fails, or replay checks fail, the system must deny execution.
 
-This is not an “availability vs security” tradeoff. It is a protocol guarantee.
+This is not an "availability vs security" tradeoff. It is a protocol guarantee.
 
 ### 6.2 State machine
 
@@ -331,7 +331,7 @@ HARP-KEYMGMT defines requirements for:
 
 If a signer key is revoked, Decisions from that key must be rejected immediately.
 
-Key management is not “nice to have” for enterprise deployments. It is required to make the authorization authority real.
+Key management is not "nice to have" for enterprise deployments. It is required to make the authorization authority real.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yapay Zeka Çağında Lehman’ın Evrim Kanunları"
+title: "Yapay Zeka Çağında Lehman'ın Evrim Kanunları"
 subtitle: "AI ile Üretilmiş Yazılım da Çürür mü?"
 date:  2026-04-17
 author:  "Ali Özgür"
@@ -14,7 +14,7 @@ tags:
   - ai
 
 ---
-1970’lerin sonlarında Meir Lehman, büyük ölçekli yazılım sistemlerinin zaman içindeki davranışlarını inceleyerek bir dizi kanun ortaya koydu. Bu kanunlar teorik değil, doğrudan üretim sistemlerinden elde edilen gözlemlere dayanıyordu.
+1970'lerin sonlarında Meir Lehman, büyük ölçekli yazılım sistemlerinin zaman içindeki davranışlarını inceleyerek bir dizi kanun ortaya koydu. Bu kanunlar teorik değil, doğrudan üretim sistemlerinden elde edilen gözlemlere dayanıyordu.
 
 Bugün ise farklı bir kırılma noktasındayız. Yazılım artık sadece insanlar tarafından yazılmıyor, giderek artan oranda AI ile üretiliyor.
 
@@ -25,9 +25,9 @@ Bugün ise farklı bir kırılma noktasındayız. Yazılım artık sadece insanl
 
 Bu durum şu soruyu gündeme getiriyor:
 
-AI ile üretilmiş yazılım, Lehman’ın kanunlarından muaf mı, yoksa bu kanunlar daha sert mi uygulanıyor?
+AI ile üretilmiş yazılım, Lehman'ın kanunlarından muaf mı, yoksa bu kanunlar daha sert mi uygulanıyor?
 
-Kısa cevap nettir. Lehman’ın kanunları geçerliliğini korur. Hatta AI bağlamında daha agresif şekilde kendini gösterir.
+Kısa cevap nettir. Lehman'ın kanunları geçerliliğini korur. Hatta AI bağlamında daha agresif şekilde kendini gösterir.
 
 
 ## Lehman Kanunlarına Kısa Bir Bakış
@@ -173,7 +173,7 @@ Bu da kalite problemlerini tespit etmeyi zorlaştırır.
 
 ## Kanun-5: Geri Besleme Olmadan Evrim Yok
 
-Lehman’ın en kritik noktası geri beslemedir.
+Lehman'ın en kritik noktası geri beslemedir.
 
 AI süreçlerinde çoğunlukla eksik olan da budur:
 
@@ -183,7 +183,7 @@ AI süreçlerinde çoğunlukla eksik olan da budur:
 
 Bu durumda sistem doğruyu değil, makul olanı üretir.
 
-Bu evrim değildir. Drift’tir.
+Bu evrim değildir. Drift'tir.
 
 
 ## Yeni Bir Kavram: Regenerative Rot
@@ -255,7 +255,7 @@ Geliştirici rolü değişir:
 
 ## Sonuç
 
-Lehman’ın kanunları insanlara değil, kompleks sistemlere aittir.
+Lehman'ın kanunları insanlara değil, kompleks sistemlere aittir.
 
 AI bu kanunları bozmaz.
 
@@ -284,4 +284,4 @@ Problem, kendini üreten sistemleri kontrol etmektir.
 2. Lehman, M. M., & Belady, L. A. (1985). "Program Evolution: Processes of Software Change". Academic Press.
 3. Lehman, M. M. (1996). "Laws of Software Evolution Revisited". European Workshop on Software Process Technology.
 
-Not: Bu yazıda kullanılan "Kanun-1" vb. numaralandırma, Lehman’ın orijinal çalışmalarındaki sınıflandırmanın sadeleştirilmiş ve AI bağlamına uyarlanmış halidir.
+Not: Bu yazıda kullanılan "Kanun-1" vb. numaralandırma, Lehman'ın orijinal çalışmalarındaki sınıflandırmanın sadeleştirilmiş ve AI bağlamına uyarlanmış halidir.

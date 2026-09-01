@@ -156,7 +156,7 @@ Karar mekanizmasında.
 
 ## Herkes aynı stack'e mi gidecek?
 
-Kodlama görevleri için kullanılan LLM modelleri (Claude Opus, Codex,Kimi, MiniMax vb) eğitim verisinin yoğun olduğu ve açık kaynakta en çok temsil edilen ekosistemlerde daha güçlü performans gösteriyor. Bu özellikle şu stack’lerde net şekilde görülüyor:
+Kodlama görevleri için kullanılan LLM modelleri (Claude Opus, Codex,Kimi, MiniMax vb) eğitim verisinin yoğun olduğu ve açık kaynakta en çok temsil edilen ekosistemlerde daha güçlü performans gösteriyor. Bu özellikle şu stack'lerde net şekilde görülüyor:
 
 * React
 * Node.js
@@ -311,7 +311,7 @@ Doğru problemi çözmekte.
 Son soru:
 
 Sen AI ile birlikte çalışan bir mühendis misin,
-yoksa AI’nın yerine geçeceği biri mi?
+yoksa AI'nın yerine geçeceği biri mi?
 
 
 ***

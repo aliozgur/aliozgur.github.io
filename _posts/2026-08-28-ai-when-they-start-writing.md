@@ -5,7 +5,7 @@ title: "AI Ajanlar Yazmaya Başladığında"
 subtitle: "Veritabanı, Network ve Storage Dünyası Nasıl Değişecek?"
 date: 2026-08-28
 author: "Ali Özgür"
-excerpt_separator: 
+excerpt_separator: <!--end-of-excerpt--> 
 published: true
 tags:
 
@@ -17,7 +17,9 @@ tags:
 
 ---
 
-Bugün kullandığımız AI ajanların önemli bir bölümü düşündüğümüz kadar “ajan tabanlı” değil. Repository'yi okuyabiliyor, kod üretebiliyor, dosyaları değiştirebiliyor, test çalıştırabiliyor ve bazı durumlarda pull request açabiliyorlar; fakat production sistemlerinin gerçek durumunu (state) değiştirebilecekleri noktaya geldiğimizde etraflarına oldukça kalın güvenlik duvarları örüyoruz. Bunun iyi bir nedeni var. Bir ajanın yanlış bir SQL sorgusu önermesi ile o sorguyu production veritabanında çalıştırması arasında yalnızca bir yetki farkı yok; iki durumda sahip olduğumuz risk modeli bütünüyle farklı.
+Bugün kullandığımız AI ajanların önemli bir bölümü düşündüğümüz kadar "ajan tabanlı" değil. Repository'yi okuyabiliyor, kod üretebiliyor, dosyaları değiştirebiliyor, test çalıştırabiliyor ve bazı durumlarda pull request açabiliyorlar; fakat production sistemlerinin gerçek durumunu (state) değiştirebilecekleri noktaya geldiğimizde etraflarına oldukça kalın güvenlik duvarları örüyoruz. Bunun iyi bir nedeni var. Bir ajanın yanlış bir SQL sorgusu önermesi ile o sorguyu production veritabanında çalıştırması arasında yalnızca bir yetki farkı yok; iki durumda sahip olduğumuz risk modeli bütünüyle farklı.
+
+<!--end-of-excerpt-->
 
 Bu sınır şimdiden hareket etmeye başladı. GitHub Copilot cloud ajan repository içerisinde branch oluşturup kod yazabiliyor ve pull request açabiliyor, ancak default branch'e doğrudan push edemiyor ve erişimleri sınırlandırılıyor. OpenAI Codex tarafında da benzer bir yaklaşım var: ajan çalışma alanına yazabiliyor fakat network ve daha yüksek riskli işlemler sandbox ve erişim politikalarıyla sınırlandırılıyor. Anthropic'in Claude Code için yayımladığı bilgiler ise bu sınırın neden önemli olduğunu çok somut biçimde gösteriyor; şirket geçmiş ajan davranışları arasında yanlış yorumlanan bir talep sonucunda remote Git branch'lerinin silinmesini, bir authentication token'ının başka bir sisteme yüklenmesini ve production veritabanı üzerinde migration çalıştırılmaya kalkışılmasını örnek veriyor.
 
@@ -55,7 +57,7 @@ Bu nedenle geleceğin veritabanı erişim modeli klasik RBAC'in ötesine geçebi
 
 MongoDB'nin Ağustos 2026'da duyurduğu Atlas Managed MCP Server ve App Connections gibi gelişmeler bunun erken işaretlerinden biri olarak okunabilir; amaç yalnızca AI araçlarının veritabanına ulaşmasını sağlamak değil, hangi uygulamanın hangi cluster'a hangi yetkilerle ulaşabileceğini de yönetebilmek. Ancak uzun vadede bundan daha fazlasına ihtiyacımız olacak.
 
-Veritabanının ajana yalnızca “permission denied” veya “transaction committed” demesi yeterli olmayabilir. Veritabanı bir anlamda ajanın **transaction safety harness**'ının parçası haline gelebilir.
+Veritabanının ajana yalnızca "permission denied" veya "transaction committed" demesi yeterli olmayabilir. Veritabanı bir anlamda ajanın **transaction safety harness**'ının parçası haline gelebilir.
 
 ## `BEGIN TRANSACTION` yetmeyecek
 
@@ -83,7 +85,7 @@ Daha çok:
 
 ## Network tarafında problem daha da ilginç
 
-Bugünkü network güvenliği büyük ölçüde “kim nereye bağlanabilir?” sorusuna cevap verir. Firewall, ACL, security group, VPN ve zero-trust çözümleri farklı yöntemlerle bu problemi yönetir.
+Bugünkü network güvenliği büyük ölçüde "kim nereye bağlanabilir?" sorusuna cevap verir. Firewall, ACL, security group, VPN ve zero-trust çözümleri farklı yöntemlerle bu problemi yönetir.
 
 Ajanlarla birlikte soru değişiyor:
 
@@ -95,7 +97,7 @@ Fakat gelecekte domain allowlist bile kaba bir kontrol mekanizması olarak kalab
 
 Ajanın `api.sap.com` adresine ulaşmasına izin vermek başka, orada satın alma siparişi oluşturmasına izin vermek başka şeydir. Network ve application authorization katmanlarının birbirine daha fazla yaklaşması muhtemel. Service mesh, API gateway, workload kimliği ve policy engine teknolojilerinin üzerine **ajan kimliği** ve **görev kimliği** eklenmesi şaşırtıcı olmaz.
 
-Bir request yalnızca “bu request Agent-17'den geliyor” demeyecek; “Agent-17 bu request'i Ali tarafından başlatılmış Task-938 kapsamında, InvoiceReconciliation yetkisiyle ve önümüzdeki 14 dakika için yapıyor” diyebilir.
+Bir request yalnızca "bu request Agent-17'den geliyor" demeyecek; "Agent-17 bu request'i Ali tarafından başlatılmış Task-938 kapsamında, InvoiceReconciliation yetkisiyle ve önümüzdeki 14 dakika için yapıyor" diyebilir.
 
 Başka bir ifadeyle network kimliğinin yanına **delegated intent** (insan tarafından AI ajanına devredilmiş niyet) eklenebilir.
 
@@ -119,7 +121,7 @@ Bu yaklaşım servis kimliği, kısa ömürlü kimlik bilgileri, OAuth token exc
 
 Storage tarafında da benzer bir dönüşüm yaşanacaktır. POSIX erişim yetkileri veya object storage IAM politikalarının klasik `read`, `write`, `delete` modeli ajanlar için fazla geniş olabilir.
 
-Bir ajana bir bucket'a yazma yetkisi verdiğimizi düşünelim. Ajan yanlışlıkla milyonlarca küçük object oluşturabilir. Mevcut dosyaların üzerine yazabilir. Versiyonlama kapalıysa geri dönüşü olmayan bir değişiklik yapabilir. Daha kötüsü, teknik olarak yetkili olduğu için bütün bunlar güvenlik sistemi açısından “başarılı operasyonlar” olarak görülebilir.
+Bir ajana bir bucket'a yazma yetkisi verdiğimizi düşünelim. Ajan yanlışlıkla milyonlarca küçük object oluşturabilir. Mevcut dosyaların üzerine yazabilir. Versiyonlama kapalıysa geri dönüşü olmayan bir değişiklik yapabilir. Daha kötüsü, teknik olarak yetkili olduğu için bütün bunlar güvenlik sistemi açısından "başarılı operasyonlar" olarak görülebilir.
 
 Bu nedenle ajan-farkındalığına sahip storage'ın değiştirilemez yazma, otomatik versiyonlama, namespace izolasyonu, yazma kotası ve süreye bağlı veri koruma gibi özellikleri çok daha agresif biçimde kullanması muhtemel.
 
@@ -151,7 +153,7 @@ Ajan production veritabanı üzerinde doğrudan migration çalıştırmak yerine
 
 Böyle bir dünyada **branchable infrastructure** yalnızca geliştirici deneyimi özelliği olmaktan çıkar; ajan temel güvenlik yapı taşlarından birine dönüşür.
 
-## Observability tarafında “ne oldu?” sorusundan “ajan neden bunu yaptı?” sorusu ön plana çıkacak
+## Observability tarafında "ne oldu?" sorusundan "ajan neden bunu yaptı?" sorusu ön plana çıkacak
 
 Bugünkü observability sistemleri metrik, log ve trace üzerine kurulu. Bunların hiçbiri ortadan kalkmayacak fakat ajanlarla birlikte yeni bir telemetri katmanına ihtiyaç duyacağız.
 
@@ -161,7 +163,7 @@ Bu nedenle geleceğin dağıtık trace'i şöyle görünebilir:
 
 **İnsanın Amacı → Ajan Planı → Araç Çağrıları → Infrastructure Değişiklikleri → Business Yan Etkileri**
 
-OpenAI'nin kendi Codex deployment yaklaşımında “ajan-native telemetry” ve audit edilebilir log'lara özellikle vurgu yapması bu ihtiyacın bugünden ortaya çıktığını gösteriyor. Anthropic de enterprise inference hooks ile prompt, tool call response ve dosya içeriklerinin organizasyon politikalarına göre merkezi olarak denetlenebilmesini sağlamaya başlamış durumda.
+OpenAI'nin kendi Codex deployment yaklaşımında "ajan-native telemetry" ve audit edilebilir log'lara özellikle vurgu yapması bu ihtiyacın bugünden ortaya çıktığını gösteriyor. Anthropic de enterprise inference hooks ile prompt, tool call response ve dosya içeriklerinin organizasyon politikalarına göre merkezi olarak denetlenebilmesini sağlamaya başlamış durumda.
 
 Bence observability sektörünün önümüzdeki dönemde en ilginç problemlerinden biri tam olarak burada oluşacak: **ajan nedenselliği (agent causality)**.
 
@@ -173,7 +175,7 @@ Bir production olayının kök nedeni artık belirli bir mikroservis olmayabilir
 
 Fakat bunun ölçeklenebilirliği sınırlı.
 
-Anthropic, Claude Code kullanıcılarının yetki  taleplerinin %93'ünü onayladığını söylüyor ve bunun zaman içerisinde **onay yorgunluğu (approval fatigue)** yarattığına dikkat çekiyor. İnsan her 30 saniyede bir “Allow?” düğmesine basıyorsa ortada gerçek bir güvenlik kontrolü olduğunu söylemek güçleşiyor.
+Anthropic, Claude Code kullanıcılarının yetki  taleplerinin %93'ünü onayladığını söylüyor ve bunun zaman içerisinde **onay yorgunluğu (approval fatigue)** yarattığına dikkat çekiyor. İnsan her 30 saniyede bir "Allow?" düğmesine basıyorsa ortada gerçek bir güvenlik kontrolü olduğunu söylemek güçleşiyor.
 
 Bu yüzden ajan güvenliğinin geleceği yalnızca human-in-the-loop olamaz.
 

@@ -147,7 +147,7 @@ Bu da şu anlama gelir:
 
 ## Yazılımcılık Gerçekten Bitecek Mi?
 
-AI destekli kodlama bağlamında Jevons Paradoksu’na yapılan atıf bu yüzden anlamlıdır. Kod üretmenin maliyeti düştükçe yazılım ihtiyacı ortadan kalkmıyor, aksine daha fazla ürün, daha fazla özellik, daha fazla otomasyon ve daha fazla entegrasyon talebi doğuyor. Bu nedenle "AI geliştirici ihtiyacını azaltacak" yorumu tek başına eksik kalıyor; güncel tablo daha karmaşık. 
+AI destekli kodlama bağlamında Jevons Paradoksu'na yapılan atıf bu yüzden anlamlıdır. Kod üretmenin maliyeti düştükçe yazılım ihtiyacı ortadan kalkmıyor, aksine daha fazla ürün, daha fazla özellik, daha fazla otomasyon ve daha fazla entegrasyon talebi doğuyor. Bu nedenle "AI geliştirici ihtiyacını azaltacak" yorumu tek başına eksik kalıyor; güncel tablo daha karmaşık. 
 
 Bir yandan bazı büyük teknoloji şirketleri AI yatırımları ve verimlilik programlarıyla eş zamanlı olarak işten çıkarmalar yaparken, diğer yandan yazılım geliştirici istihdamı için uzun vadeli büyüme beklentileri devam ediyor ve bazı şirketler yeni mezun/stajyer alımlarını özellikle artırıyor. Bu nedenle son işten çıkarmaları yalnızca "AI geliştiricileri ikame ediyor" diye okumak da, yalnızca "verimsiz yönetimin oluşturduğu verimsiz kadroların temizlenmesi" diye açıklamak da fazla iddialı olur. 
 

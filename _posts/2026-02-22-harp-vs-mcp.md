@@ -205,13 +205,13 @@ Authorization is not initiated by the agent as a normal capability call.
 
 Authorization is a control requirement enforced by the system.
 
-If authorization is modeled as “just another tool call,” then:
+If authorization is modeled as "just another tool call," then:
 
 - The agent conceptually participates in its own approval flow
 - The boundary between control and capability weakens
 - Enforcement risks becoming advisory
 
-HARP’s philosophy is:
+HARP's philosophy is:
 
 Authorization must be externally verifiable and enforced, not cooperatively negotiated.
 

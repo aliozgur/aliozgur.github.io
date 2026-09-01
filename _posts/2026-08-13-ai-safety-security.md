@@ -23,7 +23,7 @@ Bugün yaşadığımız değişimin önemli tarafı bu nedenle yapay zekânın h
 
 Generative AI, Large Language Model'lar ve özellikle Agentic AI ile birlikte bu sınır hızla genişliyor. Artık AI sistemlerinden yalnızca tahmin veya metin üretmesini istemiyoruz. Dokümanları incelemesini, verileri analiz etmesini, veri tabanlarını sorgulamasını, API'leri kullanmasını, kod çalıştırmasını, farklı sistemlerden bilgi toplamasını ve bir problemi çözmek için gerekli adımları planlamasını bekliyoruz. Agent mimarileri geliştikçe bu planların belirli bölümlerini kullanıcı adına gerçekleştirme yetkisini de yapay zekâya vermeye başlıyoruz.
 
-Bu dönüşüm AI Safety konusunu geçmiştekinden farklı bir noktaya taşıyor. Çünkü bir sistemin yanlış tahmin üretmesi ile yanlış bir aksiyon gerçekleştirmesi arasında ciddi bir fark var. Bir kestirimci bakım modelinin “bu makinenin önümüzdeki yedi gün içerisinde arızalanma ihtimali yüksek” şeklinde yanlış bir tahmin üretmesi elbette bir risk oluşturur. Fakat aynı sistemin bu değerlendirmeye dayanarak üretimi otomatik olarak durdurabilmesi tamamen farklı bir risk sınıfıdır. Benzer şekilde bir finans uygulamasının “bu işlem şüpheli görünüyor” demesi ile hesabı otomatik olarak bloke etmesi veya kurumsal bir AI asistanının müşteriye gönderilecek cevabı hazırlaması ile cevabı kendi başına göndermesi aynı şey değildir.
+Bu dönüşüm AI Safety konusunu geçmiştekinden farklı bir noktaya taşıyor. Çünkü bir sistemin yanlış tahmin üretmesi ile yanlış bir aksiyon gerçekleştirmesi arasında ciddi bir fark var. Bir kestirimci bakım modelinin "bu makinenin önümüzdeki yedi gün içerisinde arızalanma ihtimali yüksek" şeklinde yanlış bir tahmin üretmesi elbette bir risk oluşturur. Fakat aynı sistemin bu değerlendirmeye dayanarak üretimi otomatik olarak durdurabilmesi tamamen farklı bir risk sınıfıdır. Benzer şekilde bir finans uygulamasının "bu işlem şüpheli görünüyor" demesi ile hesabı otomatik olarak bloke etmesi veya kurumsal bir AI asistanının müşteriye gönderilecek cevabı hazırlaması ile cevabı kendi başına göndermesi aynı şey değildir.
 
 Dolayısıyla AI Safety tartışmasının merkezine yalnızca modelin **ne kadar doğru olduğunu** değil, modelin **ne kadar yetkili olduğunu** da koymamız gerekiyor.
 
@@ -65,7 +65,7 @@ Burada kritik değişken aslında modelin zekâsından çok **agency**, yani sis
 
 LLM'lerin en çok tartışılan problemlerinden biri hallucination. Model gerçekte var olmayan bir bilgiyi doğruymuş gibi üretebilir, mevcut veriyi yanlış yorumlayabilir veya yeterli bilgiye sahip olmadığı halde oldukça ikna edici bir cevap verebilir. Geleneksel bir chatbot içerisinde bu davranış çoğunlukla bilgi kalitesi ve kullanıcı deneyimi problemi olarak karşımıza çıkar. Kullanıcı yanlış bilgi alır ve kullanım alanına bağlı olarak bunun sonuçları önemli olabilir.
 
-Agentic sistemlerde aynı problem farklı bir boyuta taşınıyor. Model yanlış bir çıkarımdan sonra bir araç çağırabiliyorsa hallucination doğrudan gerçek bir işleme dönüşebilir. Model bir müşterinin borcunun geciktiğini yanlış değerlendirip tahsilat süreci başlatabilir, yanlış SQL üreterek veri değiştirebilir, yanlış kişiye e-posta gönderebilir veya operasyonel bir sistemi hatalı parametrelerle çağırabilir. Böyle bir durumda problem artık yalnızca “AI yanlış cevap verdi” değildir; **olasılıksal çalışan bir sistemin yanlış kararı, deterministik dünyada gerçek bir sonuç üretmiştir.**
+Agentic sistemlerde aynı problem farklı bir boyuta taşınıyor. Model yanlış bir çıkarımdan sonra bir araç çağırabiliyorsa hallucination doğrudan gerçek bir işleme dönüşebilir. Model bir müşterinin borcunun geciktiğini yanlış değerlendirip tahsilat süreci başlatabilir, yanlış SQL üreterek veri değiştirebilir, yanlış kişiye e-posta gönderebilir veya operasyonel bir sistemi hatalı parametrelerle çağırabilir. Böyle bir durumda problem artık yalnızca "AI yanlış cevap verdi" değildir; **olasılıksal çalışan bir sistemin yanlış kararı, deterministik dünyada gerçek bir sonuç üretmiştir.**
 
 Güvenlik mühendisliğinin temel yaklaşımlarından biri hiçbir bileşenin kusursuz olmadığı varsayımıdır. Güvenli bir sistem, içerisindeki bütün bileşenlerin her zaman doğru davranacağı kabulü üzerine kurulmaz. Hataların gerçekleşebileceği kabul edilir ve mimari bu hataların etkisini sınırlayacak şekilde tasarlanır. AI sistemlerinde de modelin her zaman doğru çıkarım yapacağını, bütün talimatları doğru yorumlayacağını veya hiçbir zaman manipüle edilemeyeceğini varsaymak yerine, bunların zaman zaman gerçekleşeceğini kabul etmek daha sağlıklı bir mühendislik yaklaşımıdır.
 
@@ -73,7 +73,7 @@ Bu bakış açısı AI Safety açısından bence en önemli sorulardan birini or
 
 ## Prompt bir güvenlik sınırı değildir
 
-LLM tabanlı uygulamalarda karşılaştığım en riskli yaklaşımlardan biri güvenlik kurallarının system prompt içerisine yazılmasının yeterli görülmesi. Modele “kullanıcının erişim yetkisi olmayan finansal bilgileri gösterme” demek elbette yararlıdır. Ancak bu talimat bir authorization mekanizması değildir. Benzer şekilde “bu aracı yalnızca yöneticiler kullanabilir” şeklindeki bir prompt da gerçek bir erişim kontrolünün yerini tutmaz.
+LLM tabanlı uygulamalarda karşılaştığım en riskli yaklaşımlardan biri güvenlik kurallarının system prompt içerisine yazılmasının yeterli görülmesi. Modele "kullanıcının erişim yetkisi olmayan finansal bilgileri gösterme" demek elbette yararlıdır. Ancak bu talimat bir authorization mekanizması değildir. Benzer şekilde "bu aracı yalnızca yöneticiler kullanabilir" şeklindeki bir prompt da gerçek bir erişim kontrolünün yerini tutmaz.
 
 Bir web uygulamasında frontend üzerindeki bir butonu kullanıcıdan gizlemenin backend authorization yerine geçmediğini biliyoruz. AI sistemlerinde de aynı prensip geçerli olmalı. Modelin bir işlemi yapmaması gerektiğini bilmesi faydalıdır, ancak güvenlik mimarisi modelin bu kurala uymaması durumunda da işlemi engelleyebilmelidir.
 
@@ -195,7 +195,7 @@ Risk ≈ Hata Olasılığı × Hatanın Etkisi
 
 AI araştırmalarının önemli bir bölümü denklemin ilk tarafını azaltmaya çalışıyor. Modelleri daha doğru, daha güvenilir, daha iyi aligned ve manipülasyona karşı daha dayanıklı hale getirmek için ciddi çalışmalar yapılıyor. Ancak sistem mühendisliği açısından ikinci taraf da en az bunun kadar önemli. Model hata yaptığında oluşabilecek maksimum etkinin sınırlandırılması, modelin hiçbir zaman hata yapmamasını beklemekten çok daha gerçekçi bir güvenlik stratejisidir.
 
-Bu nedenle bir Agent tasarlanırken yalnızca “bu Agent neler yapabiliyor?” sorusunu sormak yeterli değil. Tasarım aşamasında **“bu Agent tamamen yanlış davranırsa yapabileceği en kötü şey nedir?”** sorusunu da sormamız gerekiyor. Bu sorunun cevabı kabul edilebilir değilse önce modeli biraz daha iyileştirmekten ziyade Agent'ın yetkilerini ve mimarisini yeniden düşünmek daha doğru olabilir.
+Bu nedenle bir Agent tasarlanırken yalnızca "bu Agent neler yapabiliyor?" sorusunu sormak yeterli değil. Tasarım aşamasında **"bu Agent tamamen yanlış davranırsa yapabileceği en kötü şey nedir?"** sorusunu da sormamız gerekiyor. Bu sorunun cevabı kabul edilebilir değilse önce modeli biraz daha iyileştirmekten ziyade Agent'ın yetkilerini ve mimarisini yeniden düşünmek daha doğru olabilir.
 
 ## Human-in-the-loop her işlem için onay istemek değildir
 
@@ -263,13 +263,13 @@ Bu noktada AI Safety ile cybersecurity arasındaki sınırın giderek bulanıkla
 
 ## Peki AI Safety için ne kadar kaynak ayırıyoruz?
 
-OpenAI, Anthropic, Google DeepMind ve diğer frontier AI şirketlerinin alignment, interpretability, model evaluations, safeguards, red teaming ve AI security gibi alanlarda önemli çalışmalar yürüttüğünü biliyoruz. Bununla birlikte bu şirketlerin toplam AI yatırımlarının tam olarak ne kadarını AI Safety'ye ayırdığını tek bir oranla ifade etmek kolay değil. Bunun önemli nedenlerinden biri “AI Safety”nin standart bir muhasebe kalemi olmaması. Cybersecurity, infrastructure security, alignment research, evaluation, privacy, governance ve ürün seviyesindeki güvenlik önlemlerinin hangisinin ne ölçüde AI Safety olarak kabul edileceği bile başlı başına tartışmalı bir konu.
+OpenAI, Anthropic, Google DeepMind ve diğer frontier AI şirketlerinin alignment, interpretability, model evaluations, safeguards, red teaming ve AI security gibi alanlarda önemli çalışmalar yürüttüğünü biliyoruz. Bununla birlikte bu şirketlerin toplam AI yatırımlarının tam olarak ne kadarını AI Safety'ye ayırdığını tek bir oranla ifade etmek kolay değil. Bunun önemli nedenlerinden biri "AI Safety"nin standart bir muhasebe kalemi olmaması. Cybersecurity, infrastructure security, alignment research, evaluation, privacy, governance ve ürün seviyesindeki güvenlik önlemlerinin hangisinin ne ölçüde AI Safety olarak kabul edileceği bile başlı başına tartışmalı bir konu.
 
-Bu nedenle “AI geliştiren şirketler bütçelerinin yüzde 1'ini, yüzde 5'ini veya yüzde 10'unu AI Safety için ayırmalıdır” şeklinde genel bir kural koymanın doğru olduğunu düşünmüyorum. İnternete bağlı olmayan ve yalnızca doküman özetleyen bir uygulama ile finansal işlem gerçekleştirebilen, şirket sistemlerinde veri değiştirebilen veya endüstriyel sistemlere komut gönderebilen bir Agent'ın risk profili aynı olmadığı için güvenlik ihtiyaçlarının da aynı olması beklenemez.
+Bu nedenle "AI geliştiren şirketler bütçelerinin yüzde 1'ini, yüzde 5'ini veya yüzde 10'unu AI Safety için ayırmalıdır" şeklinde genel bir kural koymanın doğru olduğunu düşünmüyorum. İnternete bağlı olmayan ve yalnızca doküman özetleyen bir uygulama ile finansal işlem gerçekleştirebilen, şirket sistemlerinde veri değiştirebilen veya endüstriyel sistemlere komut gönderebilen bir Agent'ın risk profili aynı olmadığı için güvenlik ihtiyaçlarının da aynı olması beklenemez.
 
 Ancak burada **100'de 1** üzerinden basit bir düşünce deneyi yapmak bana ilginç geliyor. AI sistemlerini daha yetenekli hale getirmek için harcadığımız her 100 birim mühendislik çabasının ne kadarını, bu yeteneklerin güvenli kullanılmasını sağlamak için harcıyoruz? Yüz geliştiricinin çalıştığı büyük bir AI organizasyonunda kaç kişinin temel sorumluluğu AI security, evaluation, red teaming veya safety engineering? Yüz yeni AI özelliğinin kaçı production ortamına çıkmadan önce sistematik adversarial testlerden geçiyor ve yüz Agent operasyonunun kaçını başından sonuna kadar denetleyebiliyoruz?
 
-Bu soruların doğru cevabının mutlaka “1” olması gerekmiyor. Düşük riskli bazı sistemlerde çok küçük bir güvenlik yatırımı yeterli olabilirken yüksek etkili sistemlerde çok daha büyük bir mühendislik yatırımı gerekebilir. Buradaki önemli nokta oranı bir kurala dönüştürmek değil, **capability için yaptığımız yatırım ile safety için yaptığımız yatırım arasındaki ilişkiyi görünür hale getirmek**.
+Bu soruların doğru cevabının mutlaka "1" olması gerekmiyor. Düşük riskli bazı sistemlerde çok küçük bir güvenlik yatırımı yeterli olabilirken yüksek etkili sistemlerde çok daha büyük bir mühendislik yatırımı gerekebilir. Buradaki önemli nokta oranı bir kurala dönüştürmek değil, **capability için yaptığımız yatırım ile safety için yaptığımız yatırım arasındaki ilişkiyi görünür hale getirmek**.
 
 ## Capability arttıkça Safety aynı yerde kalamaz
 
@@ -293,7 +293,7 @@ Bu zincirde ilerledikçe yalnızca modelin capability'si artmıyor; uygun mimari
 
 Örneğin yalnızca SQL sorgusu öneren bir Copilot'ta kullanıcı sorguyu çalıştırmadan önce inceleyebilir. Aynı SQL'i kendi başına çalıştıran Agent'ta authorization ve query validation gerekir. Veriyi değiştirebilen bir Agent'ta transaction sınırları, approval ve rollback mekanizmaları gündeme gelirken, birden fazla sistemi koordine eden otonom Agent'ta bunlara identity, policy enforcement, distributed tracing ve merkezi kontrol mekanizmalarının eklenmesi gerekebilir.
 
-Başka bir ifadeyle **AI capability maturity ile AI safety maturity birlikte ilerlemelidir**. Bir sisteme yeni bir capability eklemek yalnızca “artık ne yapabiliyor?” sorusunu değil, “bu yeni yetenek hangi yeni riskleri oluşturdu?” sorusunu da beraberinde getirmelidir.
+Başka bir ifadeyle **AI capability maturity ile AI safety maturity birlikte ilerlemelidir**. Bir sisteme yeni bir capability eklemek yalnızca "artık ne yapabiliyor?" sorusunu değil, "bu yeni yetenek hangi yeni riskleri oluşturdu?" sorusunu da beraberinde getirmelidir.
 
 ## Gerektiğinde sistemi gerçekten durdurabiliyor muyuz?
 
@@ -319,7 +319,7 @@ Ancak aynı gelişme bizi farklı bir mühendislik sorusuyla karşı karşıya b
 
 Bu nedenle AI Safety'yi yalnızca modelin uygunsuz cevap vermesini engelleyen filtreler veya şirketlerin hazırladığı etik ilkeler olarak görmemek gerekiyor. Kimlik, yetkilendirme, izolasyon, politika uygulama, evaluation, red teaming, observability, auditability ve gerektiğinde sistemi durdurabilme kabiliyeti modern AI sistemlerinin temel mimari bileşenleri haline gelmeli. Özellikle Agentic AI dünyasında güvenliği yalnızca model katmanında çözmeye çalışmak yeterli olmayacaktır.
 
-“100'de 1” sorusunun asıl değerini de burada görüyorum. Bunun bir bütçe kuralı olması gerekmiyor ve bence olmamalı da. Ancak AI sistemlerini daha akıllı, daha bağımsız ve daha yetenekli hale getirmek için harcadığımız her 100 birim çabanın yanında, bu sistemlerin yanlış davrandığında neler yapabileceğini anlamaya ve bunun etkisini sınırlamaya ne kadar çaba harcadığımızı sorgulamak oldukça değerli.
+"100'de 1" sorusunun asıl değerini de burada görüyorum. Bunun bir bütçe kuralı olması gerekmiyor ve bence olmamalı da. Ancak AI sistemlerini daha akıllı, daha bağımsız ve daha yetenekli hale getirmek için harcadığımız her 100 birim çabanın yanında, bu sistemlerin yanlış davrandığında neler yapabileceğini anlamaya ve bunun etkisini sınırlamaya ne kadar çaba harcadığımızı sorgulamak oldukça değerli.
 
 Belki de önümüzdeki dönemde AI sistemleri için sormamız gereken en önemli iki soru birbirinden ayrı düşünülemeyecek kadar bağlantılı olacak:
 

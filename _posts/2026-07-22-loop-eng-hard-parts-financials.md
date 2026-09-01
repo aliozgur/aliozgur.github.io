@@ -33,7 +33,7 @@ Bu yazıda aynı konunun daha az konuşulan ama pratikte en belirleyici tarafın
 
 Bir LLM'e tek bir soru sormak ile bir loop çalıştırmak aynı şey değildir. Tek bir cevapta genellikle bir prompt, bir context ve bir output vardır. Oysa bir loop içinde planlama, araç kullanımı, doğrulama, hata analizi, yeniden deneme, context güncelleme, loglama, memory yazımı ve bazen insan onayı vardır.
 
-Bu yüzden loop engineering'in zorluğu sadece “model doğru cevap verdi mi?” sorusuyla açıklanamaz.
+Bu yüzden loop engineering'in zorluğu sadece "model doğru cevap verdi mi?" sorusuyla açıklanamaz.
 
 Asıl soru şudur:
 
@@ -187,7 +187,7 @@ Bağlam keşfi
   -> kalıcı hale getirilecek bilgileri ayıklama
 ```
 
-Bu aslında bir tür “ilk yatırım” maliyetidir.
+Bu aslında bir tür "ilk yatırım" maliyetidir.
 
 Örneğin bir coding loop düşünelim. İlk kez çalıştığında agent şunları bilmez:
 
@@ -242,7 +242,7 @@ Birincisi, **context caching** sayesinde tekrar eden input token'ları daha dü�
 
 Dördüncüsü, başarısız deneme sayısı azalabilir. Eğer loop önceki hatalardan doğru ders çıkardıysa aynı hatayı tekrar etmez.
 
-Bu nedenle iyi bir loop tasarımında amaç sadece “cevap üretmek” değildir.
+Bu nedenle iyi bir loop tasarımında amaç sadece "cevap üretmek" değildir.
 
 Amaç şudur:
 
@@ -260,7 +260,7 @@ Cache'in işe yaraması için tekrar eden context'in gerçekten tekrar etmesi ge
 
 Ayrıca cache genellikle input tarafını ucuzlatır. Output hâlâ pahalı olabilir.
 
-Bu yüzden loop tasarımında sadece “input'u cache'leyelim” demek yeterli değildir.
+Bu yüzden loop tasarımında sadece "input'u cache'leyelim" demek yeterli değildir.
 
 Şu sorular da sorulmalıdır:
 
@@ -319,7 +319,7 @@ Cevap özetleme
   -> düşük maliyetli model
 ```
 
-Böyle bakınca loop engineering, “tek bir büyük model çağırma” problemi olmaktan çıkar.
+Böyle bakınca loop engineering, "tek bir büyük model çağırma" problemi olmaktan çıkar.
 
 Daha çok bir orkestrasyon problemine dönüşür.
 
@@ -447,7 +447,7 @@ Yüksek maliyetli sorgularda insan onayı
 
 Bu limitler sadece teknik koruma değildir. Aynı zamanda bütçe sözleşmesidir.
 
-Bir agent'a “bu işi çöz” demek yeterli değildir.
+Bir agent'a "bu işi çöz" demek yeterli değildir.
 
 Şunu da söylemek gerekir:
 
@@ -459,9 +459,9 @@ Bir agent'a “bu işi çöz” demek yeterli değildir.
 
 Bugün birçok kişi agent sistemlerine hâlâ tekil model başarısı açısından bakıyor.
 
-“Bu model daha iyi kod yazıyor mu?”  
-“Bu model daha iyi SQL üretiyor mu?”  
-“Bu model daha iyi akıl yürütüyor mu?”
+"Bu model daha iyi kod yazıyor mu?"  
+"Bu model daha iyi SQL üretiyor mu?"  
+"Bu model daha iyi akıl yürütüyor mu?"
 
 Bunlar önemli sorular. Ama loop engineering açısından yeterli değiller.
 

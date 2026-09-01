@@ -5,7 +5,7 @@ title: "AI Engineering FinOps'un Eksik Parçası: Harness Engineering"
 subtitle: "Bölüm 2: Maliyeti Ölçmek Yetmez, Ajanın Çalışma Biçimini Tasarlamak Gerekir"
 date: 2026-08-26
 author: "Ali Özgür"
-excerpt_separator: 
+excerpt_separator: <!--end-of-excerpt--> 
 published: true
 tags:
 
@@ -20,6 +20,8 @@ tags:
 > **Bu yazı, AI destekli kodlama ekonomisi ve harness engineering üzerine iki bölümlük serinin ikinci yazısıdır. İlk bölümde AI destekli yazılım geliştirmenin değişen maliyet yapısını ve neden klasik lisans bütçesinden farklı bir FinOps problemi haline geldiğini ele aldım. Bu bölümde ise aynı problemi yürütme katmanından inceliyorum: Maliyeti yalnızca ölçmek yerine, ajanın çalışma biçimini tasarlayarak nasıl kontrol edebiliriz?**
 
 [İlk yazıdaki]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) temel soru şuydu: AI destekli kodlama için ne kadar harcadığımızı biliyor muyuz ve bu harcamayı gerçek mühendislik çıktısıyla ilişkilendirebiliyor muyuz? Bu soruyu biraz daha ileri götürdüğümüzde daha zor bir problem ortaya çıkıyor. Bir kodlama ajanının gereksiz yere yüz binlerce token tükettiğini, aynı repository'yi tekrar tekrar okuduğunu, başarısız bir yaklaşımı defalarca denediğini veya basit bir görev için gereğinden pahalı bir model kullandığını ay sonunda görmek elbette faydalıdır; ancak asıl değer, bu davranışları maliyet ortaya çıkmadan veya büyümeden önce kontrol edebilmektir.
+
+<!--end-of-excerpt-->
 
 Bu nedenle AI Engineering FinOps'u yalnızca dashboard, fatura analizi veya token raporlama problemi olarak görmenin yetersiz olduğunu düşünüyorum. Gerçek maliyet kontrolü, ajanın nasıl çalıştığını belirleyen katmana kadar inmek zorunda. Hangi modelin seçileceği, hangi dosyaların bağlama gireceği, görevin nasıl parçalanacağı, başarısız bir denemeden sonra ne yapılacağı, kaç denemeye izin verileceği, hangi doğrulama koşullarının sağlanması gerektiği ve ajanın hangi noktada durup insana dönmesi gerektiği doğrudan ekonomik kararlardır. Harness engineering tam da bu kararların sistematik hale getirildiği yer olarak önem kazanıyor.
 

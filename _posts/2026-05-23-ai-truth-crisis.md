@@ -21,7 +21,7 @@ Son birkaç yıldır teknoloji dünyasında sürekli aynı cümleyi duyuyoruz:
 
 Bu cümle artık o kadar sık tekrarlandı ki, neredeyse anlamını kaybetti. Ama bazen bazı metinler çıkıyor ve size teknolojinin sadece ne yapabildiğini değil, insanlık için ne anlama geldiğini düşündürüyor.
 
-Kyle Kingsbury’nin "The Future of Everything is Lies, I Guess" başlıklı uzun denemesi tam olarak böyle bir metin. Teknik bir makale değil. Bir yatırım sunumu değil. Bir ürün lansmanı hiç değil. Daha çok, yapay zekanın insan hayatına sızarken beraberinde getirdiği kültürel, psikolojik ve toplumsal kırılmaları anlatan karanlık ama dürüst bir düşünce yazısı.
+Kyle Kingsbury'nin "The Future of Everything is Lies, I Guess" başlıklı uzun denemesi tam olarak böyle bir metin. Teknik bir makale değil. Bir yatırım sunumu değil. Bir ürün lansmanı hiç değil. Daha çok, yapay zekanın insan hayatına sızarken beraberinde getirdiği kültürel, psikolojik ve toplumsal kırılmaları anlatan karanlık ama dürüst bir düşünce yazısı.
 
 ![Cover]({{ root.url }}/media/ai-truth-crisis.png)
 
@@ -60,7 +60,7 @@ Arama motorlarında artık sık sık şunu görüyoruz:
 
 Bu sadece bir başlangıç. 
 
-Kingsbury’nin en çarpıcı tespitlerinden biri şu:
+Kingsbury'nin en çarpıcı tespitlerinden biri şu:
 
 "İnternet artık bilgi üretmekten çok, dikkat çekmek için içerik üretmeye başladı."
 
@@ -101,7 +101,7 @@ Yapay zeka şirketler için inanılmaz ekonomik fırsatlar sunuyor. Bir müşter
 
 Şirket açısından maliyet düşer. Ama kullanıcı açısından ne olur?
 
-Kingsbury’nin yazısındaki en güçlü fikirlerden biri şu:
+Kingsbury'nin yazısındaki en güçlü fikirlerden biri şu:
 
 "Yapay zeka çoğu zaman insan deneyimini iyileştirmek için değil, maliyetleri düşürmek için kullanılacak."
 

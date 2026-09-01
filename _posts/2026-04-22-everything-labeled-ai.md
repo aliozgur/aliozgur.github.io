@@ -32,7 +32,7 @@ Bu sert bir ifade olabilir. Ancak sahadaki gerçeklik çoğu zaman bunu doğrulu
 
 <!--end-of-excerpt-->
 
-Bu yazıda amacım basit bir tartışma yapmak değil. Sahada gördüğüm pattern’leri, müşteri tarafındaki gerçek deneyimleri ve araştırmalarla desteklenen bulguları bir araya getirerek daha net bir resim çizmek.
+Bu yazıda amacım basit bir tartışma yapmak değil. Sahada gördüğüm pattern'leri, müşteri tarafındaki gerçek deneyimleri ve araştırmalarla desteklenen bulguları bir araya getirerek daha net bir resim çizmek.
 
 ## AI Entegrasyonu mu, AI Overlay mi?
 
@@ -70,7 +70,7 @@ Bu ayrım kritik çünkü gerçek değer genellikle yüzeyde değil, sistemin i�
 
 ## Yüzey Alanı ve Gerçek Değer
 
-Bugün AI’nın en yoğun kullanıldığı alanlara baktığımızda benzer bir pattern görüyoruz:
+Bugün AI'nın en yoğun kullanıldığı alanlara baktığımızda benzer bir pattern görüyoruz:
 
 - Özetleme
 - Soru-cevap
@@ -114,21 +114,21 @@ Ama sahada karşılaşılan çoğu çözüm şu kategoride kalıyor:
 
 Bu fark küçük değil.
 
-> Müşteri “işi yapan sistem” bekler, ürün “işi kolaylaştıran sistem” sunar.
+> Müşteri "işi yapan sistem" bekler, ürün "işi kolaylaştıran sistem" sunar.
 
-MIT Sloan ve Gartner çalışmalarında organizasyonların AI’yı otomasyon olarak algıladığı, ancak kullanımın büyük ölçüde augmentasyon seviyesinde kaldığı açıkça belirtiliyor (Bkz: 2) (Bkz: 3).
+MIT Sloan ve Gartner çalışmalarında organizasyonların AI'yı otomasyon olarak algıladığı, ancak kullanımın büyük ölçüde augmentasyon seviyesinde kaldığı açıkça belirtiliyor (Bkz: 2) (Bkz: 3).
 
 Bu farkın etkisini gerçek hayatta çok net görüyoruz.
 
 Örnek:
 
-Bir müşteri, müşteri destek operasyonunu AI ile “otomatikleştirmek” ister.
+Bir müşteri, müşteri destek operasyonunu AI ile "otomatikleştirmek" ister.
 
 Gerçekte kurulan sistem:
 
-- Ticket’ları sınıflandırır
+- Ticket'ları sınıflandırır
 - Önerilen cevaplar üretir
-- Agent’lara yardımcı olur
+- Agent'lara yardımcı olur
 
 Sonuç:
 
@@ -147,7 +147,7 @@ AI sistemleri demo ortamında çok güçlü görünür.
 
 - Senaryolar kontrollüdür
 - Veri temizdir
-- Prompt’lar optimize edilmiştir
+- Prompt'lar optimize edilmiştir
 
 Production ortamında ise gerçek dünya devreye girer:
 
@@ -157,7 +157,7 @@ Production ortamında ise gerçek dünya devreye girer:
 
 Bu yüzden şu ifade abartı değildir:
 
-> AI sistemleri demo’da satılır, production’da test edilir.
+> AI sistemleri demo'da satılır, production'da test edilir.
 
 BCG verilerine göre dijital ve AI projelerinin önemli bir kısmı beklenen değeri yaratamaz (Bkz: 4).
 
@@ -169,7 +169,7 @@ Bu başarısızlıkların çoğu teknik değil, bağlamsaldır:
 
 ## Pilot Arafı ve Ekonomik Gerçeklik
 
-Kurumsal dünyada çok sayıda AI projesi başlar. Ama çok azı production’a çıkar.
+Kurumsal dünyada çok sayıda AI projesi başlar. Ama çok azı production'a çıkar.
 
 Bu durum için kullanılan kavram:
 
@@ -218,7 +218,7 @@ Bu durum karar vericiler için ciddi bir problem yaratır.
 
 > AI gerçekten fark yaratan bir yetkinlik mi, yoksa artık bir checkbox mı?
 
-Gartner bu durumu hype cycle içinde “inflated expectations” fazı olarak tanımlar (Bkz: 5).
+Gartner bu durumu hype cycle içinde "inflated expectations" fazı olarak tanımlar (Bkz: 5).
 
 Bunun pratik sonucu:
 
@@ -240,7 +240,7 @@ Gerçek kullanıcı deneyimi çoğu zaman benzer bir akış izler:
 
 Kullanıcı genelde bunu açıkça ifade etmez. Ama içten içe şunu düşünür:
 
-> “Bu kadar hype’ın karşılığı bu olmamalıydı.”
+> "Bu kadar hype'ın karşılığı bu olmamalıydı."
 
 Burada önemli bir ayrım var.
 
@@ -264,7 +264,7 @@ Bugün geldiğimiz noktayı en doğru şekilde şu ifade özetler:
 
 Ve belki de en kritik test:
 
-> Eğer AI’yı kaldırdığınızda ürün hala çalışıyorsa, orada AI core değildir.
+> Eğer AI'yı kaldırdığınızda ürün hala çalışıyorsa, orada AI core değildir.
 
 Bu ayrımı doğru yapabilenler, gerçekten değer üreten sistemleri inşa edebilecek.
 

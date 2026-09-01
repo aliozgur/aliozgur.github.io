@@ -33,7 +33,7 @@ There is a lot of attention on the user-facing side of these tools: prompt boxes
 
 This is increasingly hard to ignore.
 
-Many of today’s AI coding IDEs, editors, and terminal tools appear modern on the surface while offering surprisingly limited extension and integration capabilities underneath. In several important respects, they feel less extensible than mature developer tooling ecosystems that existed long before the current wave of LLM products.
+Many of today's AI coding IDEs, editors, and terminal tools appear modern on the surface while offering surprisingly limited extension and integration capabilities underneath. In several important respects, they feel less extensible than mature developer tooling ecosystems that existed long before the current wave of LLM products.
 
 That should be taken seriously.
 ## Why this post
@@ -64,7 +64,7 @@ Without these, you cannot build serious systems.
 
 Visual Studio, JetBrains IDEs, Vim, and Emacs all understood this. Their extension models were not perfect, but they allowed developers to build real products on top of them.
 
-Today’s AI coding tools often do not.
+Today's AI coding tools often do not.
 
 ## Hooks are not enough
 
@@ -128,7 +128,7 @@ Again, not acceptable for real systems.
 
 There is also a noticeable shift toward terminal-based AI tools.
 
-Claude Code, OpenCode, and similar systems are often presented as more “powerful” or “closer to the metal.”
+Claude Code, OpenCode, and similar systems are often presented as more "powerful" or "closer to the metal."
 
 This narrative is misleading.
 
@@ -164,7 +164,7 @@ Even older systems like Vim and Emacs:
 - composability  
 - full control over behavior  
 
-Today’s AI tools are ignoring these lessons.
+Today's AI tools are ignoring these lessons.
 
 Instead, we have:
 - fragmented ecosystems  
@@ -262,9 +262,9 @@ They should be:
 
 Example:
 
-- “No file writes outside /src”  
-- “All DB migrations require approval”  
-- “All external HTTP calls must be logged”  
+- "No file writes outside /src"  
+- "All DB migrations require approval"  
+- "All external HTTP calls must be logged"  
 
 These should not depend on agent cooperation.
 
