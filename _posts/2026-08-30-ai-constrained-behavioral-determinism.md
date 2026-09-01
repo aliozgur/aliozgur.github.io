@@ -282,7 +282,6 @@ Dizinin [ikinci bölümünde]({% post_url 2026-08-31-ai-formal-spec-driven-devel
 
 **2) Rice Teoremi**, bir bilgisayar programının davranışı veya çıktısı (semantik özellikleri) hakkındaki **tüm önemsiz olmayan (non-trivial) özelliklerin karar verilemez (undecidable) olduğunu** belirtir.Basitçe ifade etmek gerekirse: Bir programın kaynak koduna bakarak, onun ne yapacağını (hata verip vermeyeceğini, belirli bir çıktıyı üretip üretmeyeceğini veya sonsuz döngüye girip girmeyeceğini) her zaman doğru tahmin eden **genel bir algoritma yazmak matematiksel olarak imkansızdır**.
 
->
 
 ---
 
