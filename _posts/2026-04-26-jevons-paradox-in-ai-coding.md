@@ -4,7 +4,7 @@ title: "Jevons Paradoksu ve AI Destekli Kodlama"
 subtitle: "Verimlilik Artışı Neden Her Zaman Daha Az İş Anlamına Gelmez?"
 date: 2026-04-26
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -22,7 +22,7 @@ Jevons Paradoksu, bir kaynağın kullanım verimliliği arttığında o kaynağ�
 
 
 Paradoksun temelinde oldukça basit ama güçlü bir mekanizma vardır. Bir kaynağın daha verimli kullanılması, o kaynağın efektif maliyetini düşürür. Maliyet düştüğünde ise talep artar. 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 Talep artışı, çoğu durumda verimlilikten elde edilen tasarrufu absorbe eder ve hatta aşar. Bu durumda toplam tüketim azalmak yerine artar (Bkz: 1).
 
 Bu noktada kritik olan kavram "verimlilik" değil, "toplam sistem davranışı"dır. Çünkü verimlilik, tek başına sonucu belirleyen bir değişken değildir.

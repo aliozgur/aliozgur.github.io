@@ -4,7 +4,7 @@ title: "AB Yapay Zekâ Tüzüğü ve Claude'un Metin Filigranı"
 subtitle: "SynthID-Text, OpenAI'nin C2PA Yaklaşımı ve Daha Güçlü Bir Yapay Zekâ Köken Doğrulama Modeli Önerisi"
 date: 2026-08-15
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -17,7 +17,7 @@ tags:
 
 Yapay zekâ tarafından üretilen içeriğin nasıl ayırt edileceği uzun süredir teknik bir tartışma konusuydu. Bir metnin diline, kelime seçimlerine veya cümle yapılarına bakarak "bunu bir yapay zekâ yazmış olabilir" diyen sınıflandırıcılar geliştirildi; görseller için metadata ve görünür filigranlar kullanıldı; kriptografik imzalar ve içerik kökenini izleyen standartlar üzerinde çalışıldı. Ancak Ağustos 2026 itibarıyla konu yalnızca araştırma laboratuvarlarının veya güvenlik ekiplerinin meselesi olmaktan çıktı. Avrupa Birliği'nin Yapay Zekâ Tüzüğü'nün (AI Act) şeffaflığa ilişkin hükümlerinin uygulanmaya başlaması, üretken yapay zekâ sağlayıcılarını doğrudan teknik önlem almaya zorluyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu gelişmenin en somut örneklerinden biri Anthropic'in 14 Ağustos 2026'da duyurduğu Claude metin filigranı. Anthropic, gelecekteki Claude modellerinin ürettiği metinlerde Google DeepMind tarafından geliştirilen SynthID-Text yaklaşımının bir sürümünü kullanacağını açıkladı. Şirket bunu yalnızca gönüllü bir güvenlik özelliği olarak değil, açık biçimde AB Yapay Zekâ Tüzüğü'ne uyum amacıyla yaptığı bir değişiklik olarak tanımlıyor. Bu nokta önemli; çünkü tartışma artık "AI content detector işe yarıyor mu?" sorusundan, sağlayıcı seviyesinde uygulanacak, makine tarafından okunabilir ve doğrulanabilir bir köken sinyalinin nasıl tasarlanması gerektiği sorusuna kayıyor.
 

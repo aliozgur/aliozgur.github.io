@@ -4,7 +4,7 @@ title: "Yazılım Geliştirme Standartları Yapay Zekâ Çağına Hazır mı?"
 subtitle: "SPICE, ISO 12207, CMMI ve Diğer SDLC Yaklaşımlarında AI Katkısının İzlenebilirliği"
 date: 2026-08-09
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -19,7 +19,7 @@ Yapay zekânın yazılım geliştirme süreçlerine girişi artık "gelecekte ya
 
 Bugün bir yazılım geliştirici gereksinimi analiz ederken ChatGPT kullanabiliyor, mimari alternatifleri Claude ile tartışabiliyor, Cursor veya GitHub Copilot ile kod yazabiliyor, Codex benzeri bir ajanı bir issue üzerinde çalıştırabiliyor, oluşturulan kodu başka bir LLM'e (Large Language Model — Büyük Dil Modeli) inceletebiliyor ve son olarak ortaya çıkan değişikliği Git üzerinden pull request olarak gönderebiliyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Birkaç yıl öncesine kadar yazılım geliştirme sürecinin temel varsayımı oldukça basitti:
 

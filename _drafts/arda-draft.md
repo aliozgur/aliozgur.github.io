@@ -4,7 +4,7 @@ title: "Arda'nın Kodlama Öğrenme Macerası"
 subtitle: ""
 date:  2018-11-28 16:05
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Çocuklar
@@ -15,7 +15,7 @@ tags:
 
 Bu sayfada Arda ile yaptığımız kodlama öğrenme oturumlarındaki çalışmalarımızın notlarını paylaşıyorum.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Başlarken
 

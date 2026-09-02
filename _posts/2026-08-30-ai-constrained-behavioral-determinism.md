@@ -5,7 +5,7 @@ title: "Kısıtlar Yapay Zekâyı Determinizme Yaklaştırabilir mi?"
 subtitle: "Bölüm 1: Olasılıksal üretimi daraltılmış bir çözüm uzayına hapsetmek"
 date: 2026-08-30
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->  
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -21,7 +21,7 @@ tags:
 
 Üretken yapay zekâ ile yazılım geliştirirken karşılaştığımız temel çelişkilerden biri şu: Giderek daha fazla kodu doğası gereği olasılıksal sistemlere ürettirirken, ortaya çıkan yazılımdan mümkün olduğunca kesin, tekrarlanabilir ve güvenilir davranmasını bekliyoruz. Büyük dil modeli aynı probleme farklı zamanlarda farklı çözümler önerebilir; aynı çözümü üretmesi halinde bile bu çözümün doğru olduğunu üretim sürecinin kendisi garanti etmez. Buna karşılık yazılımın özellikle finans, güvenlik, üretim, altyapı veya fiziksel sistemlerle etkileşime girdiği alanlarda "büyük ihtimalle doğru" olması yeterli değildir.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Buradan ilginç bir soru çıkıyor: Yapay zekânın kendisini deterministik hale getiremiyorsak, hareket edebileceği alanı matematiksel ve yapısal kısıtlarla daraltarak sistemin sonucunu determinizme yaklaştırabilir miyiz?
 

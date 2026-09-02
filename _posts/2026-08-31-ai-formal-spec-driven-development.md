@@ -5,7 +5,7 @@ title: "Spec-Driven Development'tan Formal Spec-Driven Development'a"
 subtitle: "Bölüm 2: AI Çağında Spesifikasyon Koddan Daha Önemli Hale Gelebilir"
 date: 2026-08-31
 author: "Ali Özgür"
-excerpt_separator:  
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -20,6 +20,8 @@ tags:
 > **Bu yazı, kısıtlar, davranışsal determinizm ve Formal Spec-Driven Development üzerine iki bölümlük serinin ikinci yazısıdır. [İlk bölümde]({% post_url 2026-08-30-ai-constrained-behavioral-determinism %}) yapay zekânın olasılıksal doğasını ortadan kaldırmadan, kabul edilebilir davranış uzayını matematiksel ve yapısal kısıtlarla daraltarak determinizme yaklaştırıp yaklaştıramayacağımızı ele aldım. Bu bölümde ise aynı fikrin doğal devamına geçiyorum: spesifikasyonun yalnızca rehber olmaktan çıkıp programın kabul edilme koşulu haline gelmesi.**
 
 Yazılım geliştirme uzun süre kod merkezli ilerledi. Gereksinimler bir yerde yazılır, analiz dokümanları hazırlanır, kullanıcı hikâyeleri oluşturulur ve sonunda geliştirici bu belirsizliğin içerisinden çalışan bir program üretmeye çalışırdı. Kod, çoğu zaman sistemin gerçek davranışını tarif eden tek kesin kaynak haline gelirdi.
+
+{::comment}end-of-excerpt{:/comment}
 
 Spec-driven development bu modele önemli bir itiraz getiriyor. Temel fikir basit: Önce sistemin ne yapacağını mümkün olduğunca açık biçimde tanımla, sonra implementasyonu bu spesifikasyon üzerinden üret. Özellikle AI kodlama ajanlarının yaygınlaşmasıyla birlikte bu yaklaşım daha da değer kazandı çünkü agent'ın başarısı büyük ölçüde kendisine verilen bağlamın ve kısıtların kalitesine bağlı.
 

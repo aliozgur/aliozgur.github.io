@@ -4,7 +4,7 @@ title: "Yapay Zekâ İşten Çıkarma Tuzağı"
 subtitle: "Verimlilik Yarışı Şirketlerin Kendi Talebini Yok Edebilir Mi?"
 date: 2026-06-02
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -21,7 +21,7 @@ Brett Hemenway Falk ve Gerry Tsoukalas'ın Mart 2026 tarihli "The AI Layoff Trap
 
 ![Cover]({{ root.url }}/media/ai_layoff_trap.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Makalenin temel iddiası şu: Eğer AI insan emeğini ekonominin yeniden geri kazandırabileceğinden daha hızlı ikame ederse, firmalar bireysel olarak rasyonel kararlar alırken kolektif olarak irrasyonel bir sonuca sürüklenebilir. Her firma otomasyon sayesinde maliyet avantajı elde eder; fakat işten çıkarılan çalışanların kaybolan satın alma gücü tüm piyasaya yayılır. Firma tasarrufun tamamını kendi hanesine yazar, ama yarattığı talep kaybının sadece küçük bir kısmını üstlenir. Bu nedenle rekabetçi piyasalarda otomasyon,  verimlilik artışının ötesinde toplumsal etkilere neden olur.
 

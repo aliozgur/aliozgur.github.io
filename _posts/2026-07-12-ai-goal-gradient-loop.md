@@ -4,7 +4,7 @@ title: "AI Goal Gradient Loop: Yapay Zeka Yazılım Geliştirme Davranışımız
 subtitle: "Goal Gradient Effect, yapay zeka destekli yazılım geliştirme davranışını nasıl açıklıyor?"
 date: 2026-07-12
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -19,7 +19,7 @@ Yapay zekâ, yazılım geliştirme süreçlerini kökten değiştirdi. Artık da
 
 Bu değişimin en görünür sonucu üretkenlik artışı oldu. Ancak, bence gözden kaçan başka bir değişim daha yaşanıyor. Yapay zeka yalnızca üretkenliğimizi artırmıyor, yazılım geliştirirken nasıl davrandığımızı da değiştiriyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Yapay zekâ kullanan geliştiricilerin çalışma alışkanlıklarında dikkat çekici bir ortak davranış görüyorum: **bir problemi çözdükten sonra gerçekten duramıyoruz.** Neredeyse her zaman aynı düşünce ortaya çıkıyor:
 

@@ -4,7 +4,7 @@ title: "Farewell Subversion, Hello Git"
 subtitle: "Subversion to Git Migration"
 date:  2015-04-09 12:46
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -14,7 +14,7 @@ tags:
 At Istanbul Bilgi University Software Development Team we have been using Subversion for nearly 10 years. I was the person who introduced Subversion to the team in 2005. During all those years we have created lots of repositories, to give you the exact number we have 121 repositories. Around 100 of these repositories include source code for different systems, applications or modules. Around 20 of those repositores are just junk. We have a repository per system, application or module. I guess this bit of information is enough to give you an idea about the overall migration work we need to perform.  
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ![Migrate Subversion to Git]({{ root.url }}/media/git-migration/migration.png)
 

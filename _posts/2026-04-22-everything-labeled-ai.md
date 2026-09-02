@@ -4,7 +4,7 @@ title: "AI Etiketli Ürünler Gerçekten Ne Sunuyor?"
 subtitle: "Pazarlama mı, Gerçek Değer mi?"
 date: 2026-04-22
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -30,7 +30,7 @@ Bu sert bir ifade olabilir. Ancak sahadaki gerçeklik çoğu zaman bunu doğrulu
 ![Cover]({{ root.url }}/media/everything-labeled-ai.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu yazıda amacım basit bir tartışma yapmak değil. Sahada gördüğüm pattern'leri, müşteri tarafındaki gerçek deneyimleri ve araştırmalarla desteklenen bulguları bir araya getirerek daha net bir resim çizmek.
 

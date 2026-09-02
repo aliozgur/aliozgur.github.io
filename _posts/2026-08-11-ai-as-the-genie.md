@@ -4,7 +4,7 @@ title: "Cin Problemi: Yapay Zekâ Çağında Zekâ ve Bilgelik"
 subtitle: "Harari'nin Cin Hikâyesi Benzetmesinden Yazılım Mühendisliğine: Doğrulama, Geçerleme ve Specification Gaming"
 date: 2026-08-11
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -17,7 +17,7 @@ tags:
 
 Yuval Noah Harari'nin yapay zekâ üzerine yaptığı konuşmalarda kullandığı cin hikâyeleri benzetmesini oldukça düşündürücü buluyorum. Harari, dünyanın farklı kültürlerinde farklı biçimlerde karşımıza çıkan cin ve dilek hikâyelerindeki ortak bir noktaya dikkat çekiyor. Bu hikâyelerde temel problem çoğu zaman cinin yeterince güçlü olmaması veya insanın dileğini gerçekleştirememesi değildir. Asıl problem, insanların ne istemeleri gerektiğini bilmemeleri ve yanlış şeyleri dilemeleridir. Cin kendisinden isteneni yapar; hatta bazen dileği kelimesi kelimesine ve kusursuz biçimde gerçekleştirir. İnsan ise istediği şeyi elde ettikten sonra bunun aslında arzuladığı sonuç olmadığını veya dileğinin öngöremediği sonuçlar doğurduğunu fark eder.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Harari bu örnek üzerinden **zekâ ile bilgelik arasında önemli bir ayrım** yapıyor. Zekâ, bir problemi çözebilme, bilgiyi işleyebilme, örüntüleri görebilme ve belirlenmiş bir hedefe ulaşmanın etkili yollarını bulabilme kapasitesi olarak düşünülebilir. Bilgelik ise hangi hedeflerin peşinden gitmeye değer olduğunu, ne istememiz gerektiğini ve tercihlerimizin uzun vadeli sonuçlarını değerlendirebilme yeteneğiyle ilgilidir. Başka bir ifadeyle zekâ daha çok "Bunu nasıl yapabilirim?" sorusuyla ilgilenirken bilgelik "Bunu yapmalı mıyım, gerçekten istediğim şey bu mu?" sorularını sorar. Bence yapay zekânın geleceği ve özellikle yazılım geliştirme üzerindeki etkisi açısından asıl ilginç tartışma tam olarak bu ayrımda başlıyor.
 

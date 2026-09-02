@@ -4,7 +4,7 @@ title: "Yazılım Sistemlerinde Kök Neden Analizi Gerçekten Yapılıyor mu?"
 subtitle: "Observability, Teknik Borç ve Operasyonel Dürüstlük"
 date: 2026-05-06
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -21,7 +21,7 @@ Temel mantık oldukça basit. Bir sorun yaşandıysa sadece görünen sonucu de�
 
 ![Cover]({{ root.url }}/media/rca-yazilim-sistemleri.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Örneğin bir üretim hattında sürekli motor arızası yaşandığını düşünelim. Eğer sadece motor değiştirilirse sorun geçici olarak ortadan kalkar. Ancak motoru zorlayan yanlış yağlama sistemi, titreşim problemi veya yanlış yük hesabı bulunmazsa aynı arıza tekrar yaşanır.
 

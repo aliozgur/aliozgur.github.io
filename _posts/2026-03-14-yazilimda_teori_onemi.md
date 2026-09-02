@@ -4,7 +4,7 @@ title: "Yazılım Geliştirmede Teorinin Önemi"
 subtitle: "Gözlem Tek Başına Yeterli Mi?"
 date:  2026-03-13
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -24,7 +24,7 @@ Teori bu noktada devreye girer. Teori, gözlemlenen davranışların arkasındak
 
 ![Cover]({{ root.url }}/media/theory_in_swe.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Gözlem Ne Sağlar?
 

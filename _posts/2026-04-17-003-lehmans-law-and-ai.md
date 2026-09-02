@@ -4,7 +4,7 @@ title: "Yapay Zeka Çağında Lehman'ın Evrim Kanunları"
 subtitle: "AI ile Üretilmiş Yazılım da Çürür mü?"
 date:  2026-04-17
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -21,7 +21,7 @@ Bugün ise farklı bir kırılma noktasındayız. Yazılım artık sadece insanl
 
 ![Cover]({{ root.url }}/media/lehmans-law-and-ai.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu durum şu soruyu gündeme getiriyor:
 

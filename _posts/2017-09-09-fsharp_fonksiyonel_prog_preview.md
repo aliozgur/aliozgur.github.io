@@ -4,7 +4,7 @@ title: "Yeni Bir Kitap Hazırlığı"
 subtitle: "F# ile Fonksiyonel Programlama"
 date:  2017-09-09 16:50
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - F#
@@ -20,7 +20,7 @@ tags:
 ---
 
 Uzun zamandır çok beğendiğim ve kullandığım zaman oldukça keyif aldığım F# programlama dili ile ilgili Türkçe bir kitap hazırlama fikrim vardır. Sonunda bu fikri hayata geçirmek için çalışma fırsatı buldum. Kitabın içeriğine aşağıdaki linkte yer alan ön izleme sürümünden göz atabilirsiniz.
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Önizleme sürümünde kitabın ilk üç bölümü yer alıyor. Kitap büyük ihtimalle basılı olarak değil elektronik formatta [Dikeyeksen](https://www.dikeyeksen.com) tarafından piyasaya sürülecek. 
 

@@ -4,7 +4,7 @@ title: "Git ile Versiyon Kontrolü Yazım Süreci"
 subtitle: "Türkiye'nin ilk ve şimdilik tek Türkçe Git kitabının yazım hikayesi"
 date:  2017-08-23 12:04
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Git
@@ -15,7 +15,7 @@ tags:
 
 Yazılım geliştirme kariyerim boyunca lise ve üniversitede aldığımı İngilizce eğitimin de yardımı ile neredeyse tüm teknik bilgileri İngilizce kaynak ve kitaplardan takip ettim. Bu konularda incelediğim kısıtlı sayıdaki Türkçe kitap ve kaynağı da teknik terim çevirileri nedeni ile özümsemem daha fazla çaba harcayarak mümkün oldu. Genel görüşe benzer şekilde madem biz bu teknolojiyi üretip terminolojisini oluşturmuyoruz o halde yazılım geliştirme alanında öncelikle herkes İngilizce öğrenmeli/bilmeli şeklinde bir kanaate sahiptim. Ancak bu kanaatim Bilgi Üniversitesi bünyesinde Yazılım Geliştirme Yöneticisi olmam ile birlikte iki temel etken nedeniyle değişmeye başladı ve bu değişimin ilk meyvesi olarak da [Git ile Versiyon Kontrolü](https://www.dikeyeksen.com/products/git-ile-versiyon-kontrolu) kitabı ortaya çıktı.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Mühendis yönünüz varsa ve teknik yöneticilik pozisyonundaysanız iyi yapmanız gereken işlerden birisi de ekibinizin yetkinlik ve becerilerini arttırmak olmalıdır. Bunu çok farklı aktiviteler ile yapabilirsiniz; örneğin ekibinize eğitimler aldırabilirsiniz, ekibinizin mesai saatlerinde belli oranda zaman ayırmalarını destekleyerek farklı teknolojiler ile kendi projelerini yapmalarını sağlayabilirsiniz veya kendiniz bilgisayar başında konu odaklı kısa eğitimler tasarlayıp uygulayabilirsiniz.
 

@@ -4,7 +4,7 @@ title: "Why HARP Is Not Built on Existing MCP"
 subtitle: "Control plane versus tool invocation layer"
 date:  2026-02-22
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - AI agents
@@ -20,7 +20,7 @@ A detailed explanation of why HARP defines a cryptographic human authorization l
 
 ![Cover]({{ root.url }}/media/harp-vs-mcp.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 # Why HARP Is Not Built on Existing MCP
 

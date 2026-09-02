@@ -4,7 +4,7 @@ title: "Loop Engineering: Kendi Kendini İyileştiren Yapay Zekâ Döngüleri"
 subtitle: "LLM tabanlı sistemlerde kontrollü, doğrulanabilir ve öğrenen çalışma döngüleri"
 date: 2026-06-22
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -27,7 +27,7 @@ Loop engineering, yapay zekâ destekli sistemlerde şu soruya cevap arar:
 
 Bu yazıda loop engineering kavramını, self-improving loop yani kendi kendini iyileştiren döngü fikrini, erken benchmark sonuçlarının bu konuda bize ne söylediğini ve bu yaklaşımın yazılım geliştirme ile kurumsal yapay zekâ sistemleri açısından ne anlama geldiğini ele alacağım.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ---
 

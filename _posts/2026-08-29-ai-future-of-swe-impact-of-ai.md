@@ -5,7 +5,7 @@ title: "2030'a Giderken Yazılım Mühendisliği: Kod Yazmanın Ötesinde"
 subtitle: "Yapay Zekâ Mühendisliği Ortadan Kaldırmıyor, Neyin Değerli Olduğunu Değiştiriyor"
 date: 2026-08-29
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt--> 
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -18,7 +18,7 @@ tags:
 
 Yapay zekânın yazılım geliştirmeye etkisini tartışırken konu çoğu zaman aynı eksene sıkışıyor: Bir geliştirici AI destekli araçlarla ne kadar daha hızlı kod yazabilir, aynı ekip daha fazla işi tamamlayabilir mi, yazılım geliştirme maliyetleri ne kadar düşebilir? Bunların hepsi bugün için anlamlı sorular, ancak birkaç yıl sonrasını düşündüğümüzde asıl dönüşümün burada olmayacağı giderek daha belirgin hale geliyor. Eğer yazılım üretmenin teknik maliyeti dramatik biçimde düşüyorsa, asıl kıt kaynak artık kod yazma kapasitesi değil; doğru problemi seçmek, neyin inşa edilmesi gerektiğini tarif etmek, ortaya çıkan sistemi yönlendirmek ve ona güvenebilmek oluyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Gartner'ın *Future of Software Engineering 2030: The Impact of AI* araştırması bu dönüşümü altı temel öngörü etrafında ele alıyor: Yapay zekânın geliştirici ihtiyacını azaltmak yerine artırması, mühendislik başarısında verimlilikten yaratıcılığa doğru kayan ağırlık, AI ile güçlendirilmiş küçük ürün ekipleri, güvenin özellik sayısından daha önemli hale gelmesi, fiziksel yapay zekâ ve robotik sistemlerin yeni bir yazılım geliştirme alanı oluşturması ve son olarak insan niyetini doğrudan çalışan sisteme dönüştüren, sürtünmenin giderek azaldığı bir yazılım yaşam döngüsü (SDLC).
 

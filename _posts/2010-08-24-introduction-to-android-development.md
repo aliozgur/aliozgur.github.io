@@ -4,7 +4,7 @@ title: "Introduction to Android development : TouchCalculator"
 subtitle: ""
 date:  2011-07-22 15:01
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -14,7 +14,7 @@ tags:
 
 This post is the winner of [The CodeProject Android Development Competition](http://www.codeproject.com/script/Awards/Winners.aspx?obtid=2&cmpTpId=3&cid=429)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ### Introduction  
 

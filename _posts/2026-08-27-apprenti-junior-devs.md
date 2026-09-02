@@ -5,7 +5,7 @@ title: "AI Çağında Junior Geliştiricileri Kaybetmemeliyiz"
 subtitle: "Mentörlük Neden Hiç Olmadığı Kadar Önemli?"
 date: 2026-08-27
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt--> 
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -19,7 +19,7 @@ tags:
 
 Yazılım dünyasında uzun yıllardır oldukça doğal kabul ettiğimiz bir kariyer yolu vardı. Üniversiteden mezun olur, junior geliştirici olarak bir ekibe katılır, küçük hataları düzeltir, nispeten basit geliştirmeler yapar, code review'larda hatalarınızı görür, daha deneyimli geliştiricilerin kodlarını okur ve zaman içinde daha karmaşık problemlerin sorumluluğunu almaya başlardınız. Bu süreç yalnızca kod yazmayı öğretmezdi; bir production sisteminin neden belirli şekilde tasarlandığını, bir teknik kararın hangi sonuçları doğurabileceğini, ne zaman soru sormanız gerektiğini, ne zaman araştırmaya devam etmenin doğru olduğunu ve bazen de çalışan bir çözümün neden iyi bir çözüm olmadığını anlamanızı sağlardı.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ![Cover]({{ root.url }}/media/apprenti-junior-devs.png)
 

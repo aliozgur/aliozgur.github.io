@@ -4,7 +4,7 @@ title: "Hurry! You must teach coding to your kids"
 subtitle: "A tough journey you can't resist"
 date:  2016-07-02 12:26
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Kids
@@ -15,7 +15,7 @@ tags:
 
 Within last couple of years teaching how to code to kids has become a very popular topic. Tech guys, educators, schools and governments started to invest more on this topic and they try to sell the idea to the parents. In this post I will share my own experience with my 8 year old son Arda and try to formulate couple of gotchas.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 **Disclaimer: I'm not a pedagogue and this post is based on my own experience**
 

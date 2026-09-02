@@ -4,7 +4,7 @@ title: "Yazılım Şirketlerini Gerçekten Ayakta Tutan Şey Ne?"
 subtitle: "Theory Building, Organizasyonel Hafıza ve Modern Yazılım Sistemlerini"
 date: 2026-05-26
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -38,7 +38,7 @@ Bu yaklaşımın kökeni ise Peter Naur'un yıllar önce ortaya koyduğu ["Progr
 
 ![Cover]({{ root.url }}/media/theory-building-in-software-dev.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ---
 

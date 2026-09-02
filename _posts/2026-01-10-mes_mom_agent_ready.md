@@ -4,7 +4,7 @@ title: "MES/MOM için Agent Ready Mimari"
 subtitle: "Kontrat, Doğrulama ve Yönetişim" 
 date:  2026-01-10
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -20,7 +20,7 @@ tags:
 ![Cover]({{ root.url }}/media/mes_mom_agent_ready.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 MES ve MOM gibi sistemlerin kullanıldığı üretim ortamlarında ise durum biraz daha kaotik ve farklıdır. 
 Sistemler heterojen, veri kaynakları parçalı, süreçler insanla iç içe, hatalar semantik değil ve yan etki (side effect) maliyeti yüksektir. 

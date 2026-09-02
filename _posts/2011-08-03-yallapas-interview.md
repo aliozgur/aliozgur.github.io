@@ -4,7 +4,7 @@ title: "Interview with Yalla Apps about WP7 and mobile development"
 subtitle: ""
 date:  2011-08-03 12:47
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -12,7 +12,7 @@ tags:
 ---
 Yesterday Yalla Apps contacted with me and asked for an interview. The interview  was conducted to get more insight on the WP7 developer community and thier opinions about different platforms.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
  
 Below are my answers to the questions of Yalla Apps
 

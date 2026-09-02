@@ -4,8 +4,7 @@ title: "Endüstriyel zekâ, hibrit mimaride hayat buluyor"
 subtitle: "Sahada güven, bulutta zekâ"
 date:  2025-10-15
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
-
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -34,7 +33,7 @@ Bu yazıda bu algının neden oluştuğunu, neden tam olarak doğru olmadığın
 ![Cover]({{ root.url }}/media/mes-hybrid-arch.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Üretim Ortamının Doğası: Gerçek Zaman, Kesintisizlik, Güvenilirlik
 

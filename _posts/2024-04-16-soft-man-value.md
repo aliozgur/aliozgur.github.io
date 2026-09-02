@@ -4,7 +4,7 @@ title: "Yazılım Yöneticileri İçin Değer Odaklı Yönetim İpuçları"
 subtitle: ""
 date:  2024-04-16 10:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - Yazılım
@@ -15,7 +15,7 @@ Bu yazımda Gartner'ın **Software Engineering Practices** kategorisi altında y
 
 ![Cover]({{ root.url }}/media/soft-man-value/000.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Giriş
 

@@ -22,6 +22,7 @@ google_analytics: aliozgur.net
 
 # Build settings
 markdown: kramdown
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 highlighter: rouge
 permalink: pretty
 paginate: 5

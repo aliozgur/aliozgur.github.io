@@ -4,7 +4,7 @@ title: "How to keep coding?"
 subtitle: "A personal take on career management"
 date:  2016-06-27 17:37
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -15,7 +15,7 @@ tags:
 
 Software development and all related stuff is a joy you will never want to give up. But the truth is, you will sometimes feel exhausted and need to head to different directions in your career. This post is mostly about my personal experience and I will try to share couple of advices with you.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ![Stay Calm and Keep Coding]({{ root.url }}/media/stay-calm-and-keep-coding-5.jpg)
 

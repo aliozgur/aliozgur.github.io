@@ -4,7 +4,7 @@ title: "Entity Framework 4 (EF4) Adventures"
 subtitle: ""
 date:  2010-05-13 09:11
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - C#
@@ -15,7 +15,7 @@ tags:
 
 I've been recently working on a smart client (WinForms) application backed by Entitiy Framework 4 (EF4) on Visual Studio 2010\. In this blog post I will try to give you some tips regarding some limitations and points to be careful about EF4.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ### Why Entity Framework (EF)?  
 

@@ -4,7 +4,7 @@ title: "AI Safety: Yapay Zekâ Daha Fazla Yetki Kazanırken Güvenliği Nasıl D
 subtitle: "Modelin Doğruluğundan Sistemin Yetkisine: Agentic AI Çağında Güvenlik Mimarisi"
 date: 2026-08-13
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -17,7 +17,7 @@ tags:
 
 Yapay zekâ hayatımıza yeni girmedi. On yılı aşkın süredir arama motorlarının sonuçları sıralamasından öneri sistemlerine, kredi kartı işlemlerindeki sahtekârlık tespitinden görüntü işlemeye, talep tahmininden kestirimci bakıma kadar pek çok sistemin arkasında makine öğrenmesi ve yapay zekâ modelleri bulunuyor. Hatta bugün geriye dönüp baktığımızda, günlük hayatımızda kullandığımız birçok ürünün uzun süredir AI destekli olduğunu ancak çoğu zaman bunun farkında bile olmadığımızı söyleyebiliriz.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bugün yaşadığımız değişimin önemli tarafı bu nedenle yapay zekânın hayatımıza girmesi değil, **yapay zekâya verdiğimiz rolün değişmesi**. Geleneksel makine öğrenmesi uygulamalarında model çoğunlukla sınırları önceden belirlenmiş bir problemi çözüyor, bir tahmin veya sınıflandırma üretiyor ve bu sonuç başka bir yazılım tarafından kullanılıyordu. Bir model işlemin fraud olma ihtimalini hesaplıyor, başka bir model bir makinenin arızalanma olasılığını tahmin ediyor, görüntü işleme modeli ürün üzerindeki hatayı sınıflandırıyor veya öneri motoru kullanıcıya gösterilecek ürünleri sıralıyordu. Model önemli bir bileşendi ancak modelin sistem üzerindeki rolü genellikle dar ve önceden tanımlanmıştı.
 

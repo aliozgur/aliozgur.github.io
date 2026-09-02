@@ -4,7 +4,7 @@ title: "HARP: Human Authorization & Review Protocol"
 subtitle: "A standards-grade, cryptographic human control layer for autonomous AI agent actions"
 date:  2026-02-22
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - AI agents
@@ -21,7 +21,7 @@ HARP defines a deterministic artifact model, canonical hashing, and signed decis
 
 ![Cover]({{ root.url }}/media/harp-intro.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 # HARP: A Cryptographic Human Control Layer for Autonomous AI Agent Actions
 

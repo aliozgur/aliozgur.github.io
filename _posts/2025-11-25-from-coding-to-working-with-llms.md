@@ -4,7 +4,7 @@ title: "Kod Yazmanın Tadından, AI ile Çalışmanın Tuhaflığına"
 subtitle: "Üreten elden denetleyen akla: Yeni dönemin içsel bedeli" 
 date:  2025-11-25
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -22,7 +22,7 @@ Bunu yazıya dökmek istedim; belki benzer bir çatışmayı yaşayan başkalar�
 ![Cover]({{ root.url }}/media/from-coding-to-working-with-llms.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Eskiden Tatmin Nereden Geliyordu?
 

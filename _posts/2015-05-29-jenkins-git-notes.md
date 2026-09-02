@@ -4,7 +4,7 @@ title: "Jenkins Kurulum ve Yapılandırma Notları"
 subtitle: ""
 date:  2015-05-29 22:01
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -18,7 +18,7 @@ tags:
 Bu yazımda daha önce sizlerle paylaştığım ["Environment Branching With Git"](http://aliozgur.net/2015/05/13/bilgi-softdev-git-workflow/) yaklaşımında adı geçen deployment otomasyonu için
 [Jenkins'i](https://jenkins-ci.org/) nasıl konfigüre edebileceğmize ilişkin notlarımı paylaşıyorum.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Kurulan pluginler şunlar
 

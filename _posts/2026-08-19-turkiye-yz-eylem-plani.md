@@ -4,7 +4,7 @@ title: "Türkiye Yapay Zekâ Eylem Planı 2026–2030: Teknoloji Şirketleri İ�
 subtitle: "Planda Eksik Kalan Boyut: Bağımsız Bir Stratejik Hedef Olarak Bilimsel Araştırma"
 date: 2026-08-19
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -17,7 +17,7 @@ tags:
 
 Türkiye Yapay Zekâ Eylem Planı 2026–2030, yapay zekâyı yalnızca belirli sektörlerin kullanacağı yeni bir teknoloji olarak değil, ekonomik dönüşümün temel unsurlarından biri olarak ele alıyor. Planın "Fark Et, İstifade Et, Üret, Yönet" şeklinde tanımlanan dört temel ekseni; insan kaynağından hesaplama altyapısına, veriden uygulamalara, finansmandan düzenleyici çerçeveye kadar oldukça geniş bir alanı kapsıyor. Enerji, hesaplama donanımı, altyapı, modeller ve veri ile uygulamalar planın temel katmanlarını oluştururken; yetenek, finansman ve düzenleme-güven bu yapının tamamını besleyen kesişen bileşenler olarak tanımlanıyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Teknoloji şirketleri açısından bakıldığında planın önemli fırsatlar sunduğunu kabul etmek gerekiyor. Buna karşılık, Türkiye'nin uzun vadede yapay zekâ teknolojilerini kullanan ve uyarlayan bir ülke mi, yoksa yeni yöntemler, algoritmalar ve teknolojiler geliştiren ülkeler arasında mı yer alacağı açısından planın bilimsel araştırma yaklaşımının yeterince güçlü olmadığı kanaatindeyim. Belgede araştırma yok değil; aksine araştırma fonları, üniversiteler, araştırmacılar ve ileri düzey uzman yetiştirilmesi açık biçimde yer alıyor. Ancak araştırma, planın bağımsız ve stratejik bir hedefi olmaktan çok, ürünleştirme ve ticarileştirmeye giden yolun bir aşaması olarak konumlandırılıyor. Benim temel eleştirim de tam olarak burada başlıyor.
 

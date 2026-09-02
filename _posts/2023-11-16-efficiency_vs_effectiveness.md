@@ -4,7 +4,7 @@ title: "Etkinlik vs Verimlilik"
 subtitle: ""
 date:  2023-11-16 10:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -19,7 +19,7 @@ Bu kısa yazımızda, MES/MOM ve dijital dönüşüm ekosisteminde OEE kavramı 
 
 ![Cover]({{ root.url }}/media/efficiency_vs_effectiveness/000.jpg)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Dijital dönüşüm motivasyonu ile MES/MOM (Üretim Yürütme Sistemleri/Üretim Operasyon Yönetimi) sistemleri kullanmayı planlayan işletmelerin bu sistemlerden elde etmeyi umdukları en önemli çıktı [OEE](https://www.oee.com/) adı verilen ve üretim ile ilişkili sektörlerde altın standart olarak kabul görmüş bir performans ölçütüdür. 
 

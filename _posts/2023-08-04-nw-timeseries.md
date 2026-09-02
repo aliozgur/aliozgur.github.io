@@ -4,7 +4,7 @@ title: "NightWatch ile Zaman Serisi Verisi Toplama"
 subtitle: ""
 date:  2023-08-04 10:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - NightWatch
@@ -18,7 +18,7 @@ Merhaba! Bu yazımızda zaman serilerinin (time series) karakteristik özellikle
 
 ![Cover]({{ root.url }}/media/nightwatch-003/000.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Zaman Serisi Nedir?
 

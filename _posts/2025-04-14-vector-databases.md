@@ -4,7 +4,7 @@ title: "What Is a Vector Database?"
 subtitle: "A Practical .NET Example with PostgreSQL"
 date:  2025-04-14 18:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - AI
@@ -28,7 +28,7 @@ In this post, we’ll walk through:
 
 ![Cover]({{ root.url }}/media/vectordb.gif)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## From Keyword to Meaning
 

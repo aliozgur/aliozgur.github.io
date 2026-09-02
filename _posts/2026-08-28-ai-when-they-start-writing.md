@@ -5,7 +5,7 @@ title: "AI Ajanlar Yazmaya Başladığında"
 subtitle: "Veritabanı, Network ve Storage Dünyası Nasıl Değişecek?"
 date: 2026-08-28
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt--> 
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -19,7 +19,7 @@ tags:
 
 Bugün kullandığımız AI ajanların önemli bir bölümü düşündüğümüz kadar "ajan tabanlı" değil. Repository'yi okuyabiliyor, kod üretebiliyor, dosyaları değiştirebiliyor, test çalıştırabiliyor ve bazı durumlarda pull request açabiliyorlar; fakat production sistemlerinin gerçek durumunu (state) değiştirebilecekleri noktaya geldiğimizde etraflarına oldukça kalın güvenlik duvarları örüyoruz. Bunun iyi bir nedeni var. Bir ajanın yanlış bir SQL sorgusu önermesi ile o sorguyu production veritabanında çalıştırması arasında yalnızca bir yetki farkı yok; iki durumda sahip olduğumuz risk modeli bütünüyle farklı.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu sınır şimdiden hareket etmeye başladı. GitHub Copilot cloud ajan repository içerisinde branch oluşturup kod yazabiliyor ve pull request açabiliyor, ancak default branch'e doğrudan push edemiyor ve erişimleri sınırlandırılıyor. OpenAI Codex tarafında da benzer bir yaklaşım var: ajan çalışma alanına yazabiliyor fakat network ve daha yüksek riskli işlemler sandbox ve erişim politikalarıyla sınırlandırılıyor. Anthropic'in Claude Code için yayımladığı bilgiler ise bu sınırın neden önemli olduğunu çok somut biçimde gösteriyor; şirket geçmiş ajan davranışları arasında yanlış yorumlanan bir talep sonucunda remote Git branch'lerinin silinmesini, bir authentication token'ının başka bir sisteme yüklenmesini ve production veritabanı üzerinde migration çalıştırılmaya kalkışılmasını örnek veriyor.
 

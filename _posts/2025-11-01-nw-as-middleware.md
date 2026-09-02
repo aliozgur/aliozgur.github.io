@@ -4,7 +4,7 @@ title: "Akıllı Üretimin Görünmeyen Kahramanı"
 subtitle: "Middleware - Veri Akışını Yöneten Orta Katman" 
 date:  2025-11-01
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -29,7 +29,7 @@ NightWatch, trex MOP (Manufacturing Operations Platform) bileşenleriyle hazır 
 ![Cover]({{ root.url }}/media/nw-as-middleware.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Modern Üretimde Middleware Neden Hâlâ Gereklidir?  
 

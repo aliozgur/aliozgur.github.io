@@ -4,7 +4,7 @@ title: "Kestirimci Bakım Uygulamaları ve Anomali Tespiti"
 subtitle: ""
 date:  2021-07-01 18:45
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -20,7 +20,7 @@ tags:
 
 ![Kestirimci Bakım Uygulamaları]({{ root.url }}/media/predictive_m.jpg)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Kestirimci bakım, üretimde kullanılan ekipmanlarda meydana gelebilecek arızaların önceden tahmin edilerek ekipman bakımlarının herhangi bir kayba neden olmadan planlanmasını hedefleyen proaktif bir yaklaşımdır. Kestirimci bakım uygulamaları ekipman belirtimlerinin tanımlanması, eşik değerlerin tanımlanması veya dinamik tespit edilmesi, sahadan veri toplama, verinin temizlenmesi, verinin zenginleştirilmesi, tahminleme ve bakım aksiyonlarının tetiklenmesi olarak özetleyebileceğimiz aşamaların tamamını veya bir kısmını kapsar. Kestirimci bakım, yazılım sistemleri, manuel süreçler veya her iki yöntem aynı anda kullanılarak uygulanabilir.
 

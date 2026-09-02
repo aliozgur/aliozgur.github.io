@@ -4,7 +4,7 @@ title: "MCP Tool Descriptions: Göründüğü Gibi Değil"
 subtitle: "Tool Tanımları, Semantic Risk ve Çalıştırma Kontrolü"
 date: 2026-04-24
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -22,7 +22,7 @@ Bu fark küçük gibi görünür ama etkisi büyük. Çünkü model bir şeyi ya
 ![Cover]({{ root.url }}/media/mcp_tools_security.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Tool'lar: Küçük Bir Fark, Büyük Bir Etki
 

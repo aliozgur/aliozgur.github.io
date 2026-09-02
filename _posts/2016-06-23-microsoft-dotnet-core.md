@@ -4,7 +4,7 @@ title: "How is Microsoft doing with .NET Core?"
 subtitle: "A short hands on experience with an OSX guy"
 date:  2016-06-23 22:01
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 published : true
 tags: 
@@ -17,7 +17,7 @@ tags:
 
 In this blog post I will tell you a story and share my couple of cents on .NET Core, Microsoft's last gig. 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## The Story
 Today started as just another day at our office in Bilgi University. I got my black coffee 

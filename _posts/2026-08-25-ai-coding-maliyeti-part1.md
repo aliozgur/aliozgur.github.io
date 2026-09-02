@@ -5,7 +5,7 @@ title: "Kod Yazmak Ucuzlamıyor: AI Destekli Kodlamanın Görünmeyen Maliyeti"
 subtitle: "Bölüm 1: Token Ekonomisi, Ajan Maliyeti ve AI Engineering FinOps"
 date: 2026-08-25
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt--> 
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
 
@@ -21,7 +21,7 @@ tags:
 
 AI destekli kodlama araçları bugüne kadar ağırlıklı olarak verimlilik üzerinden tartışıldı: daha hızlı kod üretmek, daha kısa cycle time, daha az rutin iş ve daha yüksek geliştirici kapasitesi. Ancak bu araçlar olgunlaştıkça ikinci bir soru giderek daha önemli hale geliyor: Bu verimliliğin gerçek maliyeti nedir?
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu soru özellikle ajan tabanlı geliştirmede basit bir lisans maliyeti hesabının çok ötesine geçiyor. Bir kodlama ajanı repository'yi tarıyor, dosyaları bağlama alıyor, plan oluşturuyor, kod değiştiriyor, test çalıştırıyor, hataları yorumluyor ve gerektiğinde aynı döngüyü tekrar ediyor. Dolayısıyla maliyet artık yalnızca "hangi aracı kaç geliştirici kullanıyor?" sorusuyla açıklanamıyor; kullanılan model, bağlam büyüklüğü, ajanın kaç adım çalıştığı ve görevi tamamlamak için kaç kez yeniden denediği doğrudan ekonomik değişken haline geliyor.
 

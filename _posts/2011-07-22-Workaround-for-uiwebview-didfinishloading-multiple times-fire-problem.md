@@ -4,7 +4,7 @@ title: "A workaround for UIWebView didFinishLoading firing multiple times proble
 subtitle: ""
 date:  2011-07-22 15:01
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -24,7 +24,7 @@ Here is a stackoverflow question which describes the issue very well
 
 Some people say that "UIWebView must die". Yes I actually agree with them. UIWebView loads slower than Safari, it is hard to use and it does not expose some core methods. For example you can not get source of the loaded HTML page or the document title with a regular method call. But it has its strenghts like the**stringByEvaluatingJavaScriptFromString (MonoTouch equivalent is EvaluateJavascript)** method. With this method you can perform some of the missing core functions.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 The idea to solve the mentioned problem goes on like this
 

@@ -4,7 +4,7 @@ title: "F# ile Fonksiyonel Programlama Kitabı"
 subtitle: "Yazım Süreci"
 date:  2017-11-23 18:50
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - F#
@@ -26,7 +26,7 @@ tags:
 Yazılım geliştirme profesyonelleri, fonksiyonel programlama kavramlarına ve ilkelerine ağır akademik yönleri ve ihtiyaç duyulan matematiksel alt yapı nedeni ile genelde çok mesafeli yaklaşırlar. Ben de 17 yılı bulan profesyonel kariyerimin bazı dönemlerinde fonksiyonel programlamaya ilgi duymama rağmen kimi zaman tembellikten kimi zaman da incelediğim fonksiyonel programlama dilinin aşırı matematiksel yaklaşımı ve kısıtlamaları nedeni bu mecarada kendimden istediğim verimi alamadım.
     </div>
 </div>
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Ancak, 3-4 yıl önce Bilgi Üniversitesindeki bir projemizde gündeme gelen HTML sayfalardaki verilerin ayıklanması ve yapısal olarak ilişkisel veri tabanında saklanması ihtiyacı nedeni ile aslında ilk günden beri varlığından haberdar olduğum ve ilk versiyonunu da belirli bir seviyeye kadar incelediğim F# ile bu işi yapmayı denemek istedim. 
 

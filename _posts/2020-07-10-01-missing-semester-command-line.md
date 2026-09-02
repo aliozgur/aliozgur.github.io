@@ -4,7 +4,7 @@ title: "Komut Satırı Ortamı"
 subtitle: "MIT Missing Semester"
 date:  2020-07-16 13:10
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - Linux
@@ -18,7 +18,7 @@ Bu yazımda, MIT tarafından açık kaynak olarak yayınlanan "Missing Semester"
 
 Diğer dersler için [MIT Missing Semester Dersleri (Türkçe)](https://missing-semester-tr.github.io/2020/) sayfasını ziyaret edebilirsiniz.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 <hr/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e8BO_dYxk5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

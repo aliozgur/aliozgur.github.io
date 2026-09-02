@@ -4,7 +4,7 @@ title: "Digital Thread Nedir? Dijital Ürün Pasaportu ile İlişkisi Nedir?"
 subtitle: "Bölüm 1: PLM, ERP, MES, IIoT ve QMS Arasında Kaybolan Ürün Bağlamını Yeniden Kurmak"
 date: 2026-08-19
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -19,7 +19,7 @@ tags:
 
 Üretim teknolojileri dünyasında bazı kavramlar, neyi ifade ettiklerinden çok hangi ürün ailesiyle birlikte kullanıldıkları üzerinden tanınmaya başlıyor. "Digital Thread" da bunlardan biri. Kavramı çoğu zaman PLM, CAD, Digital Twin veya Model-Based Enterprise gibi başlıkların yanında görüyoruz; bu nedenle ilk bakışta bunun esas olarak ürün tasarımı ve PLM dünyasına ait bir yaklaşım olduğu izlenimi oluşabiliyor. Oysa Digital Thread'in anlamı bundan daha geniş ve özellikle üretim şirketlerinin sahip olduğu PLM, ERP, MES/MOM, QMS, IIoT, bakım, lojistik ve servis sistemleri birlikte düşünüldüğünde çok daha değerli bir çerçeve ortaya çıkıyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Digital Thread'i anlamanın en iyi yolu tanımla değil, üretim şirketlerinin günlük olarak yaşadığı temel bir problemle başlamak. Bir ürünün tasarım verisi PLM sisteminde, malzeme ve sipariş bilgileri ERP'de, nasıl üretileceğine ilişkin operasyon planı MES veya MOM sisteminde, makineden toplanan proses verileri IIoT altyapısında, ölçüm ve kalite sonuçları QMS veya metrology sistemlerinde, bakım ve saha bilgileri ise başka uygulamalarda bulunabiliyor. Her sistem kendi işini doğru yapıyor olsa bile, bu verilerin tamamını "aynı ürünün yaşam öyküsü" olarak ilişkilendirmek çoğu şirkette hâlâ kolay değil.
 

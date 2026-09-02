@@ -4,7 +4,7 @@ title: "Gerçeğin Sonu mu Geliyor?"
 subtitle: "Yapay Zeka Çağında Güven, Bilgi ve İnsan Olmak"
 date: 2026-05-23
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -26,7 +26,7 @@ Kyle Kingsbury'nin "The Future of Everything is Lies, I Guess" başlıklı uzun 
 ![Cover]({{ root.url }}/media/ai-truth-crisis.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu yazıda teknik detaylara girmeyeceğim. Çünkü asıl mesele teknik değil. 
 

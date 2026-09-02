@@ -4,7 +4,7 @@ title: "BT Sektöründe Büyük İstifa Dalgası"
 subtitle: "Uzaktan çalışma, tükenmişlik sendromu, iş-özel hayat dengesi"
 date:  2022-02-10 10:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - Bilişim Teknolojileri
@@ -16,7 +16,7 @@ COVID-19 pandemi sürecinin başlangıcından bu yana 2 yıl geçti ve bu 2 yıl
 
 ![Pandemic-Work From Home]({{ root.url }}/media/pandemic-wfh.jpg)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 
 Amerika Birleşik Devletleri İşgücü İstatistikleri Ofisinin [verilerine](https://www.theguardian.com/business/2022/jan/04/great-resignation-quitting-us-unemployment-economy) göre 2021’in ikinci yarısında işten ayrılanların sayısı ABD’de 20 milyona ulaştı ve sadece 2021 yılının Ekim ayında 4.9 milyon çalışan işinden ayrıldı. Harvard Business Review’ın farklı sektörlerden 4000 şirketi ve 9 milyon çalışan kaydını değerlendirdiği [çalışmanın](https://hbr.org/2021/09/who-is-driving-the-great-resignation) sonuçlarına göre ise işinden ayrılanların büyük bir kısmını pandemi döneminde en büyük baskıya maruz kalan sağlık ve teknoloji sektörlerinin çalışanları oluşturuyor. COVID-19 ile yürütülen amansız mücadelede en ön saflarda yer alan sağlık sektörü çalışanlarının 2 yıllık yorucu ve yıpratıcı sürecin sonunda işlerinden ayrılmak istemeleri bir sürpriz olmayabilir. Ancak , BT sektöründe, özellikle de yazılım geliştirme alanında, çalışan beyaz yakalı bilgi emekçisi personelin işlerinden ayrılmalarının nedenlerini ve yeni işverenlerinden beklentilerini BT şirketlerinin çok iyi analiz edebilmeleri gerekir.

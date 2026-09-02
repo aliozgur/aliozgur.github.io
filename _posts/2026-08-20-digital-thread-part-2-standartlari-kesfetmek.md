@@ -4,7 +4,7 @@ title: "Digital Thread Standartlarını Keşfetmek"
 subtitle: "Bölüm 2: STEP, ISA-95, QIF, OPC UA, AAS, EPCIS ve DPP Standartları Nasıl Bir Arada Çalışır?"
 date: 2026-08-20
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - MES
@@ -19,7 +19,7 @@ tags:
 
 Serinin ilk bölümünde Digital Thread'i ürün yaşam döngüsü boyunca oluşan bilgilerin bağlamını kaybetmeden birbirine bağlanmasını sağlayan dijital süreklilik olarak ele aldık. PLM'deki tasarım verisinden ERP'deki malzeme ve siparişlere, MES/MOM sistemindeki üretim kayıtlarından IIoT verilerine, kalite sonuçlarından servis geçmişine ve Digital Product Passport'a kadar uzanan bu yapı, tek bir sistemin doğal sınırlarını aşıyor. Bu noktada teknik olarak kaçınılmaz bir soru ortaya çıkıyor: Böyle bir Digital Thread oluşturmak istiyorsak hangi standardı kullanacağız?
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu sorunun rahatlatıcı ama aynı zamanda işleri biraz zorlaştıran cevabı şu: **Digital Thread için bütün yaşam döngüsünü tek başına tanımlayan evrensel bir standart yok.** Bunun yerine farklı problem alanlarını çözmek için yıllar içinde gelişmiş STEP, ISA-95, QIF, OPC UA, AutomationML, Asset Administration Shell, EPCIS ve benzeri standartlar var; 2026 itibarıyla bunlara doğrudan Digital Thread'i ele alan ISO 23247-5 ve Digital Product Passport sistem altyapısını tanımlayan yeni Avrupa standartları da eklenmiş durumda.[1][2]
 

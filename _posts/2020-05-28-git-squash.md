@@ -4,7 +4,7 @@ title: "Git ile Tarihi Yeniden Yazmak"
 subtitle: "Commitleri derleyip toplamak"
 date:  2020-05-28 09:0
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - Git
@@ -20,7 +20,7 @@ Commit sayısının fazla olmasının temel nedenleri
 
 Bu ipucu yazımızda özellikle 1. maddede belirttiğim durumda ortaya çıkan git history kirliliğini nasıl ortadan kaldırabileceğimizi paylaşıyorum.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 Herhangi bir branch'deki commitlerin bir kısmını birleştirip tek bir commit olarak yeniden oluşturmak için yapılan işleme git terminolojisinde **squash** denir.
 
 Squash işlemi ile herhangi bir branch'in historysini (commitleri) değiştirmiş oluruz. History değiştirme işlemi ,normal koşullarda, özellikle **master** gibi resmi branch'lerde doğrudan uygulamadığımız bir yöntem. Bu nedenle squash işlemini merge öncesinde ve sadece **henüz merge etmediğimiz** commitleri birleştirecek şekilde uygulamalıyız.

@@ -4,7 +4,7 @@ title: "Hooks Are Not Extensibility"
 subtitle: "The Broken Architecture of AI Coding Tools"
 date:  2026-03-17
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -27,7 +27,7 @@ There is a lot of attention on the user-facing side of these tools: prompt boxes
 > **Disclaimer:** This is not written as a criticism of any specific product or team. The issues discussed here are structural and ecosystem-wide. No pun intended toward any particular tool, vendor, or approach.
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 # AI Coding Tools Need a Real Extensibility Model
 
 

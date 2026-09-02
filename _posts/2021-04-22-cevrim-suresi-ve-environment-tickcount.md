@@ -4,7 +4,7 @@ title: "MES Uygulamalarında Çevrim Süresi Hesabı"
 subtitle: ".NET ile yüksek çözünürlüklü hesaplama"
 date:  2021-04-22 13:56
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - C#
@@ -22,7 +22,7 @@ Bu yazımda .NET ve C# ile bir sinyalin iki ölçümü arasında geçen süreyi 
 ![C# 7.0]({{ root.url }}/media/cycle-time.jpg)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 Panel yazılımlarında genel olarak çevrim süresi (cycle time) bilgisinin IO kartlardan veya PLC'den gelmediği durumlarda sayaç değeleri veya input değerlerindeki değişimlere göre `Environment.TickCount` kullanılarak benim `virtual cycle` dediğim bir çevrim süresi hesabı yapılıyor. 
 
 > **Çevrim Süresi Nedir?**: Kabaca, bir sinyalin değerinin iki ölçümü arasında geçen süre olarak tanımlanabilir. Sinyalin ne ifade ettiğine bağlı olarak **birim çevrim süresi** şeklinde bir hesaplama da yapılabilir. Örneğin, sinyalimiz makinadan gelen ve üretim adedini bize bildiren bir sinyal olsun. `T1` anında sinyal değeri `C1=10` ise, `T2` anında da bu değer `C2=20` ise birim çevrim süresi `(C2-C1)/(T2-T1)` şeklinde hesaplanabilir

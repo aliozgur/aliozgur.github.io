@@ -4,7 +4,7 @@ title: "XML ve HTML Auto Merge ve Hatalı Conflict Sorunları"
 subtitle: "Diff algoritmalarının başımıza açabileceği dertler"
 date:  2020-05-22 18:23
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - Git
@@ -17,7 +17,7 @@ Aynı proje üzerinde devam eden iş sayısı artınca XML formatında olan resx
 veya normalde olmaması gereken conflictlerin oluşması ve bunların manul çözülmesi gerekn durumlar ile karşılaşabiliyoruz.
 Bu sorunların nedeninin Git olduğunu düşünenler olabilir ama konu tüm VCS sistemlerinin kullandıkları genel kabul görmüş diff algoritmalarının eksikliğinden kaynaklanıyor.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 
 Özetlemek gerekirse;

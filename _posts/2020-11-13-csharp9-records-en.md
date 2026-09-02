@@ -4,7 +4,7 @@ title: "C# 9 Records"
 subtitle: "What is wrong with records?"
 date:  2020-11-13 15:21
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - C#
@@ -13,7 +13,7 @@ tags:
 
 Microsoft released .NET 5 couple of days ago which comes with a new version of C#, namely C# 9. In this blog post I will not rant about the beauties of the record types in C# 9, rather I will try to warn my fellow developers about couple of issues I've noticed about the record types.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 I guess fair amount of the developers working with ALGOL like object oriented languages must have heard of [Tony Hoeare's (inventor of null)](https://en.wikipedia.org/wiki/Tony_Hoare) apology about the null reference. Speaking at a software conference in 2009, Tony Hoare apologized for inventing the null reference. He said "I call it my billion-dollar mistake. It was the invention of the null reference in 1965.".
 

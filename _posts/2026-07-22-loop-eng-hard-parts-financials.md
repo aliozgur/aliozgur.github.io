@@ -4,7 +4,7 @@ title: "Loop Engineering Neden Zor?"
 subtitle: "Asıl Problem Model Değil, Döngünün Ekonomisidir"
 date: 2026-07-22
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -23,7 +23,7 @@ Orada temel soru şuydu:
 > Bir LLM'i hedefe doğru adım adım ilerleyen, hata yaptığında geri dönebilen, sonucu test edebilen ve gerektiğinde kendini iyileştirebilen bir yapıya nasıl dönüştürürüz?
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu yazıda aynı konunun daha az konuşulan ama pratikte en belirleyici tarafına bakmak istiyorum:
 

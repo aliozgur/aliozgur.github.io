@@ -4,7 +4,7 @@ title: "AB Yapay Zeka Yasası (AI Act) – Geliştiriciler İçin Gerçek Etkisi
 subtitle: "MES/MOM ve IIoT Perspektifinden Teknik Etki"
 date: 2026-04-23
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -24,7 +24,7 @@ Bu yazıda AI Act'in ne olduğunu anlatmanın ötesine geçip, geliştiriciler v
 ![Cover]({{ root.url }}/media/eu-ai-act-mes.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Kısa bir tarihsel çerçeve çizmek faydalı. AB, yapay zekayı regüle etmeye 2018 civarında "Trustworthy AI" ilkeleri ile başladı. Ardından 2021'de ilk AI Act taslağı yayımlandı. Bu taslak, risk temelli bir yaklaşım öneriyordu. 2023–2024 arasında özellikle generative AI ve foundation model tartışmalarıyla birlikte metin ciddi şekilde güncellendi. Sonuçta ortaya çıkan şey, klasik bir "teknoloji yasası" değil; daha çok CE işareti mantığında, ürün güvenliği perspektifiyle yazılmış bir düzenleme.
 

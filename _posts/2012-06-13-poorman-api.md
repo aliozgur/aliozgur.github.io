@@ -4,7 +4,7 @@ title: "Custom API Authentication"
 subtitle: "Poor man's API authentication with API keys and some cryptography"
 date:       2012-06-13 15:53
 author:     "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 # header-img: "img/post-bg-05.jpg"
 published: true
 tags: 
@@ -12,7 +12,7 @@ tags:
 ---
 In this blog post I will show you the details of a custom and minimal solution we have developed for Web API authentication.
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 PragmaTouch team is currently working on a new e-learning project. Below you can see a conceptual system diagram.
 ![Conceptual System Diagram]({{ root.url }}/media/poormanapi/01.jpg)

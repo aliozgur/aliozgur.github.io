@@ -4,7 +4,7 @@ title: "When AI Learns From AI"
 subtitle: "The Risk of Losing Human Knowledge in a Synthetic Feedback Loop"
 date: 2025-04-22
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - AI
@@ -19,7 +19,7 @@ AI is no longer a futuristic concept - it's embedded in how we work, write, code
 
 ![Cover]({{ root.url }}/media/ai-learns-from-ai.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## From Tool to Crutch
 

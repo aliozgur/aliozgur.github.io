@@ -4,7 +4,7 @@ title: "C# 7.0 Yeni Dil Özellikleri"
 subtitle: "Daha Basit ve Daha Yüksek Performanslı Kod"
 date:  2018-03-05 18:31
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - C#
@@ -28,7 +28,7 @@ Bu yazımda yukarıdaki tema çerçevesinde C# 7.0 ile birlikte gelen yeni dil �
 
 ![C# 7.0]({{ root.url }}/media/csharp7.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 
 >**DİKKAT !!!**

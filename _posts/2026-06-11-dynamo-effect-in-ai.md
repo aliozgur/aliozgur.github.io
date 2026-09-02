@@ -4,7 +4,7 @@ title: "Yeni Tasarım Gerekliliği: AI Verimlilik Sıçramasını Ne Zaman Gerç
 subtitle: "AI'de dinamo etkisi ve AI-native süreç tasarımı neden gerekli?"
 date: 2026-06-11
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - ai
@@ -18,7 +18,7 @@ tags:
 Teknoloji tarihinde bazı dönemler vardır. Herkes büyük bir değişimin geldiğini hisseder, şirketler yatırım yapar, yöneticiler sunumlarında bu yeni teknolojiden bahseder, danışmanlar yeni kavramlar üretir, tedarikçiler hızlıca yeni ürünler çıkarır. Fakat bütün bu hareketliliğe rağmen verimlilik göstergeleri beklenen hızda değişmez. İnsanlar doğal olarak şu soruyu sormaya başlar: "Bu kadar büyük teknoloji yatırımı yapıyoruz ama gerçek verimlilik nerede?"
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 
 ## AI Neden Beklenen Sıçramayı Hemen Üretmiyor?

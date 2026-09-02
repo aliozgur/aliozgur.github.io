@@ -4,7 +4,7 @@ title: "Environment Branching With Git"
 subtitle: "Bilgi Software Development Team Git Workflow "
 date:  2015-05-13 13:25
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - Software
@@ -16,7 +16,7 @@ In this blog post I will give you some details about the Git Workflow we are usi
 
 ![Bilgi Git Workflow]({{ root.url }}/media/bilgi-softdev-git-workflow/01.jpg)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 > Our flow includes some inspiration and material from James Kurczodyna's [ENV Branching with Git](http://www.wearefine.com/mingle/env-branching-with-git/) post.
 

@@ -4,7 +4,7 @@ title: "Testing NHibernate projects"
 subtitle: ""
 date:  2009-01-26 09:11
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags: 
   - C#
@@ -19,7 +19,7 @@ Based on [one of my articles](http://blog.pragmasql.com/post/Writing-NHibernate-
 
 Here is my answer
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 The problem related to testing a Repository method is a very common one and people suggest different solutions to this problem. Here are some of them
 

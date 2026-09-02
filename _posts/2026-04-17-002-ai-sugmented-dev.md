@@ -4,7 +4,7 @@ title: "AI-Augmented Software Engineering ve AI-Native Development"
 subtitle: "Yazılım Geliştirme Nereye Gidiyor?"
 date:  2026-04-17
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -25,7 +25,7 @@ Her yerde aynı sorular:
 
 ![Cover]({{ root.url }}/media/ai-sugmented-dev.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 Bu soruların çoğu ya fazla yüzeysel ya da yanlış çerçevelenmiş.
 

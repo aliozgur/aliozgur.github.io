@@ -4,7 +4,7 @@ title: "AI Destekli Yazılım Geliştirmede Bilişsel Yük"
 subtitle: "Gerçekten Azalıyor mu?"
 date: 2026-04-21
 author: "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - software
@@ -33,7 +33,7 @@ Bu yazıda bu hissin arkasındaki gerçeği inceleyeceğiz: AI gerçekten biliş
 ![Cover]({{ root.url }}/media/cognitive-load-ai-aug-coding.png)
 
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## Bilişsel Yük Nedir ve Neden Önemlidir?
 

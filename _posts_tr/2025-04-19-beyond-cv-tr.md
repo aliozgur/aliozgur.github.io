@@ -3,7 +3,7 @@ layout: post
 title: "Yapay Zeka Sizi Özgeçmişinizden Daha İyi Tanıyor"
 subtitle: "İşe alımcılar LLM geçmişinizle konuşsaydı ne olurdu?"
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - YZ
@@ -22,7 +22,7 @@ English Version - [Beyond Your CV: AI Knows You Better Than Your Resume Does]({{
 
 ![Cover]({{ root.url }}/media/beyond-cv.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 > LLM: Büyük Dil Modeli (Large Language Model)
 

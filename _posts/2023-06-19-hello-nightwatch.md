@@ -4,7 +4,7 @@ title: "Merhaba NightWatch!"
 subtitle: ""
 date:  2023-06-19 10:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - NightWatch
@@ -19,7 +19,7 @@ NightWatch açık veri toplama platformumuzu çok yakında tüm paydaşlarımız
 
 ![Cover]({{ root.url }}/media/nightwatch-001/000.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 ## NightWatch Nedir?
 

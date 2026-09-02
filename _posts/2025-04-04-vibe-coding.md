@@ -4,7 +4,7 @@ title: "Vibe Coding: Useful Hack or Engineering Hazard?"
 subtitle: "Prototype with vibes. Ship with discipline."
 date:  2025-04-04 18:00
 author:  "Ali Özgür"
-excerpt_separator: <!--end-of-excerpt-->
+excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 published: true
 tags:
   - AI
@@ -17,7 +17,7 @@ But if you skip understanding and review, you're not coding faster — you're ju
 
 ![Cover]({{ root.url }}/media/vibe_coding.png)
 
-<!--end-of-excerpt-->
+{::comment}end-of-excerpt{:/comment}
 
 # Vibe Coding: Useful Hack or Engineering Hazard?
 
