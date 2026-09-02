@@ -25,7 +25,7 @@ markdown: kramdown
 excerpt_separator: "{::comment}end-of-excerpt{:/comment}"
 highlighter: rouge
 permalink: pretty
-paginate: 5
+paginate: 20
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Posts with a future `date:` in front matter are excluded from the build
