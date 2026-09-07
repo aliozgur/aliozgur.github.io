@@ -23,7 +23,7 @@ Bu soru özellikle birden fazla model ve sağlayıcı arasında seçim yapabilen
 
 {::comment}end-of-excerpt{:/comment}
 
-Önceki yazılarımda [Kod Yazmak Ucuzlamıyor](https://aliozgur.net/2026/08/25/ai-coding-maliyeti-part1/) ve [AI Engineering FinOps'un Eksik Parçası: Harness Engineering](https://aliozgur.net/2026/08/26/harness-engineering-ai-finops-part2/) yazılarında, gerçekleşen maliyetin ölçülmesinin yeterli olmadığını ve harness engineering katmanının model seçimi, bağlam yönetimi, retry politikası ve bütçe gibi kararları çalışma anında değiştirebilmesi gerektiğini tartışmıştım. Burada bu düşüncenin bir adım öncesinde duran başka bir sorun var: Harness karar verecekse, kararını hangi kesin bilgiye dayanarak verecek? Model çağrısını yaptıktan sonra gelen token sayısı artık karar girdisi değil, gerçekleşmiş sonucun telemetrisidir.
+Önceki yazılarımda [Kod Yazmak Ucuzlamıyor]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) ve [AI Engineering FinOps'un Eksik Parçası: Harness Engineering]({% post_url 2026-08-26-harness-engineering-ai-finops-part2 %}) yazılarında, gerçekleşen maliyetin ölçülmesinin yeterli olmadığını ve harness engineering katmanının model seçimi, bağlam yönetimi, retry politikası ve bütçe gibi kararları çalışma anında değiştirebilmesi gerektiğini tartışmıştım. Burada bu düşüncenin bir adım öncesinde duran başka bir sorun var: Harness karar verecekse, kararını hangi kesin bilgiye dayanarak verecek? Model çağrısını yaptıktan sonra gelen token sayısı artık karar girdisi değil, gerçekleşmiş sonucun telemetrisidir.
 
 Bu nedenle asıl problem token saymak değil. Asıl problem, henüz gerçekleşmemiş bir AI işleminin kaynak tüketimini deterministik olarak sorgulayabilmek.
 
@@ -71,7 +71,7 @@ Böyle bir sistem için token sayısı dashboard'da gösterilen bir telemetri de
 
 Routing kararlarının girdisini "tahmini" bir değere dayandırmak elbette mümkündür. Bugün pek çok sistem zaten bunu yapıyor. Fakat kaynak tüketimi teknik olarak deterministik biçimde hesaplanabiliyorsa tahmin kullanmak gereksiz bir belirsizlik yaratıyor.
 
-Burada daha önce [Kısıtlar Yapay Zekâyı Determinizme Yaklaştırabilir mi?](https://aliozgur.net/2026/08/30/ai-constrained-behavioral-determinism/) yazısında ele aldığım determinizm tartışmasıyla ilginç bir paralellik de var. LLM'in üreteceği cevabı deterministik hale getiremeyebiliriz; modelin doğası gereği aynı girdiden farklı sonuçlar çıkabilir. Ancak model çalıştırılmadan önce **bizim hazırladığımız girdinin büyüklüğü** aynı türde olasılıksal bir problem olmak zorunda değil. Model cevabının belirsizliği ile API muhasebesinin belirsizliğini birbirine karıştırmamak gerekiyor.
+Burada daha önce [Kısıtlar Yapay Zekâyı Determinizme Yaklaştırabilir mi?]({% post_url 2026-08-30-ai-constrained-behavioral-determinism %}) yazısında ele aldığım determinizm tartışmasıyla ilginç bir paralellik de var. LLM'in üreteceği cevabı deterministik hale getiremeyebiliriz; modelin doğası gereği aynı girdiden farklı sonuçlar çıkabilir. Ancak model çalıştırılmadan önce **bizim hazırladığımız girdinin büyüklüğü** aynı türde olasılıksal bir problem olmak zorunda değil. Model cevabının belirsizliği ile API muhasebesinin belirsizliğini birbirine karıştırmamak gerekiyor.
 
 Çıktı probabilistic olabilir. Girdi muhasebesinin öyle olması için doğal bir neden yok.
 
@@ -83,7 +83,7 @@ Bir kullanıcının 200 tokenlık sorusu, arkasında 15 bin token conversation h
 
 Dolayısıyla iyi bir pre-request optimizasyon sistemi önce kendi ürettiği bağlama bakmalı. Kaç RAG parçası gerçekten gerekli? Conversation history'nin tamamı taşınmalı mı? Her MCP server'ın bütün tool şemalarının her çağrıda modele verilmesi gerekiyor mu? Structured output şeması gereksiz derecede ayrıntılı mı? Kullanılmayacağı zaten tahmin edilebilen araçlar prompt'a dahil ediliyor mu?
 
-Bu noktada küçük ve ucuz, hatta lokal bir model de ana modele gitmeden önce bağlam sıkıştırma katmanı olarak kullanılabilir. Ancak burada amaç yalnızca metni kısaltmak olmamalı; **bilgi yoğunluğunu artırmak** olmalı. Daha kısa ama kritik bilgiyi kaybetmiş bir prompt ekonomik olarak başarılı değildir. Daha önce [harness engineering](https://aliozgur.net/2026/08/26/harness-engineering-ai-finops-part2/) bağlamında tartıştığım context engineering problemi burada ölçülebilir bir pre-request optimizasyon döngüsüne dönüşüyor.
+Bu noktada küçük ve ucuz, hatta lokal bir model de ana modele gitmeden önce bağlam sıkıştırma katmanı olarak kullanılabilir. Ancak burada amaç yalnızca metni kısaltmak olmamalı; **bilgi yoğunluğunu artırmak** olmalı. Daha kısa ama kritik bilgiyi kaybetmiş bir prompt ekonomik olarak başarılı değildir. Daha önce [harness engineering]({% post_url 2026-08-26-harness-engineering-ai-finops-part2 %}) bağlamında tartıştığım context engineering problemi burada ölçülebilir bir pre-request optimizasyon döngüsüne dönüşüyor.
 
 Fark şu: Önceki durumda bağlamı neden küçültmek gerektiğini gerçekleşen maliyetten öğreniyorduk. Burada daha model çalışmadan alternatif bağlamların gerçek kaynak tüketimini karşılaştırabilmek istiyoruz.
 
@@ -206,7 +206,7 @@ Bu durumda ortaya çıkan mimari yaklaşık olarak şu hale gelir:
 
 Bu döngünün önemli tarafı, maliyet optimizasyonunun inference sonrasında değil **inference öncesinde** başlamasıdır.
 
-Önceki [AI Engineering FinOps](https://aliozgur.net/2026/08/25/ai-coding-maliyeti-part1/) ve [harness engineering](https://aliozgur.net/2026/08/26/harness-engineering-ai-finops-part2/) tartışmalarımda "ölç, sonucu değerlendir, öğren ve bir sonraki çalıştırmayı değiştir" yaklaşımını savunmuştum. Burada buna başka bir halka ekleniyor: çalıştırmadan önce gelecekteki tüketimin yeterince kesin bir modelini oluşturabilmek.
+Önceki [AI Engineering FinOps]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) ve [harness engineering]({% post_url 2026-08-26-harness-engineering-ai-finops-part2 %}) tartışmalarımda "ölç, sonucu değerlendir, öğren ve bir sonraki çalıştırmayı değiştir" yaklaşımını savunmuştum. Burada buna başka bir halka ekleniyor: çalıştırmadan önce gelecekteki tüketimin yeterince kesin bir modelini oluşturabilmek.
 
 Bu, retrospective FinOps'tan predictive FinOps'a geçişten de biraz farklı. Eğer girdinin maliyeti teknik olarak deterministik biçimde hesaplanabiliyorsa aslında tahmin yapmıyoruz; henüz gerçekleşmemiş işlemin **kaynak planını** çıkarıyoruz.
 
@@ -230,9 +230,9 @@ AI altyapısında gerçek maliyet kontrolü, faturayı daha iyi okumakla değil,
 
 ## Kaynaklar
 
-1. [Ali Özgür — Kod Yazmak Ucuzlamıyor: AI Destekli Kodlamanın Görünmeyen Maliyeti](https://aliozgur.net/2026/08/25/ai-coding-maliyeti-part1/)
-2. [Ali Özgür — AI Engineering FinOps'un Eksik Parçası: Harness Engineering](https://aliozgur.net/2026/08/26/harness-engineering-ai-finops-part2/)
-3. [Ali Özgür — Kısıtlar Yapay Zekâyı Determinizme Yaklaştırabilir mi?](https://aliozgur.net/2026/08/30/ai-constrained-behavioral-determinism/)
+1. [Ali Özgür — Kod Yazmak Ucuzlamıyor: AI Destekli Kodlamanın Görünmeyen Maliyeti]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %})
+2. [Ali Özgür — AI Engineering FinOps'un Eksik Parçası: Harness Engineering]({% post_url 2026-08-26-harness-engineering-ai-finops-part2 %})
+3. [Ali Özgür — Kısıtlar Yapay Zekâyı Determinizme Yaklaştırabilir mi?]({% post_url 2026-08-30-ai-constrained-behavioral-determinism %})
 4. [OpenAI — Understanding and counting tokens](https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens)
 5. [OpenAI — What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count)
 6. [Anthropic — Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting)

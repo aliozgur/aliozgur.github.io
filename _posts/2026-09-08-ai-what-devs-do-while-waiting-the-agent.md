@@ -29,7 +29,7 @@ Bu iki zaman eksenini ne kadar iyi senkronize ettiğimiz, önümüzdeki dönemde
 
 {::comment}end-of-excerpt{:/comment}
 
-Daha önce [AI Destekli Yazılım Geliştirmede Bilişsel Yük](https://aliozgur.net/2026/04/21/cognitive-load-ai-aug-coding/) yazımda context switching, doğrulama yükü ve mental state reconstruction gibi kavramlardan bahsetmiştim. [AI Goal Gradient Loop](https://aliozgur.net/2026/07/12/ai-goal-gradient-loop/) yazısında ise AI ile iterasyon maliyetinin düşmesinin geliştirici davranışını nasıl değiştirebileceğini tartışmıştım. Buradaki problem bunlarla ilişkili olmakla birlikte biraz farklı. Bu kez zihinsel yükün kendisinden çok, **ajan çalışırken boşalan insan zamanının neye dönüştüğünü** anlamaya çalışıyorum.
+Daha önce [AI Destekli Yazılım Geliştirmede Bilişsel Yük]({% post_url 2026-04-21-cognitive-load-ai-aug-coding %}) yazımda context switching, doğrulama yükü ve mental state reconstruction gibi kavramlardan bahsetmiştim. [AI Goal Gradient Loop]({% post_url 2026-07-12-ai-goal-gradient-loop %}) yazısında ise AI ile iterasyon maliyetinin düşmesinin geliştirici davranışını nasıl değiştirebileceğini tartışmıştım. Buradaki problem bunlarla ilişkili olmakla birlikte biraz farklı. Bu kez zihinsel yükün kendisinden çok, **ajan çalışırken boşalan insan zamanının neye dönüştüğünü** anlamaya çalışıyorum.
 
 Çünkü ajanların bizi hızlandırıp hızlandırmadığını yalnızca "bu görevi kaç dakikada tamamladık?" sorusuyla ölçmek giderek yetersiz hale geliyor.
 
@@ -191,7 +191,7 @@ Bu konuda güvenilir ampirik araştırma neredeyse yok.
 
 Oysa kota yalnızca pricing veya FinOps konusu olmayabilir.
 
-[Kod Yazmak Ucuzlamıyor](https://aliozgur.net/2026/08/25/ai-coding-maliyeti-part1/) yazısında token ekonomisini AI destekli yazılım geliştirmenin yeni maliyet yapısı açısından ele almıştım. Kota problemi bunun farklı bir boyutunu ortaya çıkarıyor: **compute bütçesi artık insan emeğinin zamanlamasını değiştirebilir.**
+[Kod Yazmak Ucuzlamıyor]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) yazısında token ekonomisini AI destekli yazılım geliştirmenin yeni maliyet yapısı açısından ele almıştım. Kota problemi bunun farklı bir boyutunu ortaya çıkarıyor: **compute bütçesi artık insan emeğinin zamanlamasını değiştirebilir.**
 
 Eskiden bilgisayar kaynağı yetersiz olduğunda sistem yavaşlardı.
 
