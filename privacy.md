@@ -8,7 +8,7 @@ permalink: /privacy/
 
 This site is [aliozgur.net](https://aliozgur.net), a personal blog run by Ali Özgür.
 
-It is a static site hosted on [GitHub Pages](https://pages.github.com). I do not run user accounts, a membership system, or my own analytics database. Third-party services listed below may collect data when you visit.
+I do not run user accounts, a membership system, or my own analytics database. Third-party services listed below may collect data when you visit.
 
 ## Contact
 
