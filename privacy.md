@@ -12,7 +12,7 @@ I do not run user accounts, a membership system, or my own analytics database. T
 
 ## Contact
 
-Use [GitHub](https://github.com/aliozgur) or [LinkedIn](https://linkedin.com/in/aliozgur).
+Use [LinkedIn](https://linkedin.com/in/aliozgur).
 
 ## Google Analytics
 
