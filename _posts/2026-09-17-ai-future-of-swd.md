@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "AI ile Küçülmek: Maliyet Azaltırken Yetkinliği de Kaybediyor muyuz?"
+title: "AI ile Küçülmek: Maliyet Azaltırken Kabiliyeti de Kaybediyor muyuz?"
 subtitle: "Yapay zekâ verimlilik sağlıyor, fakat verimlilik ile organizasyon kapasitesini aynı şey sanmak pahalı bir hata olabilir"
 date: 2026-09-17
 author: "Ali Özgür"
@@ -59,7 +59,7 @@ AI coding agent'larıyla çalışan herkes birkaç yıl önce günler sürebilec
 
 Fakat yazılım mühendisliğini bu görevlerin toplamı olarak görürsek yanlış noktayı optimize ederiz.
 
-Bir agent kodu üretebilir; ama hangi değişikliğin doğru olduğuna karar vermek, mevcut mimaride neden o sınırların bulunduğunu anlamak, güvenlik ve veri etkisini değerlendirmek, performans riskini görmek, migration sırasını planlamak ve production sorumluluğunu taşımak farklı yetkinliklerdir. AI bu alanlarda da giderek daha fazla yardımcı olacak, hatta bazı kararları belirli sınırlar içinde kendisi alacak. Ancak bu kez de başka bir mühendislik problemi ortaya çıkacak: Agent hangi araçlara erişebilir, hangi bağlamı görebilir, hangi değişiklikleri kendi başına yapabilir, nasıl doğrulanır, ne zaman durdurulur, ne zaman insana eskale edilir?
+Bir agent kodu üretebilir; ama hangi değişikliğin doğru olduğuna karar vermek, mevcut mimaride neden o sınırların bulunduğunu anlamak, güvenlik ve veri etkisini değerlendirmek, performans riskini görmek, migration sırasını planlamak ve production sorumluluğunu taşımak farklı kabiliyetlerdir. AI bu alanlarda da giderek daha fazla yardımcı olacak, hatta bazı kararları belirli sınırlar içinde kendisi alacak. Ancak bu kez de başka bir mühendislik problemi ortaya çıkacak: Agent hangi araçlara erişebilir, hangi bağlamı görebilir, hangi değişiklikleri kendi başına yapabilir, nasıl doğrulanır, ne zaman durdurulur, ne zaman insana eskale edilir?
 
 [AI Engineering FinOps'un Eksik Parçası: Harness Engineering]({% post_url 2026-08-26-harness-engineering-ai-finops-part2 %}) yazısında bunun maliyet tarafını tartışmıştım. AI ile kod yazmanın ekonomik modeli yalnızca lisans ücretinden ibaret değil; model, token, context, tool execution, sandbox, eval ve observability maliyeti giderek daha büyük bir bütün oluşturuyor. [Kod Yazmak Ucuzlamıyor]({% post_url 2026-08-25-ai-coding-maliyeti-part1 %}) yazısındaki temel argüman da buradan geliyordu: Modelin birim fiyatı düşebilir, fakat doğru olmayan bir çalışma biçimi toplam engineering maliyetini pekâlâ artırabilir.
 
@@ -113,13 +113,13 @@ Bu nedenle AI'nın kurumsal hafızayı daha erişilebilir hale getirmesi, insan 
 
 ## Junior geliştiriciler meselesi aynı problemin daha uzun vadeli hali
 
-[AI Çağında Junior Geliştiricileri Kaybetmemeliyiz]({% post_url 2026-08-27-apprenti-junior-devs %}) yazısında, AI'nın başlangıç seviyesindeki görevleri otomatikleştirmesinin junior developer pipeline'ını zayıflatabileceğini tartışmıştım. Bu konu da aslında maliyet ile capability arasındaki aynı ayrımın daha uzun vadeli versiyonu.
+[AI Çağında Junior Geliştiricileri Kaybetmemeliyiz]({% post_url 2026-08-27-apprenti-junior-devs %}) yazısında, AI'nın başlangıç seviyesindeki görevleri otomatikleştirmesinin junior developer pipeline'ını zayıflatabileceğini tartışmıştım. Bu konu da aslında maliyet ile kabiliyet arasındaki aynı ayrımın daha uzun vadeli versiyonu.
 
 Bugün bir junior geliştiricinin yaptığı işi senior + AI kombinasyonu daha hızlı yapabilir. O halde junior işe almamak kısa vadede ekonomik görünebilir. Fakat senior mühendisler hazır olarak ortaya çıkmıyor. Organizasyon öğrenme hattını birkaç yıl kapattığında bugün tasarruf ettiği maliyet yarının çok daha pahalı hiring problemine dönüşebilir.
 
 Gartner'ın 2029 için yeniden işe alım öngörüsü bu nedenle bana yalnızca "yanlış kişileri işten çıkarabiliriz" uyarısı gibi gelmiyor. Daha genel bir şey söylüyor: İnsan kaynağı bir cloud instance gibi kapatılıp ihtiyaç olduğunda aynı fiyat ve aynı context ile tekrar açılamıyor.
 
-Kurumsal yetkinlik zaman içinde birikir ve yeniden oluşturulmasının bir gecikmesi vardır.
+Kurumsal kabiliyet zaman içinde birikir ve yeniden oluşturulmasının bir gecikmesi vardır.
 
 ## O zaman küçülmemeli miyiz?
 
@@ -129,7 +129,7 @@ Bence yapılması gereken küçülmeye ahlaki bir evet/hayır cevabı vermek de�
 
 Önce finansal hedef açık olmalı: Ne kadar maliyeti, hangi zaman ufkunda azaltmamız gerekiyor?
 
-Ardından capability haritası çıkarılmalı: Hangi ürün, platform, domain, entegrasyon ve kurumsal bilgi kabiliyetleri şirkette kalmalı?
+Ardından kabiliyet haritası çıkarılmalı: Hangi ürün, platform, domain, entegrasyon ve kurumsal bilgi kabiliyetleri şirkette kalmalı?
 
 Sonra AI varsayımı görev bazında test edilmeli: Hangi iş gerçekten ortadan kalktı, hangi iş sadece hızlandı, hangi iş başka bir role kaydı ve hangi işin üzerinde yeni bir governance veya platform katmanı oluştu?
 
