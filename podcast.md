@@ -2,7 +2,7 @@
 layout: page
 title: Podcast
 subtitle: "Developer Kahvesi"
-header-img: "img/home-bg.jpg"
+header-img: "img/header-podcast.svg"
 permalink: /podcast/
 nav_hidden: true
 ---

@@ -1,0 +1,52 @@
+/* ============================================================
+   Compact page/post header: height and title sizes reduced by
+   25% from the Clean Blog defaults in clean-blog.css.
+   ============================================================ */
+
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+    padding: 70px 0 30px;               /* was 100px 0 50px */
+}
+.intro-header .site-heading h1,
+.intro-header .page-heading h1 {
+    font-size: 38px;                    /* was 50px */
+}
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading {
+    font-size: 18px;                    /* was 24px */
+}
+.intro-header .post-heading h1 {
+    font-size: 26px;                    /* was 35px */
+}
+.intro-header .post-heading .subheading {
+    font-size: 18px;                    /* was 24px */
+    margin: 8px 0 14px;                 /* was 10px 0 30px */
+}
+.intro-header .post-heading .meta {
+    font-size: 15px;                    /* was 20px */
+}
+
+/* Post headers centred, like page headers */
+.intro-header .post-heading { text-align: center; }
+.intro-header .post-heading h1,
+.intro-header .post-heading .subheading { text-wrap: balance; }
+.intro-header .post-heading .subheading { max-width: 760px; margin-left: auto; margin-right: auto; }
+
+@media only screen and (min-width: 768px) {
+    .intro-header .site-heading,
+    .intro-header .post-heading,
+    .intro-header .page-heading {
+        padding: 72px 0 56px;           /* was 150px 0 */
+    }
+    .intro-header .site-heading h1,
+    .intro-header .page-heading h1 {
+        font-size: 60px;                /* was 80px */
+    }
+    .intro-header .post-heading h1 {
+        font-size: 41px;                /* was 55px */
+    }
+    .intro-header .post-heading .subheading {
+        font-size: 22px;                /* was 30px */
+    }
+}

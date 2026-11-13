@@ -4,7 +4,7 @@ title: "Ali Özgür"
 subtitle: About
 nav_title: About
 head_title: About
-header-img: "img/home-bg.jpg"
+header-img: "img/header-about.svg"
 permalink: /about/
 ---
 

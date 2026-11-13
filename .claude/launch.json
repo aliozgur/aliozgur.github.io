@@ -7,6 +7,13 @@
       "runtimeArgs": ["exec", "jekyll", "serve", "--port", "4001"],
       "port": 4001,
       "autoPort": false
+    },
+    {
+      "name": "header-drafts",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4100", "--directory", "C:/Users/aliozgur/AppData/Local/Temp/claude/264fa10fb6b9a775/34eb82a4-1818-42b1-8160-df8fca1a97e1/scratchpad/headers"],
+      "port": 4100,
+      "autoPort": false
     }
   ]
 }

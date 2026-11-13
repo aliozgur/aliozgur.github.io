@@ -1,0 +1,203 @@
+/* ============================================================
+   Content-width header card + solid navbar.
+   Loaded after theme.css. Remove the <link> in head.html to go
+   back to the full-width header with the transparent navbar.
+   ============================================================ */
+
+/* ---------- Header card ---------- */
+
+/* Dark base matching the header SVGs, so there is no grey flash before the image paints */
+.intro-header { background-color: #0f1b26; }
+
+/* Phones: full-width header directly under the 50px navbar */
+.intro-header { margin: 50px 0 32px; }
+
+/* Tablet and up: rounded card the width of the content column */
+@media only screen and (min-width: 768px) {
+    .intro-header {
+        width: calc(100% - 32px);
+        max-width: 780px;
+        margin: 82px auto 44px;      /* clears the 61px navbar */
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
+/* The header's inner Bootstrap grid assumes full page width: flatten it */
+.intro-header > .container { width: auto; padding: 0 28px; }
+.intro-header .row { margin: 0; }
+.intro-header .row > [class*="col-"] { width: auto; float: none; margin-left: 0; padding: 0; }
+
+/* Navbar no longer overlaps the header, so less top padding is needed */
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading { padding: 40px 0 34px; }
+
+/* Phones: same height for home and page headers even when a subtitle wraps */
+@media only screen and (max-width: 767px) {
+    .intro-header .site-heading,
+    .intro-header .page-heading {
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .intro-header .site-heading,
+    .intro-header .post-heading,
+    .intro-header .page-heading { padding: 56px 0 48px; }
+}
+
+/* ---------- Solid navbar (desktop; mobile is already solid) ---------- */
+
+@media only screen and (min-width: 768px) {
+    .navbar-custom {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+    }
+    .navbar-custom .nav li a { color: #404040; }
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus { color: #0085a1; }
+
+    #search-input {
+        background: rgba(0, 0, 0, 0.05);
+        border-color: rgba(0, 0, 0, 0.16);
+        color: #333;
+    }
+    #search-input::placeholder { color: #999; }
+    #search-input:focus {
+        background: rgba(0, 0, 0, 0.08);
+        border-color: rgba(0, 0, 0, 0.28);
+        color: #333;
+    }
+    .search-submit-btn { border-color: rgba(0, 0, 0, 0.2); color: rgba(0, 0, 0, 0.4); }
+    .search-submit-btn:hover,
+    .search-submit-btn:focus { background: rgba(0, 0, 0, 0.07); color: rgba(0, 0, 0, 0.75); border-color: rgba(0, 0, 0, 0.35); }
+
+    .theme-toggle--desktop {
+        border-color: rgba(0, 0, 0, 0.16);
+        background: rgba(0, 0, 0, 0.03);
+        color: #404040;
+    }
+    .theme-toggle--desktop:hover,
+    .theme-toggle--desktop:focus-visible { background: rgba(0, 0, 0, 0.07); color: #0085a1; }
+
+    /* Dark theme */
+    [data-theme="dark"] .navbar-custom,
+    [data-theme="dark"] .navbar-custom.is-fixed {
+        background: var(--bg);
+        border-bottom-color: var(--border);
+    }
+    [data-theme="dark"] .navbar-custom .nav li a { color: var(--text); }
+    [data-theme="dark"] .navbar-custom .nav li a:hover,
+    [data-theme="dark"] .navbar-custom .nav li a:focus { color: var(--accent); }
+    [data-theme="dark"] #search-input,
+    [data-theme="dark"] #search-input:focus {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--border);
+        color: var(--text);
+    }
+    [data-theme="dark"] #search-input::placeholder { color: var(--muted); }
+    [data-theme="dark"] .search-submit-btn { border-color: var(--border); color: var(--muted); }
+    [data-theme="dark"] .theme-toggle--desktop {
+        border-color: var(--border);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+    }
+}
+[data-theme="dark"] .navbar-custom { background: var(--bg); }
+
+/* ---------- Navbar tint: slightly off the page background, no border, all widths ---------- */
+.navbar-custom,
+.navbar-custom.is-fixed {
+    background-color: #f2f3f6;
+    border-bottom: 1px solid transparent;   /* tint alone marks the edge */
+}
+[data-theme="dark"] .navbar-custom,
+[data-theme="dark"] .navbar-custom.is-fixed {
+    background-color: #1d2026;
+    border-bottom: 1px solid transparent;
+}
+
+/* Tablet and up: only a content-width bar is tinted, matching the header card */
+@media only screen and (min-width: 768px) {
+    .navbar-custom,
+    .navbar-custom.is-fixed,
+    [data-theme="dark"] .navbar-custom,
+    [data-theme="dark"] .navbar-custom.is-fixed {
+        background-color: transparent;
+        border-bottom-color: transparent;
+    }
+    .navbar-custom > .container-fluid {
+        width: calc(100% - 32px);
+        max-width: 780px;
+        margin: 10px auto 0;
+        padding: 0 6px;
+        background-color: #f2f3f6;
+        border-radius: 12px;
+    }
+    [data-theme="dark"] .navbar-custom > .container-fluid { background-color: #1d2026; }
+    #bs-example-navbar-collapse-1 { min-height: 52px; }
+}
+
+/* Search box must stay clear of the centred links inside the narrower bar */
+@media only screen and (min-width: 768px) {
+    #search-input:focus { width: 190px; }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+    #search-input { width: 140px; }
+    #search-input:focus { width: 160px; }
+}
+
+/* Translucent navbar: content scrolling underneath shows through, softly blurred.
+   At the top of the page it looks the same as the solid tint. */
+.navbar-custom,
+.navbar-custom.is-fixed {
+    background-color: rgba(242, 243, 246, 0.82);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+}
+[data-theme="dark"] .navbar-custom,
+[data-theme="dark"] .navbar-custom.is-fixed { background-color: rgba(29, 32, 38, 0.82); }
+
+@media only screen and (min-width: 768px) {
+    /* the tint lives on the content-width bar, so the blur goes there too */
+    .navbar-custom,
+    .navbar-custom.is-fixed,
+    [data-theme="dark"] .navbar-custom,
+    [data-theme="dark"] .navbar-custom.is-fixed {
+        background-color: transparent;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+    .navbar-custom > .container-fluid {
+        background-color: rgba(242, 243, 246, 0.82);
+        -webkit-backdrop-filter: saturate(160%) blur(10px);
+        backdrop-filter: saturate(160%) blur(10px);
+    }
+    [data-theme="dark"] .navbar-custom > .container-fluid { background-color: rgba(29, 32, 38, 0.82); }
+}
+
+/* While scrolled: almost clear glass. A stronger blur keeps the links readable over text. */
+.navbar-custom.is-fixed {
+    background-color: rgba(242, 243, 246, 0.35);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    backdrop-filter: saturate(160%) blur(14px);
+}
+[data-theme="dark"] .navbar-custom.is-fixed { background-color: rgba(29, 32, 38, 0.35); }
+
+@media only screen and (min-width: 768px) {
+    .navbar-custom.is-fixed,
+    [data-theme="dark"] .navbar-custom.is-fixed {
+        background-color: transparent;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+    .navbar-custom.is-fixed > .container-fluid {
+        background-color: rgba(242, 243, 246, 0.35);
+        -webkit-backdrop-filter: saturate(160%) blur(14px);
+        backdrop-filter: saturate(160%) blur(14px);
+    }
+    [data-theme="dark"] .navbar-custom.is-fixed > .container-fluid { background-color: rgba(29, 32, 38, 0.35); }
+}

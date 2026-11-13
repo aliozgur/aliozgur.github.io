@@ -1,8 +1,8 @@
 # Site settings
 title: Ali Özgür
-header-img: img/home-bg.jpg
+header-img: img/header-post.svg
 email:
-description: "Coding and other software development stuff"
+description: "Engineering, leadership and software in the age of AI"
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://aliozgur.github.io

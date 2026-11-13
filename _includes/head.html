@@ -1,7 +1,22 @@
 <head>
+    <!-- Theme: apply stored or system preference before first paint -->
+    <script>
+    (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+            t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+    })();
+    </script>
+    <meta name="color-scheme" content="light dark">
     <title>{% if page.title %}{{ page.head_title | default: page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include meta.html %}
     {% include adsense-head.html %}
+
+    <!-- Start fetching the header image before CSS/layout so it paints with the page -->
+    <link rel="preload" as="image" href="{{ site.baseurl }}/{{ page.header-img | default: site.header-img }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -18,6 +33,19 @@
     <link rel="stylesheet" href="{{ "/css/search.css" | prepend: site.baseurl }}">
     <script src="{{ "/js/lunr.min.js" | prepend: site.baseurl }}" defer></script>
     <script src="{{ "/js/search.js" | prepend: site.baseurl }}" defer></script>
+
+    <!-- Compact header -->
+    <link rel="stylesheet" href="{{ "/css/header.css" | prepend: site.baseurl }}">
+
+    <!-- Theme (light / dark) -->
+    <link rel="stylesheet" href="{{ "/css/theme.css" | prepend: site.baseurl }}">
+    <script src="{{ "/js/theme.js" | prepend: site.baseurl }}" defer></script>
+
+    <!-- Content-width header card + solid navbar (remove to restore full-width header) -->
+    <link rel="stylesheet" href="{{ "/css/header-card.css" | prepend: site.baseurl }}">
+
+    <!-- Reading typography (post body, home post list) -->
+    <link rel="stylesheet" href="{{ "/css/typography.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">

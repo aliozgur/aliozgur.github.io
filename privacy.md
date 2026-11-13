@@ -2,7 +2,7 @@
 layout: page
 title: Privacy
 subtitle: "How this site uses data"
-header-img: "img/home-bg.jpg"
+header-img: "img/header-post.svg"
 permalink: /privacy/
 ---
 

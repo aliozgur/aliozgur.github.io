@@ -2,12 +2,17 @@
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
+            <!-- Home button: phones only -->
+            <a class="home-btn--mobile" href="{{ site.baseurl }}/" aria-label="Home" title="Home">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 2.6 11.1a1 1 0 0 0 1.3 1.5l.9-.8V20a1 1 0 0 0 1 1h4.4v-5.6h3.6V21h4.4a1 1 0 0 0 1-1v-8.2l.9.8a1 1 0 0 0 1.3-1.5z"/></svg>
+            </a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            {% include theme_toggle.html class="theme-toggle--mobile" %}
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,6 +39,9 @@
                     </button>
                 </div>
             </form>
+
+            <!-- Theme toggle: right of search on desktop -->
+            {% include theme_toggle.html class="theme-toggle--desktop" %}
         </div>
         <!-- /.navbar-collapse -->
     </div>
