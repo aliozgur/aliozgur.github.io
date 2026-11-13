@@ -4,6 +4,7 @@ title: Projects
 subtitle: "Couple of things I'm proud of"
 #header-img: "img/projects-bg.jpg"
 permalink: /projects/
+nav_hidden: true
 ---
 
 This page is intended to provide some background and details for couple of projects I was involved with during my professional career. 

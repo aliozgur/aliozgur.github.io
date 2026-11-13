@@ -4,6 +4,7 @@ title: Podcast
 subtitle: "Developer Kahvesi"
 header-img: "img/home-bg.jpg"
 permalink: /podcast/
+nav_hidden: true
 ---
 # Developer Kahvesi Podcast
 
